@@ -15,7 +15,7 @@ public class PlayerCtrl : MonoBehaviour
     public float MOVE_SPEED = 60f;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
-    public static bool Hp = true;
+    public static bool Isdeath = false;
 
 
     public Image image;
@@ -85,8 +85,6 @@ public class PlayerCtrl : MonoBehaviour
             MOVE_SPEED = Vgear[count];
             if (count == 0) {
                 StartCoroutine("timer3");
-                
-                Debug.Log("C");
             }
         }
 

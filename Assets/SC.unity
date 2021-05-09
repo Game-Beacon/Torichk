@@ -1526,9 +1526,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1281595184}
   - component: {fileID: 1281595183}
-  - component: {fileID: 1281595185}
   - component: {fileID: 1281595187}
   - component: {fileID: 1281595186}
+  - component: {fileID: 1281595185}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -1575,7 +1575,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b4c2997748084640a08e62560d17baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 687f50dd677b31c49afbeb95346e1a22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1594,7 +1594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281595182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -107.3, y: 0, z: 0}
+  m_LocalPosition: {x: -50, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1609,10 +1609,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1281595182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4882bd6a336ea4e86beb407bbda745, type: 3}
+  m_Script: {fileID: 11500000, guid: aff789d658aa3ba43a26c40cc9e533a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MOVE_SPEED: 50
+  MOVE_SPEED: 0
 --- !u!61 &1281595186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 38.399998, y: 21.599998}
+    oldSize: {x: 9.6, y: 9.6}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

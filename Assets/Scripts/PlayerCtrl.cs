@@ -12,7 +12,7 @@ public class PlayerCtrl : MonoBehaviour
     }
 
     //[SerializeField] private FieldOfView_2 fieldOfView;
-    public float MOVE_SPEED = 60f;
+    public float MOVE_SPEED = 0f;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
     public static bool Isdeath = false;

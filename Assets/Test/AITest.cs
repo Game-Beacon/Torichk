@@ -5,10 +5,11 @@ using UnityEngine;
 public class AITest : MonoBehaviour
 {
 
-    public const int AIThinkTime = 2;
+    public const int AIThinkTime = 1;
     public const int AIDetectDistance = 10;
-    public const int AIAttackDistance = 5;
-    public float MOVE_SPEED = 60;
+    public const int AIAttackDistance = 2;
+    public float MOVE_SPEED = 0;
+    //public Vector3 origin;
 
     private float LastThinkTime;
     Rigidbody2D rigibody2D;
@@ -25,6 +26,7 @@ public class AITest : MonoBehaviour
         if (Vector3.Distance(transform.position,PlayerCtrl.GetPlayerPosition())<AIDetectDistance)
         {
             monsterState = MonsterState.Move;
+            SetDir(PlayerCtrl.GetPlayerPosition());
             //animation_Move
             Debug.Log("Move");
 
@@ -57,7 +59,7 @@ public class AITest : MonoBehaviour
                         Debug.Log("move_");
                         StateSwitch = !StateSwitch;
                         //animation_Move
-                        SetDir( new Vector3(Random.Range(-8, 8), Random.Range(-8, 8)));
+                        SetDir( new Vector3(Random.Range(-2, 2), Random.Range(-2, 2)));
 
                         break;
                     default:
@@ -65,7 +67,9 @@ public class AITest : MonoBehaviour
                 }
             }
 
-        }       
+        }
+        //moveDir = new Vector3(1,1,0).normalized;
+
     }
 
 

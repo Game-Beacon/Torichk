@@ -5,11 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
 {
+    static float MaskDistance;
     static Vector3 PlayerPosition;
     public static Vector3 GetPlayerPosition()
     {
         return PlayerPosition;
     }
+
+    public static float GetMaskDistance() {
+        return MaskDistance;
+    }
+
 
     //[SerializeField] private FieldOfView_2 fieldOfView;
     public float MOVE_SPEED = 0f;
@@ -20,8 +26,8 @@ public class PlayerCtrl : MonoBehaviour
 
     public Image image;
     public GameObject dark;
-    float fix = 100;
-    float[] Maskgear = new float[] {0,1,1.5f,2.5f,4.5f};
+    float  fix = 100;
+    float[] Maskgear = new  float[] {0,1,1.5f,2.5f,4.5f};
     float[] Vgear = new float[] {0,2,3.25f,4.75f,7.75f};
     int count = 1;
 
@@ -73,6 +79,7 @@ public class PlayerCtrl : MonoBehaviour
         {
             if (count == 0) { StopCoroutine("timer3"); }
             count++;
+            MaskDistance =  Maskgear[count];
             image.rectTransform.sizeDelta = new Vector2(fix* Maskgear[count], fix * Maskgear[count]);
             MOVE_SPEED = Vgear[count];
 
@@ -81,6 +88,7 @@ public class PlayerCtrl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X) && count >0)//down
         {
             count--;
+            MaskDistance =  Maskgear[count];
             image.rectTransform.sizeDelta = new Vector2(fix * Maskgear[count], fix * Maskgear[count]);
             MOVE_SPEED = Vgear[count];
             if (count == 0) {

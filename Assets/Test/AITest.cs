@@ -4,72 +4,81 @@ using UnityEngine;
 
 public class AITest : MonoBehaviour
 {
-
+    Vector3 origin;
+    float DefensiveDistance = 40;
     public const int AIThinkTime = 1;
     public const int AIDetectDistance = 10;
     public const int AIAttackDistance = 2;
     public float MOVE_SPEED = 0;
-    //public Vector3 origin;
+
 
     private float LastThinkTime;
     Rigidbody2D rigibody2D;
     Vector3 moveDir;
     bool StateSwitch = false;
-    private MonsterState monsterState;
+
+
+    bool IsMoveToOrigin = true;
 
     void Start()
     {       
     }
 
     void Update()
-    {       
-        if (Vector3.Distance(transform.position,PlayerCtrl.GetPlayerPosition())<AIDetectDistance)
+    {
+        if (Vector3.Distance(origin, transform.position) < DefensiveDistance && IsMoveToOrigin)
         {
-            monsterState = MonsterState.Move;
-            SetDir(PlayerCtrl.GetPlayerPosition());
-            //animation_Move
-            Debug.Log("Move");
-
-            if (Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIAttackDistance)
+            Debug.Log("Mask" + PlayerCtrl.GetMaskDistance());
+            if (Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIDetectDistance + PlayerCtrl.GetMaskDistance())
             {
-                monsterState = MonsterState.Attack;
-                //animation_attack
-                PlayerCtrl.Isdeath = true;
-                Debug.Log("Attack");
-            }
-            
-        }
-        else
-        {
-            if (Time.time-LastThinkTime>AIThinkTime)
-            {
-                Debug.Log("switch");
-                LastThinkTime = Time.time;
-                //int Rand = Random.Range(0,1);
 
-                switch (StateSwitch)
+                SetDir(PlayerCtrl.GetPlayerPosition());
+                //animation_Move
+                Debug.Log("Move");
+
+                if (Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIAttackDistance + PlayerCtrl.GetMaskDistance())
                 {
-                    case true:
-                        Debug.Log("stand");
-                        StateSwitch = !StateSwitch;
-                        //animation_idle
+                    //animation_attack
+                    PlayerCtrl.Isdeath = true;
+                    Debug.Log("Attack");
+                }
 
-                        break;
-                    case false:
-                        Debug.Log("move_");
-                        StateSwitch = !StateSwitch;
-                        //animation_Move
-                        SetDir( new Vector3(Random.Range(-2, 2), Random.Range(-2, 2)));
+            }
+            else
+            {
+                if (Time.time - LastThinkTime > AIThinkTime)
+                {
+                    Debug.Log("switch");
+                    LastThinkTime = Time.time;
 
-                        break;
-                    default:
-                        break;
+                    switch (StateSwitch)
+                    {
+                        case true:
+                            Debug.Log("stand");
+                            StateSwitch = !StateSwitch;
+                            //animation_idle
+
+                            break;
+                        case false:
+                            Debug.Log("move_");
+                            StateSwitch = !StateSwitch;
+                            //animation_Move
+                            SetDir(new Vector3(Random.Range(-2, 2), Random.Range(-2, 2)));
+
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
+        }
+        else {
+            Debug.Log("OOOO");
+            SetDir(origin);
+            IsMoveToOrigin = false;
+            if (Vector3.Distance(origin, transform.position) < 0.1|| Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIDetectDistance + PlayerCtrl.GetMaskDistance()) IsMoveToOrigin = true;
 
         }
-        //moveDir = new Vector3(1,1,0).normalized;
-
     }
 
 
@@ -83,6 +92,7 @@ public class AITest : MonoBehaviour
     private void Awake()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
+        origin = transform.position;
 
     }
 

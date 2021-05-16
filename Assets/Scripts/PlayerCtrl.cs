@@ -42,7 +42,7 @@ public class PlayerCtrl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z))
         {
-            MaskV = 0.1f;
+            MaskV = 10f;
             MOVE_SPEED = 10;
         }
         else
@@ -98,16 +98,13 @@ public class PlayerCtrl : MonoBehaviour
                 yield break;
             }
 
-
             var t = Mathf.InverseLerp(timeStart, timeEnd, Time.time);
             var v = t;
             var scale = Vector3.LerpUnclamped(Start, End, v);
-            //this.transform.localPosition = position;
             s.transform.localScale = scale;
             yield return null;
         }
         s.transform.localScale = End;
-        //this.transform.localPosition = posEnd;
     }
 
     IEnumerator UnMaskChange(float duration, Vector3 Start, Vector3 End)
@@ -116,21 +113,18 @@ public class PlayerCtrl : MonoBehaviour
         var timeEnd = timeStart + duration;
         while (Time.time < timeEnd)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
             {
                 currectScale = s.transform.localScale;
                 yield break;
             }
-
             var t = Mathf.InverseLerp(timeStart, timeEnd, Time.time);
             var v = t;
             var scale = Vector3.LerpUnclamped(Start, End, v);
-            //this.transform.localPosition = position;
             s.transform.localScale = scale;
             yield return null;
         }
         s.transform.localScale = End;
-        //this.transform.localPosition = posEnd;
     }
 
 }

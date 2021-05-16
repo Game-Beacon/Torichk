@@ -5,8 +5,14 @@ using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
 {
+    public GameObject s;
+
     static float MaskDistance;
     static Vector3 PlayerPosition;
+    Vector3 currectScale;
+    Vector3 TargetMaskScale ;
+    float MaskV;
+    bool isRun ;
     public static Vector3 GetPlayerPosition()
     {
         return PlayerPosition;
@@ -16,113 +22,116 @@ public class PlayerCtrl : MonoBehaviour
         return MaskDistance;
     }
 
-
-    //[SerializeField] private FieldOfView_2 fieldOfView;
-    public float MOVE_SPEED = 0f;
+    public float MOVE_SPEED;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
     public static bool Isdeath = false;
 
-
-    public Image image;
-    public GameObject dark;
-    float  fix = 100;
-    float[] Maskgear = new  float[] {0,1,1.5f,2.5f,4.5f};
-    float[] Vgear = new float[] {0,2,3.25f,4.75f,7.75f};
-    int count = 1;
-
-
-
     private void Awake()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
-
+        currectScale = new Vector3(1,1,1);
+        MOVE_SPEED = 5f;
+        MaskV = 10f;
+        TargetMaskScale = new Vector3(2, 2, 2);
+        isRun = false;
     }
-    // Update is called once per frame
     void Update()
     {
+
+
+        if (Input.GetKey(KeyCode.Z))
+        {
+            MaskV = 0.1f;
+            MOVE_SPEED = 10;
+        }
+        else
+        {
+            MaskV = 10f;
+            MOVE_SPEED = 5;
+        }
+
         PlayerPosition = transform.position;
-        //fieldOfView.SetAimDirection(moveDir);
-        //fieldOfView.SetOrigin(transform.position);
+
         float moveX = 0f;
         float moveY = 0f;
 
         if (Input.GetKey(KeyCode.UpArrow)) {
             moveY = 1f;
-
+            StartCoroutine(MaskChange(MaskV,currectScale,TargetMaskScale));
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
+        if (Input.GetKey(KeyCode.DownArrow)) {
             moveY = -1f;
-
+            StartCoroutine(MaskChange(MaskV,currectScale,TargetMaskScale));
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
+        if (Input.GetKey(KeyCode.LeftArrow)) {
             moveX = -1f;
-
+            StartCoroutine(MaskChange(MaskV,currectScale, TargetMaskScale));
         }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
+        if (Input.GetKey(KeyCode.RightArrow)) {
             moveX = 1f;
+            StartCoroutine(MaskChange(MaskV,currectScale,TargetMaskScale));
+        }
 
+        if (!(Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey(KeyCode.RightArrow)))
+        {
+            StartCoroutine(UnMaskChange(MaskV, currectScale,new Vector3(0,0,0)));
         }
 
         moveDir = new Vector3(moveX, moveY).normalized;
-
-        MaskCtrl();
-
     }
-
-    void MaskCtrl() {
-
-        if(Input.GetKeyDown(KeyCode.Z) && count < Maskgear.Length-1)//up
-        {
-            if (count == 0) { StopCoroutine("timer3"); }
-            count++;
-            MaskDistance =  Maskgear[count];
-            image.rectTransform.sizeDelta = new Vector2(fix* Maskgear[count], fix * Maskgear[count]);
-            MOVE_SPEED = Vgear[count];
-
-        }
-
-        if(Input.GetKeyDown(KeyCode.X) && count >0)//down
-        {
-            count--;
-            MaskDistance =  Maskgear[count];
-            image.rectTransform.sizeDelta = new Vector2(fix * Maskgear[count], fix * Maskgear[count]);
-            MOVE_SPEED = Vgear[count];
-            if (count == 0) {
-                StartCoroutine("timer3");
-            }
-        }
-
-
-
-    }
-
-
-    //int timerCount = 0;
-    IEnumerator timer3() {
-
-        for (int i = 0; i < 4; i++)
-        {
-            image.rectTransform.sizeDelta = new Vector2(fix * Maskgear[0], fix * Maskgear[0]);
-            yield return new WaitForSeconds(1);
-            image.rectTransform.sizeDelta = new Vector2(fix * Maskgear[1], fix * Maskgear[1]);
-            yield return new WaitForSeconds(0.5f);
-            image.rectTransform.sizeDelta = new Vector2(fix * Maskgear[0], fix * Maskgear[0]);
-            yield return new WaitForSeconds(0.2f);
-        }
-            yield return null;
-
-    }
-
 
     private void FixedUpdate()
     {
         rigibody2D.velocity = moveDir*MOVE_SPEED;
     }
 
+    IEnumerator MaskChange(float duration, Vector3 Start, Vector3 End)
+    {
+        var timeStart = Time.time;
+        var timeEnd = timeStart + duration;
+        while (Time.time < timeEnd)
+        {
+            if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            {
+                currectScale = s.transform.localScale;
+                yield break;
+            }
+
+
+            var t = Mathf.InverseLerp(timeStart, timeEnd, Time.time);
+            var v = t;
+            var scale = Vector3.LerpUnclamped(Start, End, v);
+            //this.transform.localPosition = position;
+            s.transform.localScale = scale;
+            yield return null;
+        }
+        s.transform.localScale = End;
+        //this.transform.localPosition = posEnd;
+    }
+
+    IEnumerator UnMaskChange(float duration, Vector3 Start, Vector3 End)
+    {
+        var timeStart = Time.time;
+        var timeEnd = timeStart + duration;
+        while (Time.time < timeEnd)
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                currectScale = s.transform.localScale;
+                yield break;
+            }
+
+            var t = Mathf.InverseLerp(timeStart, timeEnd, Time.time);
+            var v = t;
+            var scale = Vector3.LerpUnclamped(Start, End, v);
+            //this.transform.localPosition = position;
+            s.transform.localScale = scale;
+            yield return null;
+        }
+        s.transform.localScale = End;
+        //this.transform.localPosition = posEnd;
+    }
 
 }
 

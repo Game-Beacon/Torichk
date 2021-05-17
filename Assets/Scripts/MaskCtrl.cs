@@ -5,33 +5,32 @@ using UnityEngine;
 public class MaskCtrl : MonoBehaviour
 {
 
-    public GameObject g;
-    float t = 10;
-    float c = 0;
+    public GameObject _mask;
+    float target;
+    float currect;
+    float changePercentage;
 
-    void Start()
+    private void Awake()
     {
-
+        target = 10;
+        currect = 0;
+        changePercentage = 0.01f;
     }
-
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
         {
-            c = MaskChange(c, t, 0.01f);
-            Debug.Log(c);
+            currect = MaskChangeFromAtoB(currect, target,changePercentage);
+            Debug.Log(currect);
         }
         else
         {
-            c = MaskChange(c, 0, 0.01f);
-            Debug.Log(c);
+            currect = MaskChangeFromAtoB(currect, 0,changePercentage);
         }
-
-        // c = MaskChange(c,Input.GetKey(KeyCode.Space)? t:0, 0.01f);
-        g.transform.localScale = new Vector3(c,c,c);      
+        _mask.transform.localScale = new Vector3(currect,currect,currect);      
     }
-   float MaskChange(float a,float b ,float k) {
-        return a + (b - a) * k;
+   float MaskChangeFromAtoB(float a,float b ,float changePercentage) {
+        return a + (b - a) * changePercentage;
     }
 
 }

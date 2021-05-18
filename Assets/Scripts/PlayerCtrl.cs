@@ -14,25 +14,28 @@ public class PlayerCtrl : MonoBehaviour
     public static float GetMaskDistance() {
         return MaskDistance;
     }
-    public float MOVE_SPEED;
+    public float MoveSpeed;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
     public static bool Isdeath = false;
+    public static bool PlayerIsRun;
 
     private void Awake()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
-        MOVE_SPEED = 5f;
+        MoveSpeed = 5f;
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.Z)&&PlayerIsMove())
         {
-            MOVE_SPEED = 10;
+            MoveSpeed = 10;
+            PlayerIsRun = true;
         }
         else
         {
-            MOVE_SPEED = 5;
+            MoveSpeed = 5;
+            PlayerIsRun = false;
         }
 
         PlayerPosition = transform.position;
@@ -55,9 +58,13 @@ public class PlayerCtrl : MonoBehaviour
         moveDir = new Vector3(moveX, moveY).normalized;
     }
 
+    bool PlayerIsMove() {
+        return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
+    }
+
     private void FixedUpdate()
     {
-        rigibody2D.velocity = moveDir*MOVE_SPEED;
+        rigibody2D.velocity = moveDir*MoveSpeed;
     }
 }
 

@@ -18,10 +18,10 @@ public class MaskCtrl : MonoBehaviour
     }
     void Update()
     {
+        changePercentage =PlayerCtrl.PlayerIsRun ? 0.01f:0.001f;
         if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
         {
             currect = MaskChangeFromAtoB(currect, target,changePercentage);
-            Debug.Log(currect);
         }
         else
         {

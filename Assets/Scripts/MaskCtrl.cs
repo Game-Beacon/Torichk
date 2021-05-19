@@ -5,13 +5,13 @@ using UnityEditor;
 
 public class MaskCtrl : MonoBehaviour
 {
-
+    #region 欄位
     public GameObject _mask;
     float target;
     float currect;
     float changePercentage;
     float maskSpeed;
-
+    #endregion
 
     private void Awake()
     {

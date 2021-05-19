@@ -10,23 +10,31 @@ public class MaskCtrl : MonoBehaviour
     float target;
     float currect;
     float changePercentage;
-    float MaskLevel;
+    float maskSpeed;
+
 
     private void Awake()
     {
         target = 1;
         currect = 0;
         changePercentage = 0.01f;
-        MaskLevel = 1.0f;
+        maskSpeed = 0.003f;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A)&&target<5)
         {
-          target = MaskLevel++;
+            Debug.Log("MaskLevelUP");
+          target++;
         }
 
-        changePercentage =PlayerCtrl.PlayerIsRun ? 0.1f:0.01f;
+        if (Input.GetKeyDown(KeyCode.S) && target > 1)
+        {
+            Debug.Log("MaskLevelDown");
+            target--;
+        }
+
+        changePercentage =PlayerCtrl.PlayerIsRun ? maskSpeed*5:maskSpeed;
         if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
         {
             currect = MaskChangeFromAtoB(currect, target,changePercentage);
@@ -38,6 +46,9 @@ public class MaskCtrl : MonoBehaviour
         _mask.transform.localScale = new Vector3(currect,currect,currect);      
     }
    float MaskChangeFromAtoB(float a,float b ,float changePercentage) {
+        if (a > b * 0.99 && b!=0)   {return b;}
+        if (b==0 && a<0.1)          {return 0;}
+
         return a + (b - a) * changePercentage;
     }
 

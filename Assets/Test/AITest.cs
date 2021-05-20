@@ -28,15 +28,15 @@ public class AITest : MonoBehaviour
     {
         if (Vector3.Distance(origin, transform.position) < DefensiveDistance && IsMoveToOrigin)
         {
-            Debug.Log("Mask" + PlayerCtrl.GetMaskDistance());
-            if (Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIDetectDistance + PlayerCtrl.GetMaskDistance())
+            Debug.Log("Mask" + PlayerCtrl.MaskDistance);
+            if (Vector3.Distance(transform.position, PlayerCtrl.PlayerPosition) < AIDetectDistance + PlayerCtrl.MaskDistance)
             {
 
-                SetDir(PlayerCtrl.GetPlayerPosition());
+                SetDir(PlayerCtrl.PlayerPosition);
                 //animation_Move
                 Debug.Log("Move");
 
-                if (Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIAttackDistance + PlayerCtrl.GetMaskDistance())
+                if (Vector3.Distance(transform.position, PlayerCtrl.PlayerPosition) < AIAttackDistance + PlayerCtrl.MaskDistance)
                 {
                     //animation_attack
                     PlayerCtrl.Isdeath = true;
@@ -76,7 +76,7 @@ public class AITest : MonoBehaviour
             Debug.Log("OOOO");
             SetDir(origin);
             IsMoveToOrigin = false;
-            if (Vector3.Distance(origin, transform.position) < 0.1|| Vector3.Distance(transform.position, PlayerCtrl.GetPlayerPosition()) < AIDetectDistance + PlayerCtrl.GetMaskDistance()) IsMoveToOrigin = true;
+            if (Vector3.Distance(origin, transform.position) < 0.1|| Vector3.Distance(transform.position, PlayerCtrl.PlayerPosition) < AIDetectDistance + PlayerCtrl.MaskDistance) IsMoveToOrigin = true;
 
         }
     }

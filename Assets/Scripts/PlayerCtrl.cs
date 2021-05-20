@@ -1,19 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour
 {
-    static float MaskDistance;
-    static Vector3 PlayerPosition;
-    public static Vector3 GetPlayerPosition()
-    {
-        return PlayerPosition;
-    }
-    public static float GetMaskDistance() {
-        return MaskDistance;
-    }
+    public static float MaskDistance;
+    public static Vector3 PlayerPosition;
     public float MoveSpeed;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
@@ -37,31 +27,18 @@ public class PlayerCtrl : MonoBehaviour
             MoveSpeed = 5;
             PlayerIsRun = false;
         }
-
         PlayerPosition = transform.position;
-
         float moveX = 0f;
         float moveY = 0f;
-
-        if (Input.GetKey(KeyCode.UpArrow)) {
-            moveY = 1f;
-        }
-        if (Input.GetKey(KeyCode.DownArrow)) {
-            moveY = -1f;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            moveX = -1f;
-        }
-        if (Input.GetKey(KeyCode.RightArrow)) {
-            moveX = 1f;
-        }
+        if (Input.GetKey(KeyCode.UpArrow)) moveY = 1f;
+        if (Input.GetKey(KeyCode.DownArrow)) moveY = -1f;
+        if (Input.GetKey(KeyCode.LeftArrow)) moveX = -1f;
+        if (Input.GetKey(KeyCode.RightArrow)) moveX = 1f;
         moveDir = new Vector3(moveX, moveY).normalized;
     }
-
     bool PlayerIsMove() {
         return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
     }
-
     private void FixedUpdate()
     {
         rigibody2D.velocity = moveDir*MoveSpeed;

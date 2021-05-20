@@ -6,7 +6,7 @@ using UnityEditor;
 public class MaskCtrl : MonoBehaviour
 {
     #region 欄位
-    public GameObject _mask;
+    public GameObject viewMask;
     float target;
     float currect;
     float changePercentage;
@@ -43,7 +43,7 @@ public class MaskCtrl : MonoBehaviour
         {
             currect = MaskChangeFromAtoB(currect, 0,changePercentage);
         }
-        _mask.transform.localScale = new Vector3(currect,currect,currect);      
+        viewMask.transform.localScale = new Vector3(currect,currect,currect);      
     }
    float MaskChangeFromAtoB(float a,float b ,float changePercentage) {
         if (a > b * 0.99 && b!=0)   {return b;}
@@ -55,7 +55,7 @@ public class MaskCtrl : MonoBehaviour
 
     void DrawCircle(float r) {
         Handles.color = Color.red;
-        Handles.DrawWireArc(_mask.transform.position, Vector3.up, Vector3.forward, 360, r);
+        Handles.DrawWireArc(viewMask.transform.position, Vector3.up, Vector3.forward, 360, r);
     }
 
 }

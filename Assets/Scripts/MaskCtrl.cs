@@ -1,49 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class MaskCtrl : MonoBehaviour
 {
     #region 欄位
     public GameObject viewMask;
-    float target;
-    float currect;
-    float changePercentage;
-    float maskSpeed;
+    public float[] MaskLevel;
+    float targetScal;
+    float currectScal;
+    float MaskchangePercentage;
+    float maskChangePercentageBase;
+    int MaskLevelCount;
     #endregion
+
 
     private void Awake()
     {
-        target = 1;
-        currect = 0;
-        changePercentage = 0.01f;
-        maskSpeed = 0.003f;
+        targetScal = 1;
+        currectScal = 0;
+        MaskchangePercentage = 0.03f;
+        maskChangePercentageBase = 0.003f;
+        MaskLevel = new float[5] { 1,2,3,5,7};
+        MaskLevelCount = 0;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)&&target<5)
-        {
-            Debug.Log("MaskLevelUP");
-          target++;
-        }
 
-        if (Input.GetKeyDown(KeyCode.S) && target > 1)
-        {
-            Debug.Log("MaskLevelDown");
-            target--;
-        }
-
-        changePercentage =PlayerCtrl.PlayerIsRun ? maskSpeed*5:maskSpeed;
+        MaskLevelupOrDown();
+        targetScal = MaskLevel[MaskLevelCount];
+        MaskchangePercentage = PlayerCtrl.PlayerIsRun ?  (maskChangePercentageBase*5) : (maskChangePercentageBase);
         if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
         {
-            currect = MaskChangeFromAtoB(currect, target,changePercentage);
+            currectScal = MaskChangeFromAtoB(currectScal, targetScal,MaskchangePercentage);
         }
         else
         {
-            currect = MaskChangeFromAtoB(currect, 0,changePercentage);
+            currectScal = MaskChangeFromAtoB(currectScal, 0,MaskchangePercentage);
         }
-        viewMask.transform.localScale = new Vector3(currect,currect,currect);      
+        viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);          
     }
    float MaskChangeFromAtoB(float a,float b ,float changePercentage) {
         if (a > b * 0.99 && b!=0)   {return b;}
@@ -52,12 +47,18 @@ public class MaskCtrl : MonoBehaviour
         return a + (b - a) * changePercentage;
     }
 
-
-    void DrawCircle(float r) {
-        Handles.color = Color.red;
-        Handles.DrawWireArc(viewMask.transform.position, Vector3.up, Vector3.forward, 360, r);
+    void MaskLevelupOrDown() {
+        if (Input.GetKeyDown(KeyCode.A) && MaskLevelCount < MaskLevel.Length - 1)
+        {
+            Debug.Log("MaskLevelUP");
+            MaskLevelCount++;
+        }
+        if (Input.GetKeyDown(KeyCode.S) && MaskLevelCount > 1)
+        {
+            Debug.Log("MaskLevelDown");
+            MaskLevelCount--;
+        }
     }
-
 }
 
 

@@ -36,7 +36,7 @@ public class PlayerCtrl : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow)) moveX = 1f;
         moveDir = new Vector3(moveX, moveY).normalized;
     }
-    bool PlayerIsMove() {
+    public static bool PlayerIsMove() {
         return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
     }
     private void FixedUpdate()

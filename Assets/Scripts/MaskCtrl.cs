@@ -31,7 +31,7 @@ public class MaskCtrl : MonoBehaviour
         MaskchangePercentage = PlayerCtrl.PlayerIsRun ?  (maskChangePercentageBase*5) : (maskChangePercentageBase);//控制走跟跑時mask變化比例為5倍
         currectScal = MaskChangeFromAtoB(
             currectScal,                //A
-            PlayerIsMove()? targetScal:0//B mask 目標範圍，移動:往最大,不動:往0
+            PlayerCtrl.PlayerIsMove() ? targetScal:0//B mask 目標範圍，移動:往最大,不動:往0
             ,MaskchangePercentage);     //mask變化比例
         viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);          
     }
@@ -41,13 +41,6 @@ public class MaskCtrl : MonoBehaviour
         if (b==0 && a<0.1)          {return 0;}
         return a + (b - a) * changePercentage;
     }
-
-    bool PlayerIsMove()
-    {
-        return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow);
-    }
-
-
     void MaskLevelupOrDown() {
         if (Input.GetKeyDown(KeyCode.A) && MaskLevelCount < MaskLevel.Length - 1)
         {

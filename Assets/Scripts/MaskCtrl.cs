@@ -8,7 +8,7 @@ public class MaskCtrl : MonoBehaviour
     public GameObject viewMask;
     public float[] MaskLevel;
     float targetScal;
-    float currectScal;
+    public static float currectScal;
     float MaskchangePercentage;
     float maskChangePercentageBase;
     int MaskLevelCount;
@@ -21,7 +21,7 @@ public class MaskCtrl : MonoBehaviour
         currectScal = 0;
         MaskchangePercentage = 0.03f;
         maskChangePercentageBase = 0.003f;
-        MaskLevel = new float[5] { 1,2,3,5,7};
+        MaskLevel = new float[5] { 1,2,3,5,7};//遮罩比畫面距離1:3.5
         MaskLevelCount = 0;
     }
     void Update()

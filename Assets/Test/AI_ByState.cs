@@ -5,11 +5,14 @@ using UnityEngine;
 public class AI_ByState : MonoBehaviour
 {
     public float speed;
+    public float DefendDistance;//防守範圍(從出生點)
+    public float AttackDistance;//偵查距離
+    public Vector3 O;//出生點
     public IdleState idleState;
     public MoveState moveState;
     public AttackState attackState;
     public Istate currentState;
-
+    public Vector3 AiPosition;
 
     private void Start()
     {
@@ -17,14 +20,22 @@ public class AI_ByState : MonoBehaviour
         moveState =new MoveState(this);
         attackState = new AttackState(this);
         currentState = idleState;
+        O = transform.position;
+        DefendDistance = 10;
+        AttackDistance = 8;
     }
  
 
     void Update()
     {
         currentState.OnStateExecution();
-        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<10)
+        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<AttackDistance + MaskCtrl.currectScal * 3.5)
         { ChangeState(attackState); }
+        AiPosition = transform.position;
+        if (Vector3.Distance(AiPosition, O) > DefendDistance)
+        {
+            ChangeState(moveState);
+        }
     }
 
     public  void ChangeState(Istate nextstate)
@@ -34,6 +45,9 @@ public class AI_ByState : MonoBehaviour
         currentState = nextstate;
     }
 
+    public void MoveToPosition(Vector3 position,float v) {
+        transform.position = Vector3.Lerp(transform.position,position,v);
+    }
 }
 
 
@@ -52,27 +66,28 @@ public class IdleState :Istate
     {     
         timeEnd = Time.time + 3f;
         aiBystate.speed = 0;
-        Debug.Log("IdleEnter");
+        Debug.Log(aiBystate.name+":IdleEnter");
     }
 
     void Istate.OnStateExecution()
     {
-        Debug.Log("IdleEx");
+        Debug.Log(aiBystate.name + ":IdleEx");
         if (Time.time > timeEnd) {
             aiBystate.ChangeState(aiBystate.moveState);
         }
     }
 
-    void Istate.OnstateExit()
+   void Istate.OnstateExit()
     {
-        Debug.Log("IdleExit");
+        Debug.Log(aiBystate.name + ":IdleExit");
     }
 }
 
-public class MoveState : Istate
+public class MoveState :Istate
 {
     float timeEnd;
     AI_ByState aiBystate;
+    Vector3 Target;
     public MoveState(AI_ByState aI_ByState)
     {
         aiBystate = aI_ByState;
@@ -81,21 +96,28 @@ public class MoveState : Istate
     {
         timeEnd = Time.time + 3f;
         aiBystate.speed = 10;
-        Debug.Log("MoveEnter");
+        Debug.Log(aiBystate.name + ":MoveEnter");
+        Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
+        while (Vector3.Distance(aiBystate.O, Target) > aiBystate.DefendDistance)
+        {
+         Debug.Log("aaaaaaa");
+         Target = aiBystate.O + new Vector3(Random.Range(-12, 12), Random.Range(-12, 12),0);
+        }
     }
 
     void Istate.OnStateExecution()
     {
+        aiBystate.MoveToPosition(Target,0.001f);
         if (Time.time > timeEnd)
         {
             aiBystate.ChangeState(aiBystate.idleState);
         }
-        Debug.Log("MoveEx");
+        Debug.Log(aiBystate.name + ":MoveEx");
     }
 
     void Istate.OnstateExit()
     {
-        Debug.Log("MoveExut");
+        Debug.Log(aiBystate.name + ":MoveExut");
     }
 }
 
@@ -109,17 +131,30 @@ public class AttackState : Istate
 
     void Istate.OnStateEnter()
     {
-        Debug.Log("AttackEnter");
+        Debug.Log(aistate.name + ":DetenceEnter");
     }
 
     void Istate.OnStateExecution()
     {
-        Debug.Log("AttackEx");
+        if (Vector3.Distance(aistate.AiPosition, aistate.O) < aistate.DefendDistance)
+        {
+            aistate.MoveToPosition(PlayerCtrl.PlayerPosition, 0.001f);
+        }
+        else {
+            aistate.MoveToPosition(aistate.O, 0.001f);
+        }
+
+        //aistate.MoveToPosition(PlayerCtrl.PlayerPosition,0.001f);
+        if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>aistate.AttackDistance + MaskCtrl.currectScal * 3.5 || Vector3.Distance(aistate.AiPosition,aistate.O)>aistate.DefendDistance)
+        {
+            aistate.ChangeState(aistate.idleState);
+        }
+        Debug.Log(aistate.name + ":DetenceEx");
     }
 
     void Istate.OnstateExit()
     {
-        Debug.Log("AttackExit");
+        Debug.Log(aistate.name + ":DetenceExit");
     }
 }
 

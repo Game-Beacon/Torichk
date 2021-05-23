@@ -1582,7 +1582,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1281595184
 Transform:
@@ -2460,4 +2460,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201e3884be9be2f47aac50aea5d79736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mask: {fileID: 2099659420}
+  viewMask: {fileID: 2099659420}
+  MaskLevel: []

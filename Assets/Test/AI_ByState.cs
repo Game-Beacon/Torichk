@@ -4,104 +4,126 @@ using UnityEngine;
 
 public class AI_ByState : MonoBehaviour
 {
-    public static float speed;
-    AttackState attackState = new AttackState();
-    public static IdleState idleState = new IdleState();
-    public static MoveState moveState = new MoveState();
-    public static Istate currentState ;
+    public float speed;
+    public IdleState idleState;
+    public MoveState moveState;
+    public AttackState attackState;
+    public Istate currentState;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
+        idleState = new IdleState(this);
+        moveState =new MoveState(this);
+        attackState = new AttackState(this);
         currentState = idleState;
-        speed = 0;
     }
+ 
 
-    // Update is called once per frame
     void Update()
     {
         currentState.OnStateExecution();
-        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<1)
-        {
-            ChangeState(attackState);
-        }
+        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<10)
+        { ChangeState(attackState); }
     }
 
-    void ChangeState(Istate nextstate) {
+    public  void ChangeState(Istate nextstate)
+    {
         currentState.OnstateExit();
         nextstate.OnStateEnter();
         currentState = nextstate;
     }
+
 }
 
 
 
-public class IdleState :MonoBehaviour, Istate
+
+public class IdleState :Istate
 {
-    //待機3秒idle或move
+    AI_ByState aiBystate;
+    public IdleState(AI_ByState _aI_ByState)
+    {
+
+        aiBystate = _aI_ByState;
+    }
     float timeEnd ;
     void Istate.OnStateEnter()
-    {
-        timeEnd = Time.time + 3;
-        AI_ByState.speed = 0;
+    {     
+        timeEnd = Time.time + 3f;
+        aiBystate.speed = 0;
+        Debug.Log("IdleEnter");
     }
 
     void Istate.OnStateExecution()
     {
-
-        if (Time.time<timeEnd)
-        {
-            if (Random.Range(0,1)>=1)
-            {
-                AI_ByState.currentState = AI_ByState.idleState;
-            }
-            else
-            {
-                AI_ByState.currentState = AI_ByState.moveState;
-            }
+        Debug.Log("IdleEx");
+        if (Time.time > timeEnd) {
+            aiBystate.ChangeState(aiBystate.moveState);
         }
-
     }
 
     void Istate.OnstateExit()
     {
+        Debug.Log("IdleExit");
     }
 }
 
+public class MoveState : Istate
+{
+    float timeEnd;
+    AI_ByState aiBystate;
+    public MoveState(AI_ByState aI_ByState)
+    {
+        aiBystate = aI_ByState;
+    }
+    void Istate.OnStateEnter()
+    {
+        timeEnd = Time.time + 3f;
+        aiBystate.speed = 10;
+        Debug.Log("MoveEnter");
+    }
+
+    void Istate.OnStateExecution()
+    {
+        if (Time.time > timeEnd)
+        {
+            aiBystate.ChangeState(aiBystate.idleState);
+        }
+        Debug.Log("MoveEx");
+    }
+
+    void Istate.OnstateExit()
+    {
+        Debug.Log("MoveExut");
+    }
+}
 
 public class AttackState : Istate
 {
+    AI_ByState aistate;
+    public AttackState(AI_ByState aI_ByState)
+    {
+        aistate = aI_ByState;
+    }
+
     void Istate.OnStateEnter()
-    { 
+    {
+        Debug.Log("AttackEnter");
     }
 
     void Istate.OnStateExecution()
     {
-        PlayerCtrl.Isdeath = true;
+        Debug.Log("AttackEx");
     }
 
     void Istate.OnstateExit()
     {
+        Debug.Log("AttackExit");
     }
 }
 
-public class MoveState : MonoBehaviour, Istate
-{
-    void Istate.OnStateEnter()
-    {
 
-    }
-
-    void Istate.OnStateExecution()
-    {
-
-    }
-
-    void Istate.OnstateExit()
-    {
-
-    }
-}
 
 public interface Istate
 {

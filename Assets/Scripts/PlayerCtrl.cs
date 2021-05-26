@@ -19,12 +19,12 @@ public class PlayerCtrl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Z)&&PlayerIsMove())
         {
-            MoveSpeed = 10;
+            MoveSpeed = 5;//10
             PlayerIsRun = true;
         }
         else
         {
-            MoveSpeed = 5;
+            MoveSpeed = 2;//5
             PlayerIsRun = false;
         }
         PlayerPosition = transform.position;

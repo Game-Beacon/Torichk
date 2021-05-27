@@ -14,6 +14,10 @@ public class AI_ByState : MonoBehaviour
     public AttackState attackState;
     public Istate currentState;
     public Vector3 AiPosition;
+    public Sprite img1, img2;
+
+
+    private static AI_ByState aI_ByState;
 
     private void Start()
     {
@@ -51,6 +55,38 @@ public class AI_ByState : MonoBehaviour
 
     public void MoveToPosition(Vector3 position,float v) {
         transform.position = Vector3.Lerp(transform.position,position,v);
+    }
+
+
+
+    public static AI_ByState GetAi()
+    {
+        if (aI_ByState == null)
+        {
+            return aI_ByState = new AI_ByState();
+        }
+        else
+        {
+            return aI_ByState;
+        }
+    }
+
+    internal void ChangeImage(PlayerCtrl playerT, PlayerEventArgs e)
+    {
+        if (e.ObjectCount == 4)
+        {
+            //SetSprite2();
+            Debug.Log("ChangeToImage2");//尚未處理
+        }
+    }
+
+    void SetSprite()
+    {
+        GetComponent<SpriteRenderer>().sprite = img1;
+    }
+    void SetSprite2()
+    {
+        GetComponent<SpriteRenderer>().sprite = img2;
     }
 }
 
@@ -167,7 +203,9 @@ public class AttackState : Istate
     {
         Debug.Log(aistate.name + ":DetenceExit");
     }
+
 }
+
 
 
 

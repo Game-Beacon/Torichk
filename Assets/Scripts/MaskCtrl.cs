@@ -6,33 +6,35 @@ public class MaskCtrl : MonoBehaviour
 {
     #region 欄位
     public GameObject viewMask;
-    public float[] MaskLevel;
-    float targetScal;
     public static float currectScal;
-    float MaskchangePercentage;
-    float maskChangePercentageBase;
-    int MaskLevelCount;
+    //float maskChangePercentageCurrect;
+    static MaskCtrl maskT;
+    static float CurrectTargetScal;
+    float CurrectMaskPercentage;//遮罩速度
+    float[] TargetScal = new float[] { 1, 1, 1.5f, 2.5f, 4.5f };
+    float[] MaskPercentage = new float[] {0.01f, 0.02f, 0.03f, 0.05f, 0.08f };//遮罩速度1.2.3.5.8
+
     #endregion
 
+    public static MaskCtrl GetMaskT()
+    {
+        return maskT ?? new MaskCtrl();
+    }
 
     private void Awake()
     {
-        targetScal = 1;
-        currectScal = 0;
-        MaskchangePercentage = 0.03f;
-        maskChangePercentageBase = 0.003f;
-        MaskLevel = new float[4] { 1,1.5f,2.5f,4.5f};//遮罩比畫面距離1:3.5
-        MaskLevelCount = 0;
+        GetMaskT();
+        CurrectMaskPercentage = MaskPercentage[0];
+        CurrectTargetScal = TargetScal[0];
+
     }
     void Update()
     {
-        MaskLevelupOrDown();
-        targetScal = MaskLevel[MaskLevelCount];
-        MaskchangePercentage = PlayerCtrl.PlayerIsRun ?  (maskChangePercentageBase*5) : (maskChangePercentageBase);//控制走跟跑時mask變化比例為5倍
+        Debug.Log("UpdateTasrget"+CurrectTargetScal);
         currectScal = MaskChangeFromAtoB(
             currectScal,                //A
-            PlayerCtrl.PlayerIsMove() ? targetScal:0//B mask 目標範圍，移動:往最大,不動:往0
-            ,MaskchangePercentage);     //mask變化比例
+            PlayerCtrl.PlayerIsMove() ? CurrectTargetScal:0//B mask 目標範圍，移動:往最大,不動:往0
+            , PlayerCtrl.PlayerIsRun ? (CurrectMaskPercentage * 5) : (CurrectMaskPercentage));     //mask變化比例
         viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);          
     }
 
@@ -41,17 +43,19 @@ public class MaskCtrl : MonoBehaviour
         if (b==0 && a<0.1)          {return 0;}
         return a + (b - a) * changePercentage;
     }
-    void MaskLevelupOrDown() {
-        if (Input.GetKeyDown(KeyCode.A) && MaskLevelCount < MaskLevel.Length - 1)
-        {
-            Debug.Log("MaskLevelUP");
-            MaskLevelCount++;
-        }
-        if (Input.GetKeyDown(KeyCode.S) && MaskLevelCount > 1)
-        {
-            Debug.Log("MaskLevelDown");
-            MaskLevelCount--;
-        }
+
+    internal void ChangeMaskD(PlayerCtrl playerT, PlayerEventArgs e)
+    {
+        //PlayerEventArgs playerEventArgs = e as PlayerEventArgs;
+        CurrectMaskPercentage = MaskPercentage[e.ObjectCount];
+        Debug.Log("CurrectMaskPercentage:" + CurrectMaskPercentage);
+    }
+
+    internal void ChangeMaskDistance(PlayerCtrl playerT, PlayerEventArgs e)
+    {
+        //PlayerEventArgs playerEventArgs = e as PlayerEventArgs;
+        CurrectTargetScal = TargetScal[e.ObjectCount];
+        Debug.Log("TargetScal" + TargetScal[e.ObjectCount]);
     }
 }
 

@@ -14,9 +14,9 @@ public class AI_ByState : MonoBehaviour
     public AttackState attackState;
     public Istate currentState;
     public Vector3 AiPosition;
-    public Sprite img1, img2;
+    public Sprite img1;
 
-
+    private SpriteRenderer spriteRenderer;
     private static AI_ByState aI_ByState;
 
     private void Start()
@@ -29,6 +29,9 @@ public class AI_ByState : MonoBehaviour
         //DefendDistance = 10;
         AttackDistance = 8;
         Distance = 5;
+        spriteRenderer = (SpriteRenderer)GetComponent("SpriteRenderer");
+        //img = Resources.LoadAll("fox");
+
     }
  
 
@@ -75,18 +78,20 @@ public class AI_ByState : MonoBehaviour
     {
         if (e.ObjectCount == 4)
         {
-            //SetSprite2();
+            SetSprite2();
             Debug.Log("ChangeToImage2");//尚未處理
         }
     }
 
     void SetSprite()
     {
-        GetComponent<SpriteRenderer>().sprite = img1;
+
+        //spriteRenderer.sprite = img1;
     }
     void SetSprite2()
     {
-        GetComponent<SpriteRenderer>().sprite = img2;
+        //spriteRenderer.sprite = Resources.Load("fox_0", typeof(Sprite)) as Sprite;
+        //spriteRenderer.sprite = img2;
     }
 }
 

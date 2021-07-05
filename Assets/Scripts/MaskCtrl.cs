@@ -11,9 +11,9 @@ public class MaskCtrl : MonoBehaviour
     static MaskCtrl maskT;
     static float CurrectTargetScal;
     float CurrectMaskPercentage;//遮罩速度
-    float[] TargetScal = new float[] { 1, 1, 1.5f, 2.5f, 4.5f };
-    float[] MaskPercentage = new float[] {0.01f, 0.02f, 0.03f, 0.05f, 0.08f };//遮罩速度1.2.3.5.8
-
+    float[] TargetScal = new float[] { 1, 1.5f, 2.5f, 4.5f,};
+    float[] MaskPercentage = new float[] {0.01f, 0.02f, 0.03f, 0.05f };//遮罩速度1.2.3.5.8
+    public static float MaskLimit;//0 to 1.00
     #endregion
 
     public static MaskCtrl GetMaskT()
@@ -26,6 +26,7 @@ public class MaskCtrl : MonoBehaviour
         GetMaskT();
         CurrectMaskPercentage = MaskPercentage[0];
         CurrectTargetScal = TargetScal[0];
+        MaskLimit = 1;
 
     }
     void Update()
@@ -33,9 +34,9 @@ public class MaskCtrl : MonoBehaviour
         Debug.Log("UpdateTasrget"+CurrectTargetScal);
         currectScal = MaskChangeFromAtoB(
             currectScal,                //A
-            PlayerCtrl.PlayerIsMove() ? CurrectTargetScal:0//B mask 目標範圍，移動:往最大,不動:往0
+            PlayerCtrl.PlayerIsMove() ? CurrectTargetScal*MaskLimit:0//B mask 目標範圍，移動:往最大,不動:往0
             , PlayerCtrl.PlayerIsRun ? (CurrectMaskPercentage * 5) : (CurrectMaskPercentage));     //mask變化比例
-        viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);          
+        viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);
     }
 
    float MaskChangeFromAtoB(float a,float b ,float changePercentage) {

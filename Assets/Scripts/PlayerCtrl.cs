@@ -1,11 +1,11 @@
 ﻿using System;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerCtrl : MonoBehaviour
 {
     public static float MaskDistance;
     public static Vector3 PlayerPosition;
-    public float MoveSpeed;
+    public static float MoveSpeed;
     private Rigidbody2D rigibody2D;
     private Vector3 moveDir;
     public static bool Isdeath = false;
@@ -14,6 +14,9 @@ public class PlayerCtrl : MonoBehaviour
     private static PlayerCtrl playerT;
     MaskCtrl maskt;
     AI_ByState aI_ByState;
+
+    public Text text;
+
 
     private void Awake()
     {
@@ -34,18 +37,23 @@ public class PlayerCtrl : MonoBehaviour
         {
             Debug.Log("Q");
             playerT.ObjectCount = playerT.objectCount + 1;
+            text.text = "遮罩等級"+playerT.objectCount;
         }
         //................
-        if (Input.GetKey(KeyCode.Z)&&PlayerIsMove())
+        if (Input.GetKey(KeyCode.Z) && PlayerIsMove()&& MaskCtrl.MaskLimit > 0.01)
         {
             MoveSpeed = 5;//10
             PlayerIsRun = true;
         }
-        else
+        else if (PlayerIsMove()&&MaskCtrl.MaskLimit>0.01)
         {
             MoveSpeed = 2;//5
             PlayerIsRun = false;
         }
+        else {
+            MoveSpeed = 0;
+        }
+
         PlayerPosition = transform.position;
         float moveX = 0f;
         float moveY = 0f;
@@ -54,6 +62,7 @@ public class PlayerCtrl : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow)) moveX = -1f;
         if (Input.GetKey(KeyCode.RightArrow)) moveX = 1f;
         moveDir = new Vector3(moveX, moveY).normalized;
+
     }
     public static bool PlayerIsMove() {
         return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
@@ -71,7 +80,7 @@ public class PlayerCtrl : MonoBehaviour
         get { return objectCount; }
         set
         {
-            if (value >= 0 && value < 5)//目前陣列最高是5個，濾掉不符合的值
+            if (value >= 0 && value < 4)//目前陣列最高是5個，濾掉不符合的值
             {
                 Debug.Log("C++");
                 Debug.Log("value" + value);

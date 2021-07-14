@@ -14,6 +14,9 @@ public class PlayerCtrl : MonoBehaviour
     private static PlayerCtrl playerT;
     MaskCtrl maskt;
     AI_ByState aI_ByState;
+    static SpriteRenderer spriteRenderer;
+
+    public GameObject fox_T;
 
     public Text text;
 
@@ -21,6 +24,7 @@ public class PlayerCtrl : MonoBehaviour
     private void Awake()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         MoveSpeed = 5f;
 
         objectCount = 0;
@@ -39,18 +43,30 @@ public class PlayerCtrl : MonoBehaviour
             playerT.ObjectCount = playerT.objectCount + 1;
             text.text = "遮罩等級"+playerT.objectCount;
         }
+
+
+        if (Input.GetKeyDown(KeyCode.W))//按Q計數+1模擬吃到東西
+        {
+            Debug.Log("Q");
+            playerT.ObjectCount = playerT.objectCount -1;
+            text.text = "遮罩等級" + playerT.objectCount;
+        }
+
         //................
         if (Input.GetKey(KeyCode.Z) && PlayerIsMove()&& MaskCtrl.MaskLimit > 0.01)
         {
+            fox_T.active = false;
             MoveSpeed = 5;//10
             PlayerIsRun = true;
         }
         else if (PlayerIsMove()&&MaskCtrl.MaskLimit>0.01)
         {
+            fox_T.active = false;
             MoveSpeed = 2;//5
             PlayerIsRun = false;
         }
         else {
+            fox_T.active = true;
             MoveSpeed = 0;
         }
 
@@ -65,6 +81,9 @@ public class PlayerCtrl : MonoBehaviour
 
     }
     public static bool PlayerIsMove() {
+        if (Input.GetKey(KeyCode.LeftArrow)) spriteRenderer.flipX = false;
+        if (Input.GetKey(KeyCode.RightArrow)) spriteRenderer.flipX = true;
+
         return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
     }
     private void FixedUpdate()

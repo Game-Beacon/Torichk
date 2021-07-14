@@ -5,7 +5,6 @@ using UnityEngine;
 public class AI_ByState : MonoBehaviour
 {
     public float speed;
-    //public float DefendDistance;//防守範圍(從出生點)
     public float AttackDistance;//追擊距離
     public float Distance;//攻擊距離
     public Vector3 O;//出生點
@@ -16,7 +15,6 @@ public class AI_ByState : MonoBehaviour
     public Vector3 AiPosition;
     public Sprite img1;
 
-    private SpriteRenderer spriteRenderer;
     private static AI_ByState aI_ByState;
 
     private void Start()
@@ -26,27 +24,17 @@ public class AI_ByState : MonoBehaviour
         attackState = new AttackState(this);
         currentState = idleState;
         O = transform.position;
-        //DefendDistance = 10;
         AttackDistance = 8;
         Distance = 5;
-        spriteRenderer = (SpriteRenderer)GetComponent("SpriteRenderer");
-        //img = Resources.LoadAll("fox");
-
     }
  
 
     void Update()
     {
         currentState.OnStateExecution();
-        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<
-            //AttackDistance + 
-            MaskCtrl.currectScal * 3.5)
+        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal * 3.5)
         { ChangeState(attackState); }
         AiPosition = transform.position;
-        //if (Vector3.Distance(AiPosition, O) > DefendDistance)
-        //{
-        //    ChangeState(moveState);
-        //}
     }
 
     public  void ChangeState(Istate nextstate)
@@ -78,20 +66,8 @@ public class AI_ByState : MonoBehaviour
     {
         if (e.ObjectCount == 4)
         {
-            SetSprite2();
             Debug.Log("ChangeToImage2");//尚未處理
         }
-    }
-
-    void SetSprite()
-    {
-
-        //spriteRenderer.sprite = img1;
-    }
-    void SetSprite2()
-    {
-        //spriteRenderer.sprite = Resources.Load("fox_0", typeof(Sprite)) as Sprite;
-        //spriteRenderer.sprite = img2;
     }
 }
 
@@ -143,11 +119,6 @@ public class MoveState :Istate
         aiBystate.speed = 10;
         Debug.Log(aiBystate.name + ":MoveEnter");
         Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
-        //while (Vector3.Distance(aiBystate.O, Target) > aiBystate.DefendDistance)
-        //{
-        // Debug.Log("aaaaaaa");
-        // Target = aiBystate.O + new Vector3(Random.Range(-12, 12), Random.Range(-12, 12),0);
-        //}
     }
 
     void Istate.OnStateExecution()
@@ -181,19 +152,9 @@ public class AttackState : Istate
 
     void Istate.OnStateExecution()
     {
-        //if (Vector3.Distance(aistate.AiPosition, aistate.O) < aistate.Distance)
-        //{
-        //    
-        //}
-        //else {
-        //    aistate.MoveToPosition(aistate.O, 0.001f);
-        //}
+
         aistate.MoveToPosition(PlayerCtrl.PlayerPosition, 0.001f);
-        //aistate.MoveToPosition(PlayerCtrl.PlayerPosition,0.001f);
-        if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>
-            //aistate.AttackDistance + 
-            MaskCtrl.currectScal * 3.5)
-            //|| Vector3.Distance(aistate.AiPosition,aistate.O)>aistate.DefendDistance)
+        if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>MaskCtrl.currectScal * 3.5)
         {
             aistate.ChangeState(aistate.idleState);
         }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2376328173" Language="SFX" Hash="1898058905">
+			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
+			<ShortName>Monster</ShortName>
+			<Path>Monster.bnk</Path>
+			<IncludedEvents>
+				<Event Id="951158612" Name="Monster01" ObjectPath="\Events\Default Work Unit\Monster\Monster01" MaxAttenuation="28.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="54114215" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_01.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_01_10C4C929.wem</Path>
+						</File>
+						<File Id="79353227" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_03.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_03_10C4C929.wem</Path>
+						</File>
+						<File Id="103244461" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 01.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 01_10C4C929.wem</Path>
+						</File>
+						<File Id="142503006" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_02.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_02_10C4C929.wem</Path>
+						</File>
+						<File Id="371649714" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 05.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 05_10C4C929.wem</Path>
+						</File>
+						<File Id="396001407" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 02.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 02_10C4C929.wem</Path>
+						</File>
+						<File Id="407420489" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 03.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 03_10C4C929.wem</Path>
+						</File>
+						<File Id="674005367" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_05.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_05_10C4C929.wem</Path>
+						</File>
+						<File Id="835139951" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_04.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_04_10C4C929.wem</Path>
+						</File>
+						<File Id="992227655" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 07.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 07_10C4C929.wem</Path>
+						</File>
+						<File Id="1028442542" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 06.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 06_10C4C929.wem</Path>
+						</File>
+						<File Id="1064980775" Language="SFX">
+							<ShortName>Monster01\Idle\Monster01_Loop - 04.wav</ShortName>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

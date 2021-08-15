@@ -16,8 +16,7 @@ public class PlayerCtrl : MonoBehaviour
     AI_ByState aI_ByState;
     static SpriteRenderer spriteRenderer;
 
-    public GameObject fox_T;
-
+    Animator animator;
     public Text text;
 
 
@@ -25,6 +24,7 @@ public class PlayerCtrl : MonoBehaviour
     {
         rigibody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         MoveSpeed = 5f;
 
         objectCount = 0;
@@ -53,21 +53,25 @@ public class PlayerCtrl : MonoBehaviour
         }
 
         //................
+        //if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) { animator.SetBool("IsRun", true); }
         if (Input.GetKey(KeyCode.Z) && PlayerIsMove()&& MaskCtrl.MaskLimit > 0.01)
         {
-            fox_T.active = false;
+            //fox_T.active = false;
             MoveSpeed = 5;//10
             PlayerIsRun = true;
+            animator.SetBool("IsRun",true);
         }
         else if (PlayerIsMove()&&MaskCtrl.MaskLimit>0.01)
         {
-            fox_T.active = false;
+            //fox_T.active = false;
             MoveSpeed = 2;//5
             PlayerIsRun = false;
+            animator.SetBool("IsRun",true);
         }
         else {
-            fox_T.active = true;
+            //fox_T.active = true;
             MoveSpeed = 0;
+            animator.SetBool("IsRun",false);
         }
 
         PlayerPosition = transform.position;
@@ -78,13 +82,27 @@ public class PlayerCtrl : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow)) moveX = -1f;
         if (Input.GetKey(KeyCode.RightArrow)) moveX = 1f;
         moveDir = new Vector3(moveX, moveY).normalized;
-
     }
     public static bool PlayerIsMove() {
-        if (Input.GetKey(KeyCode.LeftArrow)) spriteRenderer.flipX = false;
-        if (Input.GetKey(KeyCode.RightArrow)) spriteRenderer.flipX = true;
+        bool returnbool;
+        if (Input.GetKey(KeyCode.LeftArrow)) {
 
-        return (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) ? true:false;
+            spriteRenderer.flipX = false;
+        }
+        if (Input.GetKey(KeyCode.RightArrow)) {
+
+            spriteRenderer.flipX = true;
+        } 
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
+            returnbool = true;
+        }
+        else {
+            returnbool = false;
+        }
+
+        return returnbool;
     }
     private void FixedUpdate()
     {
@@ -139,6 +157,10 @@ public class PlayerCtrl : MonoBehaviour
         {
             return playerT;
         }
+    }
+
+    public static void LevelUp() {
+        playerT.ObjectCount += 1;
     }
 }
 

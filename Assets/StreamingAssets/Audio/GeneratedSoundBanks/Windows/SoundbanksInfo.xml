@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\</ProjectRoot>
 		<SourceFilesRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SoundBanksRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -16,12 +16,28 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2376328173" Language="SFX" Hash="1898058905">
+		<SoundBank Id="2376328173" Language="SFX" Hash="3895115796">
 			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
 			<ShortName>Monster</ShortName>
 			<Path>Monster.bnk</Path>
 			<IncludedEvents>
-				<Event Id="951158612" Name="Monster01" ObjectPath="\Events\Default Work Unit\Monster\Monster01" MaxAttenuation="28.000000" DurationType="Infinite">
+				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01_Attack">
+					<IncludedMemoryFiles>
+						<File Id="132173753" Language="SFX">
+							<ShortName>Attack\Attack02.wav</ShortName>
+							<Path>SFX\Attack\Attack02_10C4C929.wem</Path>
+						</File>
+						<File Id="150299515" Language="SFX">
+							<ShortName>Attack\Attack01.wav</ShortName>
+							<Path>SFX\Attack\Attack01_10C4C929.wem</Path>
+						</File>
+						<File Id="768276696" Language="SFX">
+							<ShortName>Attack\Attack03.wav</ShortName>
+							<Path>SFX\Attack\Attack03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4233206453" Name="Monster01_Idle" ObjectPath="\Events\Default Work Unit\Monster\Monster01_Idle">
 					<IncludedMemoryFiles>
 						<File Id="54114215" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_01.wav</ShortName>

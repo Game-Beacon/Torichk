@@ -1,15 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
-	951158612	Monster01			\Default Work Unit\Monster\Monster01	
+	2069098427	Monster01_Attack			\Default Work Unit\Monster\Monster01_Attack	
+	4233206453	Monster01_Idle			\Default Work Unit\Monster\Monster01_Idle	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	54114215	Monster01_01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_01		501784
 	79353227	Monster01_03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_03		391288
 	103244461	Monster01_Loop - 01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 01		521676
+	132173753	Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Attack02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack02		296148
 	142503006	Monster01_02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_02		422340
+	150299515	Attack01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Attack01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack01		320720
 	371649714	Monster01_Loop - 05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 05		554200
 	396001407	Monster01_Loop - 02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 02		534236
 	407420489	Monster01_Loop - 03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 03		356684
 	674005367	Monster01_05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_05		490424
+	768276696	Attack03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Attack03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack03		259472
 	835139951	Monster01_04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_04		485680
 	992227655	Monster01_Loop - 07	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 07		653988
 	1028442542	Monster01_Loop - 06	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 06		750300

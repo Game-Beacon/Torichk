@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae938e9c4495c4c9137f0618656181, type: 3}
   m_Name: A1B065DA-CB55-440F-9575-3F658310B6B5
   m_EditorClassIdentifier: 
-  objectName: Monster01
-  id: 951158612
+  objectName: Monster01_Idle
+  id: 4233206453
   guid: A1B065DA-CB55-440F-9575-3F658310B6B5

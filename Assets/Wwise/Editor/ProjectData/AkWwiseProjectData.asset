@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585758714172492523
+    m_lastTime: -8585696634898263014
     List:
     - name: Monster
       guid: 02483d2e7893a74fa536731550770beb
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585758695117527651
+    m_lastTime: -8585696637844454015
     List:
     - name: Monster
       guid: 6f5afafab804b243bc91e64e57f5dff9
@@ -113,9 +113,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Monster01
-      guid: da65b0a155cb0f4495753f658310b6b5
-      id: 951158612
+    - name: Monster01_Attack
+      guid: 22d0d1a7cf52e544ae9ec830243e4951
+      id: 2069098427
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -126,10 +126,30 @@ MonoBehaviour:
       - ElementName: Monster
         ObjectType: 4
         guid: 6f5afafab804b243bc91e64e57f5dff9
-      - ElementName: Monster01
+      - ElementName: Monster01_Attack
+        ObjectType: 3
+        guid: 22d0d1a7cf52e544ae9ec830243e4951
+      Path: Events\Default Work Unit\Monster\Monster01_Attack
+      maxAttenuation: 0
+      maxDuration: 1.817778
+      minDuration: 1.470567
+    - name: Monster01_Idle
+      guid: da65b0a155cb0f4495753f658310b6b5
+      id: 4233206453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Monster
+        ObjectType: 4
+        guid: 6f5afafab804b243bc91e64e57f5dff9
+      - ElementName: Monster01_Idle
         ObjectType: 3
         guid: da65b0a155cb0f4495753f658310b6b5
-      Path: Events\Default Work Unit\Monster\Monster01
+      Path: Events\Default Work Unit\Monster\Monster01_Idle
       maxAttenuation: 28
       maxDuration: -1
       minDuration: -1
@@ -189,7 +209,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 020000000300000004000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

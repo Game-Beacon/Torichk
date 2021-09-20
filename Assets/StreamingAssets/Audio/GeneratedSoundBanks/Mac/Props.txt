@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3444057113	Crystal			\Default Work Unit\Props\Crystal	
+	4104381493	water_drown			\Default Work Unit\Props\water_drown	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	97401550	water drown	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\water drown_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\water drown		22998
+	825496742	Crystal	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Crystal_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal		15602
+

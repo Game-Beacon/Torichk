@@ -11,81 +11,336 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="968010305" Language="SFX" Hash="3577519752">
+			<ObjectPath>\SoundBanks\Default Work Unit\Props</ObjectPath>
+			<ShortName>Props</ShortName>
+			<Path>Props.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3444057113" Name="Crystal" ObjectPath="\Events\Default Work Unit\Props\Crystal">
+					<IncludedMemoryFiles>
+						<File Id="825496742" Language="SFX">
+							<ShortName>Crystal.wav</ShortName>
+							<Path>SFX\Crystal_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4104381493" Name="water_drown" ObjectPath="\Events\Default Work Unit\Props\water_drown">
+					<IncludedMemoryFiles>
+						<File Id="97401550" Language="SFX">
+							<ShortName>water drown.wav</ShortName>
+							<Path>SFX\water drown_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1069431850" Language="SFX" Hash="1568914893">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2514411446" Name="Die1" ObjectPath="\Events\Default Work Unit\Player\Die1">
+					<IncludedMemoryFiles>
+						<File Id="204108023" Language="SFX">
+							<ShortName>Die\Die02.wav</ShortName>
+							<Path>SFX\Die\Die02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="774016884" Language="SFX">
+							<ShortName>Die\Die01.wav</ShortName>
+							<Path>SFX\Die\Die01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{9A10EB02-8436-4EF9-AABC-5C6A4959AEB1}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{9A10EB02-8436-4EF9-AABC-5C6A4959AEB1}">
+							<Media>
+								<File Id="774016884"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B9130D05-A594-4D9C-BBC7-A277B7B1B232}">
+							<Media>
+								<File Id="204108023"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="2514411445" Name="Die2" ObjectPath="\Events\Default Work Unit\Player\Die2">
+					<IncludedMemoryFiles>
+						<File Id="204108023" Language="SFX">
+							<ShortName>Die\Die02.wav</ShortName>
+							<Path>SFX\Die\Die02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="774016884" Language="SFX">
+							<ShortName>Die\Die01.wav</ShortName>
+							<Path>SFX\Die\Die01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2"/>
+					</ActionSetSwitch>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Player">
+					<Switches>
+						<Switch Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1"/>
+						<Switch Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1">
+					<Switches/>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2376328173" Language="SFX" Hash="3895115796">
+		<SoundBank Id="2376328173" Language="SFX" Hash="3830836664">
 			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
 			<ShortName>Monster</ShortName>
 			<Path>Monster.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01_Attack">
+				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Attack">
 					<IncludedMemoryFiles>
 						<File Id="132173753" Language="SFX">
 							<ShortName>Attack\Attack02.wav</ShortName>
-							<Path>SFX\Attack\Attack02_10C4C929.wem</Path>
+							<Path>SFX\Attack\Attack02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="150299515" Language="SFX">
 							<ShortName>Attack\Attack01.wav</ShortName>
-							<Path>SFX\Attack\Attack01_10C4C929.wem</Path>
+							<Path>SFX\Attack\Attack01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="768276696" Language="SFX">
 							<ShortName>Attack\Attack03.wav</ShortName>
-							<Path>SFX\Attack\Attack03_10C4C929.wem</Path>
+							<Path>SFX\Attack\Attack03_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4233206453" Name="Monster01_Idle" ObjectPath="\Events\Default Work Unit\Monster\Monster01_Idle">
+				<Event Id="4233206453" Name="Monster01_Idle" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Idle">
 					<IncludedMemoryFiles>
 						<File Id="54114215" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_01.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_01_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="79353227" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_03.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_03_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="103244461" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 01.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 01_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="142503006" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_02.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_02_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="371649714" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 05.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 05_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="396001407" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 02.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 02_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="407420489" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 03.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 03_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="674005367" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_05.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_05_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="835139951" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_04.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_04_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="992227655" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 07.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 07_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 07_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1028442542" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 06.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 06_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 06_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1064980775" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 04.wav</ShortName>
-							<Path>SFX\Monster01\Idle\Monster01_Loop - 04_10C4C929.wem</Path>
+							<Path>SFX\Monster01\Idle\Monster01_Loop - 04_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2773911378" Name="Work1_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Attack">
+					<IncludedMemoryFiles>
+						<File Id="66420628" Language="SFX">
+							<ShortName>Worker01_Attack03.wav</ShortName>
+							<Path>SFX\Worker01_Attack03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="711304252" Language="SFX">
+							<ShortName>Worker01_Attack02.wav</ShortName>
+							<Path>SFX\Worker01_Attack02_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3661139732" Name="Work1_Aware" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Aware">
+					<IncludedMemoryFiles>
+						<File Id="111127699" Language="SFX">
+							<ShortName>Aware\Work1_Aware01.wav</ShortName>
+							<Path>SFX\Aware\Work1_Aware01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="273435731" Language="SFX">
+							<ShortName>Aware\Work1_Aware02.wav</ShortName>
+							<Path>SFX\Aware\Work1_Aware02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="481834780" Language="SFX">
+							<ShortName>Aware\Work1_Aware03.wav</ShortName>
+							<Path>SFX\Aware\Work1_Aware03_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3086545764" Name="Work1_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Idle">
+					<IncludedMemoryFiles>
+						<File Id="586294338" Language="SFX">
+							<ShortName>Idle\Worker1_Idle03.wav</ShortName>
+							<Path>SFX\Idle\Worker1_Idle03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="776396655" Language="SFX">
+							<ShortName>Idle\Worker1_Idle05.wav</ShortName>
+							<Path>SFX\Idle\Worker1_Idle05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="882049752" Language="SFX">
+							<ShortName>Idle\Worker1_Idle01.wav</ShortName>
+							<Path>SFX\Idle\Worker1_Idle01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="944175824" Language="SFX">
+							<ShortName>Idle\Worker1_Idle04.wav</ShortName>
+							<Path>SFX\Idle\Worker1_Idle04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1054862259" Language="SFX">
+							<ShortName>Idle\Worker1_Idle02.wav</ShortName>
+							<Path>SFX\Idle\Worker1_Idle02_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1624523373" Name="Work1_Move" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Move">
+					<IncludedMemoryFiles>
+						<File Id="214971887" Language="SFX">
+							<ShortName>Move\Move4.wav</ShortName>
+							<Path>SFX\Move\Move4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="654366805" Language="SFX">
+							<ShortName>Move\Move2.wav</ShortName>
+							<Path>SFX\Move\Move2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="702182027" Language="SFX">
+							<ShortName>Move\Move3.wav</ShortName>
+							<Path>SFX\Move\Move3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="966646504" Language="SFX">
+							<ShortName>Move\Move5.wav</ShortName>
+							<Path>SFX\Move\Move5_3F75BDB9.wem</Path>
+						</File>
+						<File Id="973863114" Language="SFX">
+							<ShortName>Move\Move1.wav</ShortName>
+							<Path>SFX\Move\Move1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1054584888" Language="SFX">
+							<ShortName>Move\Move6.wav</ShortName>
+							<Path>SFX\Move\Move6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1807395391" Name="Work2_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Attack">
+					<IncludedMemoryFiles>
+						<File Id="17659245" Language="SFX">
+							<ShortName>Attack\Work2_Attack02.wav</ShortName>
+							<Path>SFX\Attack\Work2_Attack02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="944564346" Language="SFX">
+							<ShortName>Attack\Work2_Attack01.wav</ShortName>
+							<Path>SFX\Attack\Work2_Attack01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1744541137" Name="Work2_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Idle">
+					<IncludedMemoryFiles>
+						<File Id="331282804" Language="SFX">
+							<ShortName>Idle\Work2_Idle02.wav</ShortName>
+							<Path>SFX\Idle\Work2_Idle02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="625646434" Language="SFX">
+							<ShortName>Idle\Work2_Idle03.wav</ShortName>
+							<Path>SFX\Idle\Work2_Idle03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="640699991" Language="SFX">
+							<ShortName>Idle\Work2_Idle04.wav</ShortName>
+							<Path>SFX\Idle\Work2_Idle04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="852778689" Language="SFX">
+							<ShortName>Idle\Work2_Idle05.wav</ShortName>
+							<Path>SFX\Idle\Work2_Idle05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1034464423" Language="SFX">
+							<ShortName>Idle\Work2_Idle01.wav</ShortName>
+							<Path>SFX\Idle\Work2_Idle01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2012150292" Name="Work2_Move_Hand" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Hand">
+					<IncludedMemoryFiles>
+						<File Id="204187225" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand02.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="221578199" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand03.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="691738766" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand06.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand06_3F75BDB9.wem</Path>
+						</File>
+						<File Id="767004798" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand04.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="783537012" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand05.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="969705420" Language="SFX">
+							<ShortName>Hand\Work2_Move_Hand01.wav</ShortName>
+							<Path>SFX\Hand\Work2_Move_Hand01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="178967744" Name="Work2_Move_Wheel" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Wheel">
+					<IncludedMemoryFiles>
+						<File Id="188490827" Language="SFX">
+							<ShortName>Move\Work2_Move_Wheel01.wav</ShortName>
+							<Path>SFX\Move\Work2_Move_Wheel01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="455931056" Language="SFX">
+							<ShortName>Move\Work2_Move_Wheel02.wav</ShortName>
+							<Path>SFX\Move\Work2_Move_Wheel02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="740279470" Language="SFX">
+							<ShortName>Move\Work2_Move_Wheel05.wav</ShortName>
+							<Path>SFX\Move\Work2_Move_Wheel05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="876187140" Language="SFX">
+							<ShortName>Move\Work2_Move_Wheel03.wav</ShortName>
+							<Path>SFX\Move\Work2_Move_Wheel03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="888093522" Language="SFX">
+							<ShortName>Move\Work2_Move_Wheel04.wav</ShortName>
+							<Path>SFX\Move\Work2_Move_Wheel04_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

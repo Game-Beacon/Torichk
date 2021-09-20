@@ -7,6 +7,7 @@ public class MainUI : MonoBehaviour
 {
     private Material _material;
     private bool Stop = true;
+    
     void Start ()
     {
         _material = GetComponent<Image>().material;
@@ -15,10 +16,7 @@ public class MainUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Stop = false;
-        }
+
     }
     
     IEnumerator Tween(float duration, float Start, float End)

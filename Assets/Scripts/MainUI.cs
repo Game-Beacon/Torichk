@@ -6,17 +6,20 @@ using  UnityEngine.UI;
 public class MainUI : MonoBehaviour
 {
     private Material _material;
-    private bool Stop = true;
-    
+    private bool Stop = true; 
+    public Image _image;
+    public Sprite[] _Sprites;
+    public GameData _gameData;
     void Start ()
     {
         _material = GetComponent<Image>().material;
         StartCoroutine(Tween(0.5f, 0, 1));
+        _image.sprite = _Sprites[(int)_gameData._uiTitle];
     }
 
     private void Update()
     {
-
+        _image.sprite = _Sprites[(int)_gameData._uiTitle];
     }
     
     IEnumerator Tween(float duration, float Start, float End)

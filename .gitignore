@@ -26,7 +26,6 @@ ExportedObj/
 *.pdb
 *.opendb
 *.VC.db
-*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -41,6 +40,7 @@ sysinfo.txt
 
 # ignore mac attribute file
 *.DS_Store
+*.log
 Logs/AssetImportWorker0-prev.log
 Logs/AssetImportWorker0.log
 Logs/shadercompiler-AssetImportWorker0.log

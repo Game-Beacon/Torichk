@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae938e9c4495c4c9137f0618656181, type: 3}
+  m_Name: 15EC5622-D2AD-4062-8E51-89B850DA846A
+  m_EditorClassIdentifier: 
+  objectName: Work2_Move_Wheel
+  id: 178967744
+  guid: 15EC5622-D2AD-4062-8E51-89B850DA846A

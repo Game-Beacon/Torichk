@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2514411445	Die2			\Default Work Unit\Player\Die2	
+	2514411446	Die1			\Default Work Unit\Player\Die1	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1069431850	Player			\Default Work Unit\Player	
+
+Switch	ID	Name	Switch Group			Notes
+	2514411445	Die2	Player			
+	2514411446	Die1	Player			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	204108023	Die02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Die\Die02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die02		22719
+	774016884	Die01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Die\Die01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die01		17554
+

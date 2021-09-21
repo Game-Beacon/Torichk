@@ -49,14 +49,23 @@ public class MaskCtrl : MonoBehaviour
     {
         //PlayerEventArgs playerEventArgs = e as PlayerEventArgs;
         CurrectMaskPercentage = MaskPercentage[e.ObjectCount];
+<<<<<<< Updated upstream
         Debug.Log("CurrectMaskPercentage:" + CurrectMaskPercentage);
+=======
+        Debug.Log("Scal"+e.ObjectCount);
+>>>>>>> Stashed changes
     }
 
     internal void ChangeMaskDistance(PlayerCtrl playerT, PlayerEventArgs e)
     {
         //PlayerEventArgs playerEventArgs = e as PlayerEventArgs;
         CurrectTargetScal = TargetScal[e.ObjectCount];
+<<<<<<< Updated upstream
         Debug.Log("TargetScal" + TargetScal[e.ObjectCount]);
+=======
+        Debug.Log("Scal"+e.ObjectCount);
+
+>>>>>>> Stashed changes
     }
 }
 

@@ -117,7 +117,10 @@ public class MoveState :Istate
     {
         timeEnd = Time.time + 3f;
         aiBystate.speed = 10;
+<<<<<<< Updated upstream
         Debug.Log(aiBystate.name + ":MoveEnter");
+=======
+>>>>>>> Stashed changes
         Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
     }
 
@@ -154,6 +157,8 @@ public class AttackState : Istate
     {
 
         aistate.MoveToPosition(PlayerCtrl.PlayerPosition, 0.001f);
+        aistate._animator.SetBool("IsMove",true);
+
         if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>MaskCtrl.currectScal * 3.5)
         {
             aistate.ChangeState(aistate.idleState);

@@ -94,7 +94,11 @@ public class PlayerCtrl : MonoBehaviour
             spriteRenderer.flipX = true;
         } 
 
+<<<<<<< Updated upstream
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+=======
+        if (Input.GetKeyDown(KeyCode.Space))
+>>>>>>> Stashed changes
         {
             returnbool = true;
         }
@@ -143,6 +147,7 @@ public class PlayerCtrl : MonoBehaviour
             this.objectCountChange -= value;
         }
     }
+<<<<<<< Updated upstream
 
 
 
@@ -160,6 +165,9 @@ public class PlayerCtrl : MonoBehaviour
     }
 
     public static void LevelUp() {
+=======
+    public   void LevelUp() {
+>>>>>>> Stashed changes
         playerT.ObjectCount += 1;
     }
 }

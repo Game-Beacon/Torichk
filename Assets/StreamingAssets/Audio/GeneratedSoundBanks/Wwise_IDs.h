@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID INTRO = 1125500713U;
         static const AkUniqueID MONSTER01_ATTACK = 2069098427U;
         static const AkUniqueID MONSTER01_IDLE = 4233206453U;
+        static const AkUniqueID NEW_EVENT = 3050945240U;
         static const AkUniqueID SNAKE = 3187576023U;
         static const AkUniqueID WATER_DROWN = 4104381493U;
         static const AkUniqueID WORK1_ATTACK = 2773911378U;

@@ -13,10 +13,9 @@ public class AI_ByState : MonoBehaviour
     public AttackState attackState;
     public Istate currentState;
     public Vector3 AiPosition;
-    public Sprite img1;
-
+    public Animator _animator;
+    public SpriteRenderer _spriteRenderer;
     private static AI_ByState aI_ByState;
-
     private void Start()
     {
         idleState = new IdleState(this);
@@ -26,6 +25,8 @@ public class AI_ByState : MonoBehaviour
         O = transform.position;
         AttackDistance = 8;
         Distance = 5;
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
  
 
@@ -44,7 +45,9 @@ public class AI_ByState : MonoBehaviour
         currentState = nextstate;
     }
 
-    public void MoveToPosition(Vector3 position,float v) {
+
+    public void MoveToPosition(Vector3 position,float v)
+    {
         transform.position = Vector3.Lerp(transform.position,position,v);
     }
 
@@ -61,14 +64,6 @@ public class AI_ByState : MonoBehaviour
             return aI_ByState;
         }
     }
-
-    internal void ChangeImage(PlayerCtrl playerT, PlayerEventArgs e)
-    {
-        if (e.ObjectCount == 4)
-        {
-            Debug.Log("ChangeToImage2");//尚未處理
-        }
-    }
 }
 
 
@@ -79,7 +74,6 @@ public class IdleState :Istate
     AI_ByState aiBystate;
     public IdleState(AI_ByState _aI_ByState)
     {
-
         aiBystate = _aI_ByState;
     }
     float timeEnd ;
@@ -87,6 +81,7 @@ public class IdleState :Istate
     {     
         timeEnd = Time.time + 3f;
         aiBystate.speed = 0;
+        aiBystate._animator.SetBool("IsMove",false);
         Debug.Log(aiBystate.name+":IdleEnter");
     }
 
@@ -104,11 +99,12 @@ public class IdleState :Istate
     }
 }
 
-public class MoveState :Istate
+public class MoveState : Istate
 {
     float timeEnd;
     AI_ByState aiBystate;
     Vector3 Target;
+    bool dirold = true;
     public MoveState(AI_ByState aI_ByState)
     {
         aiBystate = aI_ByState;
@@ -117,8 +113,15 @@ public class MoveState :Istate
     {
         timeEnd = Time.time + 3f;
         aiBystate.speed = 10;
+
         Debug.Log(aiBystate.name + ":MoveEnter");
         Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
+        if (aiBystate.AiPosition.x - Target.x > 0 != dirold)
+        {
+            aiBystate._spriteRenderer.flipX = !aiBystate._spriteRenderer.flipX;
+            dirold = aiBystate.AiPosition.x - Target.x > 0;
+        }
+        aiBystate._animator.SetBool("IsMove",true);
     }
 
     void Istate.OnStateExecution()
@@ -147,7 +150,7 @@ public class AttackState : Istate
 
     void Istate.OnStateEnter()
     {
-        Debug.Log(aistate.name + ":DetenceEnter");
+
     }
 
     void Istate.OnStateExecution()

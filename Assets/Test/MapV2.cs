@@ -10,6 +10,7 @@ public class MapV2 : MonoBehaviour
     private int rows;
     public GameObject[] ObjArray;
     public GameObject[] FloorArray;
+    public GameObject[] MonsterArray;
     public int rowsUnit;
     public int colsUnit;
     public int rowsCount;
@@ -62,9 +63,9 @@ public class MapV2 : MonoBehaviour
         "1011011110010100000000011100121210111001" +
 
         "1000011110011100111100011100100000030011" +
-        "1000000121002111111110021130101001000111" +
-        "1011000011000111000110001000101012001111" +
-        "1011000000000000000000000000000010011111" +
+        "1007000121002111111110021130101001000111" +
+        "1011000711000111000110001000101012001111" +
+        "1011000000070000000000000000000010011111" +
         "1111111111111111111111111111111111111111";
 
     string m2 = //0=null,1 = �֤H,2= ����,3=��,4=����,5=���a
@@ -130,7 +131,7 @@ public class MapV2 : MonoBehaviour
     void Start()
     {
         Map();
-        CreatImportObj();
+        //CreatImportObj();
     }
 
     // Update is called once per frame
@@ -218,9 +219,19 @@ public class MapV2 : MonoBehaviour
 
                 if (i[count] != 0)
                 {
-                    go = GameObject.Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
-                    go.transform.SetParent(mapHolder);
-                }                    
+                    if (i[count] ==7)
+                    {
+                        go = GameObject.Instantiate(MonsterArray[Random.Range(0,MonsterArray.Length-1)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go.transform.SetParent(mapHolder);
+                    }
+                    else
+                    {
+                        go = GameObject.Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go.transform.SetParent(mapHolder);
+                    }
+
+                }
+                
                     go = Instantiate(FloorArray[0], new Vector3(y, x, 0), Quaternion.identity) as GameObject;
                     go.transform.SetParent(mapHolder);
                     count++;

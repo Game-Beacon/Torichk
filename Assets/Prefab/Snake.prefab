@@ -11,7 +11,15 @@ GameObject:
   - component: {fileID: 8189842745164361414}
   - component: {fileID: 2948139679414433562}
   - component: {fileID: 1402674997271802636}
+<<<<<<< HEAD
   - component: {fileID: 7283172430600546793}
+=======
+<<<<<<< HEAD
+  - component: {fileID: 6802433327106392967}
+=======
+  - component: {fileID: 7283172430600546793}
+>>>>>>> origin/main
+>>>>>>> 321
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -104,14 +112,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &7283172430600546793
 MonoBehaviour:
+=======
+<<<<<<< HEAD
+--- !u!61 &6802433327106392967
+BoxCollider2D:
+=======
+--- !u!114 &7283172430600546793
+MonoBehaviour:
+>>>>>>> origin/main
+>>>>>>> 321
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4096851891590958706}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
+=======
+>>>>>>> 321
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eca595951336f14fa13dbe99fba964e, type: 3}
   m_Name: 
@@ -131,3 +172,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6fca4219fa9d1d54789cde86060d53be,
       type: 2}
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
+>>>>>>> 321

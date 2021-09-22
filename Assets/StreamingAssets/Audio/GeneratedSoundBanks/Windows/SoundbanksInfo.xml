@@ -103,7 +103,34 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2376328173" Language="SFX" Hash="3830836664">
+		<SoundBank Id="1551306167" Language="SFX" Hash="878897617">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ui</ObjectPath>
+			<ShortName>Ui</ShortName>
+			<Path>Ui.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1125500713" Name="Intro" ObjectPath="\Events\Default Work Unit\Ui\Intro">
+					<IncludedMemoryFiles>
+						<File Id="56369941" Language="SFX">
+							<ShortName>20210824-Intro2_Fin.wav</ShortName>
+							<Path>SFX\20210824-Intro2_Fin_9EDFC787.wem</Path>
+						</File>
+						<File Id="57709335" Language="SFX">
+							<ShortName>UI\Thunder01.wav</ShortName>
+							<Path>SFX\UI\Thunder01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="147433264" Language="SFX">
+							<ShortName>UI\Thunder03.wav</ShortName>
+							<Path>SFX\UI\Thunder03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="195493673" Language="SFX">
+							<ShortName>UI\Thunder02.wav</ShortName>
+							<Path>SFX\UI\Thunder02_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2376328173" Language="SFX" Hash="907843437">
 			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
 			<ShortName>Monster</ShortName>
 			<Path>Monster.bnk</Path>
@@ -173,6 +200,14 @@
 						<File Id="1064980775" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_Loop - 04.wav</ShortName>
 							<Path>SFX\Monster01\Idle\Monster01_Loop - 04_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3187576023" Name="Snake" ObjectPath="\Events\Default Work Unit\Monster\Snake">
+					<IncludedMemoryFiles>
+						<File Id="796263955" Language="SFX">
+							<ShortName>Snake.wav</ShortName>
+							<Path>SFX\Snake_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

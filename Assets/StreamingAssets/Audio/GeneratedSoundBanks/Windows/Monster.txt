@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2069098427	Monster01_Attack			\Default Work Unit\Monster\Monster01\Monster01_Attack	
 	2773911378	Work1_Attack			\Default Work Unit\Monster\Worker1\Work1_Attack	
 	3086545764	Work1_Idle			\Default Work Unit\Monster\Worker1\Work1_Idle	
+	3187576023	Snake			\Default Work Unit\Monster\Snake	
 	3661139732	Work1_Aware			\Default Work Unit\Monster\Worker1\Work1_Aware	
 	4233206453	Monster01_Idle			\Default Work Unit\Monster\Monster01\Monster01_Idle	
 
@@ -44,6 +45,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	768276696	Attack03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Attack03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack03		9506
 	776396655	Worker1_Idle05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle05		39080
 	783537012	Work2_Move_Hand05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand05		5251
+	796263955	Snake	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Snake_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Snake\Snake		19154
 	835139951	Monster01_04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_04		36029
 	852778689	Work2_Idle05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle05		49692
 	876187140	Work2_Move_Wheel03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel03		19080

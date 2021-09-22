@@ -61,11 +61,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-<<<<<<< HEAD
-    - _Float: 0.00000023841858
-=======
-    - _Float: 0.028635383
->>>>>>> 321
+    - _Float: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

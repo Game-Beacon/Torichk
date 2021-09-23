@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 474314448814115731}
   m_Layer: 0
   m_Name: Gumi
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!114 &6776273354548461441
 MonoBehaviour:
@@ -149,6 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 10
+  playerT: {fileID: 2942602083875944151}
+  maskt: {fileID: 2908792757174977385}
 --- !u!61 &221462937298586733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
 --- !u!50 &474314448814115731
 Rigidbody2D:
@@ -206,7 +208,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5115319000696494494}
   - component: {fileID: 2908792757174977385}
-  - component: {fileID: 3547172797400310479}
   - component: {fileID: 3948951412299189492}
   m_Layer: 0
   m_Name: Mask
@@ -242,18 +243,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewMask: {fileID: 3658019238970849156}
---- !u!114 &3547172797400310479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3658019238970849156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dcaf158acc86a547b7369d1bf53fcf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!331 &3948951412299189492
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -295,7 +284,7 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a15e3ad92e72974d91b7db5db84e7b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df9c901b31b0f6147bc8ce3a71614807, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0

@@ -3,8 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="8435ee78-8e9d-42cf-877a-cf9c8a5bca50" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Fire.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Fire.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Move.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Move.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Move2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Move2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrefebScenes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrefebScenes.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMask.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMask.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/m1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/Monster.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/Monster.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/Monster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/Monster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Monster.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Monster.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Monster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Monster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/7E10D831-3E88-4815-8E9E-68CDCDDD0DEB.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/7E10D831-3E88-4815-8E9E-68CDCDDD0DEB.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WwiseSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WwiseSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

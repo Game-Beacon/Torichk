@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AI_ByState : MonoBehaviour
 {
@@ -36,6 +38,16 @@ public class AI_ByState : MonoBehaviour
         if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal * 3.5)
         { ChangeState(attackState); }
         AiPosition = transform.position;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.tag =="Player")
+        {
+            _animator.SetBool("IsAttack",true);
+            other.transform.GetComponent<PlayerCtrl>().KillPlayer();
+        }
+        
     }
 
     public  void ChangeState(Istate nextstate)
@@ -143,6 +155,7 @@ public class MoveState : Istate
 public class AttackState : Istate
 {
     AI_ByState aistate;
+    bool dirold = true;
     public AttackState(AI_ByState aI_ByState)
     {
         aistate = aI_ByState;
@@ -157,6 +170,14 @@ public class AttackState : Istate
     {
 
         aistate.MoveToPosition(PlayerCtrl.PlayerPosition, 0.001f);
+        if (aistate.AiPosition.x - PlayerCtrl.PlayerPosition.x > 0 != dirold)
+        {
+            aistate._spriteRenderer.flipX = !aistate._spriteRenderer.flipX;
+            dirold = aistate.AiPosition.x - PlayerCtrl.PlayerPosition.x > 0;
+        }
+        aistate._animator.SetBool("IsMove",true);
+        
+        
         if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>MaskCtrl.currectScal * 3.5)
         {
             aistate.ChangeState(aistate.idleState);

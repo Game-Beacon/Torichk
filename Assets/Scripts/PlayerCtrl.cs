@@ -40,11 +40,15 @@ public class PlayerCtrl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow)||Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.RightArrow))
         {
+            if (Input.GetKey(KeyCode.LeftArrow)) spriteRenderer.flipX = false;
+            if (Input.GetKey(KeyCode.RightArrow)) spriteRenderer.flipX = true;
             PlayerIsMove = true;
+            animator.SetBool("IsRun",true);
         }
         else
         {
             PlayerIsMove = false;
+            animator.SetBool("IsRun",false);
         }
 
         if (Input.GetKey(KeyCode.Space))
@@ -86,8 +90,14 @@ public class PlayerCtrl : MonoBehaviour
             this.objectCountChange -= value;
         }
     }
-    public  void LevelUp() {
+    public   void LevelUp() {
         playerT.ObjectCount += 1;
+    }
+
+    public void KillPlayer()
+    {
+        animator.SetBool("IsDie",true);
+        ///關掉怪物跟玩家的移動
     }
 }
 public delegate void ObjectCountChangeHandler(PlayerCtrl playerT, PlayerEventArgs e);

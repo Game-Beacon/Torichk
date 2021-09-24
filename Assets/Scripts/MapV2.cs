@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using  UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -18,9 +19,11 @@ public class MapV2 : MonoBehaviour
 
     List<MapUnit> mapUnits = new List<MapUnit>();
     List<MapUnit> houseList = new List<MapUnit>();
+    List<MapUnit> EndhouseList = new List<MapUnit>();
     List<MapUnit> FloorList = new List<MapUnit>();
     List<GameObject> SigelList = new List<GameObject>();
-    
+
+    public GameObject Test;
     
     //0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     //str =m1,m2,m3
@@ -72,7 +75,7 @@ public class MapV2 : MonoBehaviour
         "1000011110011100111100011100100000030011" +
         "1000000121002111111110021130101001000111" +
         "1011000011000111000110601000101012001111" +
-        "1011000000070000000000000000000100111111" +
+        "1511000000070000000000000000000100111111" +
         "1111111111111111111111111111111111111111";
 
     string m2 = //(ok)0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
@@ -144,7 +147,6 @@ public class MapV2 : MonoBehaviour
     void Start()
     {
         Init();
-        //CreatImportObj();
     }
 
     private void Update()
@@ -158,39 +160,6 @@ public class MapV2 : MonoBehaviour
         }
     }
 
-    void CreatImportObj() {//0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
-        int k;
-        Vector2[] v = new Vector2[2];
-        do
-        {
-            k = Random.Range(0,mapUnits.Count-1);
-        } while (mapUnits[k].IsWhat!=0);
-        //Debug.Log(mapUnits[k].IsWhat + "(" +mapUnits[k].vector2.x + "," + mapUnits[k].vector2.y + ")");
-        GameObject go = Instantiate(ObjArray[5], new Vector3(mapUnits[k].vector2.x, mapUnits[k].vector2.y, -2), Quaternion.identity) as GameObject;
-        go.transform.SetParent(mapHolder);
-        v[0] = mapUnits[k].vector2;
-        //�ЫإX�f
-        do
-        {
-            k = Random.Range(0, houseList.Count - 1);
-        } while (houseList[k].IsWhat != 2 || Vector2.Distance(v[0], houseList[k].vector2)<35);
-        Debug.Log(houseList[k].IsWhat + "(" +houseList[k].vector2.x + "," + houseList[k].vector2.y + ")");
-        go = Instantiate(ObjArray[6], new Vector3(houseList[k].vector2.x, houseList[k].vector2.y, -2), Quaternion.identity) as GameObject;
-        go.transform.SetParent(mapHolder);
-        v[1] = mapUnits[k].vector2;
-
-        do
-        {
-            k = Random.Range(0, houseList.Count - 1);
-        } while (houseList[k].IsWhat != 2 || Vector2.Distance(v[1], houseList[k].vector2) < 15);
-        Debug.Log(houseList[k].IsWhat + "(" + houseList[k].vector2.x + "," + houseList[k].vector2.y + ")");
-        go = Instantiate(ObjArray[6], new Vector3(houseList[k].vector2.x, houseList[k].vector2.y, -2), Quaternion.identity) as GameObject;
-        go.transform.SetParent(mapHolder);
-        
-    }
-
-    
-    
     bool IsInside(Vector2[] vL,Vector2 v) {
         if ((v.x- vL[0].x)*(v.x-vL[1].x)<0 && (v.y - vL[0].y) * (v.y - vL[1].y) < 0)
         {
@@ -204,15 +173,7 @@ public class MapV2 : MonoBehaviour
         
     }
     
-    void RotateSigel(GameObject gameObject,Vector2 target) {//選轉傳入物件到指定座標
-
-        Vector2 v = new Vector2(target.x - gameObject.transform.position.x, target.y -gameObject.transform.position.y);
-        v.Normalize();
-        Vector2 v2 = Vector2.up;
-        v2.Normalize();
-        float theta = Mathf.Acos(Vector2.Dot(v2, v));
-        gameObject.transform.rotation = Quaternion.Euler(0, 0, theta * 180 / Mathf.PI * (target.x - gameObject.transform.position.x < 0 ? 1 : -1));
-    }
+ 
     void Map(string mapStr)
     {
         var l =  GetNextChars(mapStr,1);
@@ -232,67 +193,121 @@ public class MapV2 : MonoBehaviour
 
 
 
-                if (i[count] != 0)
+                switch (i[count])
                 {
-                    if (i[count] == 1)
-                    {
+                    case 0: 
+                        FloorList.Add(new MapUnit(i[count], new Vector2(y, x)));
+                        break;
+                    case 1: 
                         go = Instantiate(ObjArray[1], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
-                        if (Random.Range(0,10)<3)
-                        {
-                            CreatSigel(new Vector2(y,x)); 
-                        }
-                    }
-                    
-                    if (i[count] == 2)
-                    {
-                        houseList.Add(new MapUnit(i[count], new Vector2(y, x)));
+                        houseList.Add( new MapUnit(1,new Vector2(y,x)));
+                        break;
+                    case 2: 
+
                         go = Instantiate(ObjArray[2], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
-
-                    }
-                    if (i[count] ==6)
-                    {
+                        EndhouseList.Add(new MapUnit(i[count], new Vector2(y, x),go));
+                        if (SceneManager.GetActiveScene().name.ToLower() =="m2"||SceneManager.GetActiveScene().name.ToLower() =="m3")
+                        {
+                            ExitObj = go;
+                            Exit = new Vector2(y,x);
+                        }
+                        
+                        if (SceneManager.GetActiveScene().name.ToLower() =="m1")
+                        {
+                            EndhouseList.Add(new MapUnit(2,new Vector2(y,x),go));
+                        }
+                        
+                        break;
+                    case 3: 
+                        go = Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go.transform.SetParent(mapHolder);
+                        break;
+                    case 4: 
+                        go = Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go.transform.SetParent(mapHolder);
+                        break;
+                    case 5: 
+                        go = Instantiate(ObjArray[i[count]], new Vector3(y, x, 0), Quaternion.identity) as GameObject;
+                        go.transform.SetParent(mapHolder);
+                        break;
+                    case 6: 
                         go = Instantiate(MonsterArray[Random.Range(0,MonsterArray.Length-1)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
-                    }
-                    else if (i[count] ==5)
-                    {
-                        go = Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
-                        go.transform.SetParent(mapHolder);
-                    }else if (i[count] == 7)
-                    {
+                        break;
+                    case 7: 
                         go = Instantiate(TrapArray[Random.Range(0,TrapArray.Length-1)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
-                    }else
-                    {
-                        go = Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
-                        go.transform.SetParent(mapHolder);
-                    }
+                        break;
+                    default:
+                        Debug.Log("");
+                        break;
+                }
 
-                }
-                else
-                {
-                    FloorList.Add(new MapUnit(i[count], new Vector2(y, x)));
-                }
-                
+
                     go = Instantiate(FloorArray[0], new Vector3(y, x, 0), Quaternion.identity) as GameObject;
                     go.transform.SetParent(mapHolder);
                     count++;
             }
         }
+        
+        CreatExit_ExExit();
+        
+        foreach (var house in houseList)
+        {
+            if (Random.Range(0,10)<8)//30%創建符文
+            {
+                CreatSigel(house.vector2); 
+            }
+        }
 
     }
 
+    private Vector2 Exit,ExExit;
+    private GameObject ExitObj,ExExitObj;
+    void CreatExit_ExExit()
+    {
+        if (SceneManager.GetActiveScene().name.ToLower() =="m1")
+        {
+            int x = Random.Range(0, EndhouseList.Count - 1);
+            ExitObj = EndhouseList[x].houseObj;
+            Exit = ExitObj.transform.position;
+            EndhouseList.RemoveAt(x);
+            
+            GameObject go = Instantiate(Test, new Vector3(Exit.x, Exit.y, -2), Quaternion.identity) as GameObject;
+            go.transform.SetParent(ExitObj.transform);
+            
+            
+            int x2 = Random.Range(0, EndhouseList.Count - 1);
+            ExExitObj = EndhouseList[x2].houseObj;
+            ExExit = ExitObj.transform.position;
+            EndhouseList.RemoveAt(x2);
+            
+            GameObject go2 = Instantiate(Test, new Vector3(ExExit.x, ExExit.y, -2), Quaternion.identity) as GameObject;
+            go2.transform.SetParent(ExExitObj.transform);
+        }
+        
+    }
+    
     void CreatSigel(Vector2 vector2)
     {
         
         GameObject go2 = Instantiate(ObjArray[6], new Vector3(vector2.x, vector2.y-0.3f, -2), Quaternion.identity) as GameObject;
-        RotateSigel(go2,PlayerCtrl.PlayerPosition);//這邊需要改成假出口
+        go2 = RotateSigel(go2,Exit);//這邊需要改成假出口
         go2.transform.SetParent(mapHolder);
         SigelList.Add(go2);
     }
-    
+    GameObject RotateSigel(GameObject gameObject,Vector2 target) {//選轉傳入物件到指定座標
+
+        Vector2 v = new Vector2(target.x - gameObject.transform.position.x, target.y -gameObject.transform.position.y);
+        v.Normalize();
+        Vector2 v2 = Vector2.up;
+        v2.Normalize();
+        float theta = Mathf.Acos(Vector2.Dot(v2, v));
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, theta * 180 / Mathf.PI * (target.x - gameObject.transform.position.x < 0 ? 1 : -1));
+        return gameObject;
+    }
     void Init()
     {
         switch (SceneManager.GetActiveScene().name.ToLower())
@@ -326,10 +341,18 @@ struct MapUnit
 {
     public int IsWhat;//0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     public Vector2 vector2;
-
-    public MapUnit(int isWhat, Vector2 vector2)
+    public GameObject houseObj;
+    public MapUnit(int _isWhat, Vector2 _vector2,GameObject _houseObj)
     {
-        IsWhat = isWhat;
-        this.vector2 = vector2;
+        IsWhat = _isWhat;
+        this.vector2 = _vector2;
+        houseObj = _houseObj;
     }
+    public MapUnit(int _isWhat, Vector2 _vector2)
+    {
+        IsWhat = _isWhat;
+        this.vector2 = _vector2;
+        houseObj = null;
+    }
+    
 }

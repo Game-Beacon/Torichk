@@ -13,13 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID CRYSTAL = 3444057113U;
+        static const AkUniqueID CRYSTAL_BREAK = 756738409U;
+        static const AkUniqueID CRYSTAL_FIRE = 829715712U;
         static const AkUniqueID DIE1 = 2514411446U;
         static const AkUniqueID DIE2 = 2514411445U;
         static const AkUniqueID INTRO = 1125500713U;
         static const AkUniqueID MONSTER01_ATTACK = 2069098427U;
         static const AkUniqueID MONSTER01_IDLE = 4233206453U;
-        static const AkUniqueID NEW_EVENT = 3050945240U;
+        static const AkUniqueID SETMAINVOLUME = 1377850382U;
         static const AkUniqueID SNAKE = 3187576023U;
         static const AkUniqueID WATER_DROWN = 4104381493U;
         static const AkUniqueID WORK1_ATTACK = 2773911378U;
@@ -57,6 +58,11 @@ namespace AK
         } // namespace WORKER1
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MAIN_VOLUME = 2312172015U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

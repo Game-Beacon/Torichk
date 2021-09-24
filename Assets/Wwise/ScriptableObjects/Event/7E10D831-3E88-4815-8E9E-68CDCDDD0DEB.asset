@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae938e9c4495c4c9137f0618656181, type: 3}
   m_Name: 7E10D831-3E88-4815-8E9E-68CDCDDD0DEB
   m_EditorClassIdentifier: 
-  objectName: Crystal
-  id: 3444057113
+  objectName: Crystal_Break
+  id: 756738409
   guid: 7E10D831-3E88-4815-8E9E-68CDCDDD0DEB

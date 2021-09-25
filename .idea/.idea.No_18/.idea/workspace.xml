@@ -2,62 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Crash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Crash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Fire.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal_Fire.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Attack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Attack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Attack2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Attack2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Idle2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Idle2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Move.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Move.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Move2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster_Move2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Attack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Attack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Move.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_Move.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanAttack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanAttack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanIdle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanIdle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanMove.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Worker1_TuanMove.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Scare.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Scare.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Pool/Pool.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Pool/Pool.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/tree.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/old/fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/old/fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrefebScenes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrefebScenes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskLimitTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskLimitTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/CTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/CTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/Lamp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/Lamp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/MapV2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WwiseEventPost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WwiseEventPost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Test/MapMine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/MapMine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +44,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yOQ7FyTtY4NY6Tf3RR7UaSrvCT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,6 +100,8 @@
       <workItem from="1632155957600" duration="1754000" />
       <workItem from="1632189068545" duration="18441000" />
       <workItem from="1632210839281" duration="1486000" />
+      <workItem from="1632527200857" duration="5736000" />
+      <workItem from="1632545762903" duration="8843000" />
     </task>
     <servers />
   </component>

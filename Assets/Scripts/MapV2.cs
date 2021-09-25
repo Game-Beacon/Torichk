@@ -22,8 +22,8 @@ public class MapV2 : MonoBehaviour
     List<MapUnit> EndhouseList = new List<MapUnit>();
     List<MapUnit> FloorList = new List<MapUnit>();
     List<GameObject> SigelList = new List<GameObject>();
-
-    public GameObject Test;
+    public GameData gameData;
+    private GameObject mainSigel;
     
     //0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     //str =m1,m2,m3
@@ -146,18 +146,24 @@ public class MapV2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ChangeMap.gameData = gameData;
         Init();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+    }
+
+    void CloseAllSigl()
+    {
+        
+        foreach (var sigel in SigelList)
         {
-            foreach (var sigel in SigelList)
-            {
-                sigel.SetActive(false);
-            }
+            sigel.SetActive(false);
         }
+        //真出口符文關閉
+        //ExitObj
     }
 
     bool IsInside(Vector2[] vL,Vector2 v) {
@@ -211,7 +217,14 @@ public class MapV2 : MonoBehaviour
                         if (SceneManager.GetActiveScene().name.ToLower() =="m2"||SceneManager.GetActiveScene().name.ToLower() =="m3")
                         {
                             ExitObj = go;
+                            //gameData._uiTitle = UiTitle.GoodEnd;
+                            ExitObj.AddComponent<ChangeMap>().MapStr = "end";//好結局?
+                            ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
+
                             Exit = new Vector2(y,x);
+                            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -2), Quaternion.identity) as GameObject;
+                            go2.transform.SetParent(mapHolder);
+                            mainSigel = go2;
                         }
                         
                         if (SceneManager.GetActiveScene().name.ToLower() =="m1")
@@ -263,6 +276,12 @@ public class MapV2 : MonoBehaviour
         }
 
     }
+    
+    public  void SetToBadEnd()
+    {
+        ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
+        
+    }
 
     private Vector2 Exit,ExExit;
     private GameObject ExitObj,ExExitObj;
@@ -270,22 +289,29 @@ public class MapV2 : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name.ToLower() =="m1")
         {
+            //ChangeMap.gameData = gameData;
             int x = Random.Range(0, EndhouseList.Count - 1);
             ExitObj = EndhouseList[x].houseObj;
             Exit = ExitObj.transform.position;
             EndhouseList.RemoveAt(x);
+            //gameData._uiTitle = UiTitle.BadEnd;//壞結局
+            ExitObj.AddComponent<ChangeMap>().MapStr = "end";
+            ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.BadEnd;
+
             
-            GameObject go = Instantiate(Test, new Vector3(Exit.x, Exit.y, -2), Quaternion.identity) as GameObject;
-            go.transform.SetParent(ExitObj.transform);
             
             
             int x2 = Random.Range(0, EndhouseList.Count - 1);
             ExExitObj = EndhouseList[x2].houseObj;
             ExExit = ExitObj.transform.position;
             EndhouseList.RemoveAt(x2);
-            
-            GameObject go2 = Instantiate(Test, new Vector3(ExExit.x, ExExit.y, -2), Quaternion.identity) as GameObject;
-            go2.transform.SetParent(ExExitObj.transform);
+            //gameData._uiTitle = UiTitle.GoodEnd;//好結局
+            ExExitObj.AddComponent<ChangeMap>().MapStr = "end";
+            ExExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
+            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -2), Quaternion.identity) as GameObject;
+            go2.transform.SetParent(mapHolder);
+            mainSigel = go2;
+
         }
         
     }
@@ -294,7 +320,7 @@ public class MapV2 : MonoBehaviour
     {
         
         GameObject go2 = Instantiate(ObjArray[6], new Vector3(vector2.x, vector2.y-0.3f, -2), Quaternion.identity) as GameObject;
-        go2 = RotateSigel(go2,Exit);//這邊需要改成假出口
+        go2 = RotateSigel(go2,Exit);
         go2.transform.SetParent(mapHolder);
         SigelList.Add(go2);
     }

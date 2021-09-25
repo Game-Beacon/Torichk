@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapMine : MonoBehaviour
 {
-    public GameObject[] ImportArray;//0¬°ª±®a1¬°°²¥X¤f2¬°¯u¥X¤f3.4.5¬°ª«¥ó
+    public GameObject[] ImportArray;//0ï¿½ï¿½ï¿½ï¿½ï¿½a1ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½f2ï¿½ï¿½ï¿½uï¿½Xï¿½f3.4.5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public GameObject[] MonArray;
     public GameObject[] WallArray;
     private Transform mapHolder;
@@ -13,7 +13,7 @@ public class MapMine : MonoBehaviour
     public int rowsCount_25;
     public int colsCount_25;
     public int MonCount;
-    int rows;  //©w¸q¦a¹Ïªº¦æ¦C¡C
+    int rows;  //ï¿½wï¿½qï¿½aï¿½Ïªï¿½ï¿½ï¿½Cï¿½C
     int cols;
     int[] foxXY = new int[2];
 
@@ -23,17 +23,11 @@ public class MapMine : MonoBehaviour
 
     private void Start()
     {
-
-
         Map();
         CreatMon(MonCount);
         CreatTree();
     }
 
-    void CreatImportObj() {
-
-
-    }
     void CreatTree() {
 
         for (int i = 0; i < rows-1; i++)
@@ -86,18 +80,18 @@ public class MapMine : MonoBehaviour
     void Map()
     {
         GetRowsAndCols();
-        mapHolder = new GameObject("Map").transform;// ³]¸m¤@­Ó¤÷ÃþºÞ²z¥Í¦¨ªº¦a¹Ï
+        mapHolder = new GameObject("Map").transform;// ï¿½]ï¿½mï¿½@ï¿½Ó¤ï¿½ï¿½ï¿½ï¿½Þ²zï¿½Í¦ï¿½ï¿½ï¿½ï¿½aï¿½ï¿½
         for (int x = -1; x < cols; x++)
         {
             for (int y = -1; y < rows; y++)
             {
-                if (x == -1 || y == -1 || x == cols - 1 || y == rows - 1)//¦a¹Ï³Ì¥~­±¤@°é¬O³òÀð
+                if (x == -1 || y == -1 || x == cols - 1 || y == rows - 1)//ï¿½aï¿½Ï³Ì¥~ï¿½ï¿½ï¿½@ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½
                 {
                     int index = Random.Range(0, OutWallArray.Length);
                     GameObject go = GameObject.Instantiate(OutWallArray[index], new Vector3(x, y, 0), Quaternion.identity) as GameObject;
                     go.transform.SetParent(mapHolder);
                 }
-                else// ¨ä¾l¬O¦aªO
+                else// ï¿½ï¿½lï¿½Oï¿½aï¿½O
                 {
                     int index = Random.Range(0, FloorArray.Length);
                     GameObject go = GameObject.Instantiate(FloorArray[index], new Vector3(x, y, 0), Quaternion.identity) as GameObject;

@@ -217,7 +217,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
 --- !u!114 &5966309965545810399
 MonoBehaviour:
@@ -236,7 +236,8 @@ MonoBehaviour:
   Distance: 10
   O: {x: 0, y: 0, z: 0}
   AiPosition: {x: 0, y: 0, z: 0}
-  img1: {fileID: 0}
+  _animator: {fileID: 0}
+  _spriteRenderer: {fileID: 0}
 --- !u!50 &-3268293523480297875
 Rigidbody2D:
   serializedVersion: 4

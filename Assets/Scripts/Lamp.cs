@@ -1,11 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Lamp : MonoBehaviour
 {
+    //public AK.Wwise.Event MyEvent;
     private Animator _animator;
+    public GameData _gameData;
+    private float timeEnd;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +22,22 @@ public class Lamp : MonoBehaviour
         if (other.tag =="Player")
         {
             _animator.SetBool("BeTouch",true);
-            other.GetComponent<PlayerCtrl>().LevelUp();
+            if (this.name.ToLower().Contains("Crystal".ToLower()))
+            {
+                if (SceneManager.GetActiveScene().name =="m3")
+                {
+                    _gameData._uiTitle = UiTitle.BadEnd;
+                }
+                other.GetComponent<PlayerCtrl>().LevelUp();
+            }
+            else
+            { 
+                other.GetComponent<PlayerCtrl>().KillPlayer();
+            }
+            
+            
         }
-        
+        //停止音效
     }
+
 }

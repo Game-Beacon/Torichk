@@ -35,7 +35,7 @@ public class AI_ByState : MonoBehaviour
     void Update()
     {
         currentState.OnStateExecution();
-        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal * 3.5)
+        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal)
         { ChangeState(attackState); }
         AiPosition = transform.position;
     }

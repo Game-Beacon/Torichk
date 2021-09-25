@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PlayerCtrl : MonoBehaviour
 {
     public static Vector3 PlayerPosition;
@@ -18,11 +19,12 @@ public class PlayerCtrl : MonoBehaviour
         rigibody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        maskt = GetComponent<MaskCtrl>();
     }
 
     private void Awake()
     {
-        MoveSpeed = 5f;
+        MoveSpeed = 2f;
         objectCount = 0;
         playerT.objectCountChange += maskt.ChangeMaskD;
         playerT.objectCountChange += maskt.ChangeMaskDistance;//這三行訂閱ObjectCount狀態有沒有發生改變
@@ -51,7 +53,7 @@ public class PlayerCtrl : MonoBehaviour
             animator.SetBool("IsRun",false);
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.A))//按A可以放大光圈
         {
             LevelUp();
         }
@@ -97,7 +99,13 @@ public class PlayerCtrl : MonoBehaviour
     public void KillPlayer()
     {
         animator.SetBool("IsDie",true);
-        ///關掉怪物跟玩家的移動
+    }
+
+    void ReloadSC()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ChangeMap.LampBeUse = false;
+        ///關掉怪物跟玩家的移動   
     }
 }
 public delegate void ObjectCountChangeHandler(PlayerCtrl playerT, PlayerEventArgs e);

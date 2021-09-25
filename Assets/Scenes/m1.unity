@@ -286,36 +286,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &808809092
+--- !u!1001 &167845896
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7465023827133634596, guid: aaaf738415d153f42ac1a74786cecfff,
-        type: 3}
-      propertyPath: Test
-      value: 
-      objectReference: {fileID: 2996793977349702135, guid: 56d56915b1ea3384bad15b3735466f76,
-        type: 3}
-    - target: {fileID: 7465023827133634596, guid: aaaf738415d153f42ac1a74786cecfff,
-        type: 3}
-      propertyPath: _sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 49dd2dd48f8193a429ea4db70ad51ad9,
-        type: 3}
-    - target: {fileID: 7465023827133634596, guid: aaaf738415d153f42ac1a74786cecfff,
-        type: 3}
-      propertyPath: ObjArray.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7465023827133634597, guid: aaaf738415d153f42ac1a74786cecfff,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465023827133634597, guid: aaaf738415d153f42ac1a74786cecfff,
         type: 3}

@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 1856037461446707513, guid: 5d350da6936de2441a8a5fa9885538f0, type: 3}
   - {fileID: 7046200155748009656, guid: 5ec3700b90653eb4c8ec4dc1db3af9cc, type: 3}
   - {fileID: 1363467435751498500, guid: 1ef3ee3257584264cab96e27ecf3b32b, type: 3}
+  - {fileID: 2996793977349702135, guid: 56d56915b1ea3384bad15b3735466f76, type: 3}
   FloorArray:
   - {fileID: 4155865700333703022, guid: 478d6ed3073e4a84c8e47d9d9725cea8, type: 3}
   MonsterArray:

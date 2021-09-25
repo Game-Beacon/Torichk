@@ -6,8 +6,9 @@ using  UnityEngine.SceneManagement;
 public class ChangeMap : MonoBehaviour
 {
     public string MapStr { get; set; }
-    public UiTitle uiTitle= UiTitle.GoodEnd;
+    public UiTitle _uiTitle= UiTitle.GoodEnd;
     public static GameData gameData;
+    public static bool LampBeUse = false;
     private void Start()
     {
     }
@@ -22,10 +23,15 @@ public class ChangeMap : MonoBehaviour
 
     public void GoMap()
     {
-        if (MapStr!= null)
+        if (MapStr!= null&& !LampBeUse)
         {
-            gameData._uiTitle = uiTitle;
+            gameData._uiTitle = _uiTitle;
             SceneManager.LoadScene(MapStr);   
+        }
+        else
+        {
+            gameData._uiTitle = UiTitle.BadEnd;
+            SceneManager.LoadScene(MapStr);
         }
     }
 

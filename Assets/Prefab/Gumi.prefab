@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2942602083875944151}
   - component: {fileID: 221462937298586733}
   - component: {fileID: 474314448814115731}
+  - component: {fileID: 1761682342214916817}
   m_Layer: 0
   m_Name: Gumi
   m_TagString: Player
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd1c5d4118d64740a8b3260eca64aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
+  MoveSpeed: 2
   playerT: {fileID: 2942602083875944151}
   maskt: {fileID: 2908792757174977385}
 --- !u!61 &221462937298586733
@@ -158,7 +159,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856037461446707513}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -198,6 +199,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &1761682342214916817
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856037461446707513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.14
 --- !u!1 &3658019238970849156
 GameObject:
   m_ObjectHideFlags: 0

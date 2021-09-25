@@ -10,11 +10,20 @@ public class UIScripts : MonoBehaviour
 
     public void ExitGame()
     {
+        _gameData._uiTitle = UiTitle.Start;
         Application.Quit();
     }
 
     public void GoSc()
     {
-        SceneManager.LoadScene(m[(int)_gameData._uiTitle]);
+        if (TeachUi.CanTeach)
+        {
+            SceneManager.LoadScene("TeachSC");
+        }
+        else
+        {
+            SceneManager.LoadScene(m[(int)_gameData._uiTitle]);
+        }
+
     }
 }

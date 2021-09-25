@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using  UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -24,6 +23,7 @@ public class MapV2 : MonoBehaviour
     List<GameObject> SigelList = new List<GameObject>();
     public GameData gameData;
     private GameObject mainSigel;
+    private GameObject EXmainSigel;
     
     //0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     //str =m1,m2,m3
@@ -154,18 +154,7 @@ public class MapV2 : MonoBehaviour
     {
 
     }
-
-    void CloseAllSigl()
-    {
-        
-        foreach (var sigel in SigelList)
-        {
-            sigel.SetActive(false);
-        }
-        //真出口符文關閉
-        //ExitObj
-    }
-
+    
     bool IsInside(Vector2[] vL,Vector2 v) {
         if ((v.x- vL[0].x)*(v.x-vL[1].x)<0 && (v.y - vL[0].y) * (v.y - vL[1].y) < 0)
         {
@@ -219,10 +208,10 @@ public class MapV2 : MonoBehaviour
                             ExitObj = go;
                             //gameData._uiTitle = UiTitle.GoodEnd;
                             ExitObj.AddComponent<ChangeMap>().MapStr = "end";//好結局?
-                            ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
+                            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
 
                             Exit = new Vector2(y,x);
-                            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -2), Quaternion.identity) as GameObject;
+                            GameObject go2 = Instantiate(ObjArray[7], new Vector3(y, x-0.3f, -2), Quaternion.identity) as GameObject;
                             go2.transform.SetParent(mapHolder);
                             mainSigel = go2;
                         }
@@ -279,10 +268,25 @@ public class MapV2 : MonoBehaviour
     
     public  void SetToBadEnd()
     {
-        ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
+        ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
         
     }
 
+    void ChangeSigelState()//碰到物件服文變換
+    {
+        if (SceneManager.GetActiveScene().name =="m1")
+        {
+            EXmainSigel.SetActive(false);
+            mainSigel.SetActive(true);
+            foreach (var sigel in SigelList)
+            {
+                sigel.SetActive(false);
+            }
+        }
+
+    }
+    
+    
     private Vector2 Exit,ExExit;
     private GameObject ExitObj,ExExitObj;
     void CreatExit_ExExit()
@@ -296,19 +300,22 @@ public class MapV2 : MonoBehaviour
             EndhouseList.RemoveAt(x);
             //gameData._uiTitle = UiTitle.BadEnd;//壞結局
             ExitObj.AddComponent<ChangeMap>().MapStr = "end";
-            ExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.BadEnd;
-
+            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
+            GameObject go = Instantiate(ObjArray[7], new Vector3(Exit.x, Exit.y-0.3f, -2), Quaternion.identity) as GameObject;
+            go.transform.SetParent(mapHolder);
+             EXmainSigel= go;
+            
             
             
             
             int x2 = Random.Range(0, EndhouseList.Count - 1);
             ExExitObj = EndhouseList[x2].houseObj;
-            ExExit = ExitObj.transform.position;
+            ExExit = ExExitObj.transform.position;
             EndhouseList.RemoveAt(x2);
             //gameData._uiTitle = UiTitle.GoodEnd;//好結局
             ExExitObj.AddComponent<ChangeMap>().MapStr = "end";
-            ExExitObj.GetComponent<ChangeMap>().uiTitle = UiTitle.GoodEnd;
-            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -2), Quaternion.identity) as GameObject;
+            ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
+            GameObject go2 = Instantiate(ObjArray[8], new Vector3(ExExit.x, ExExit.y-0.3f, -2), Quaternion.identity) as GameObject;
             go2.transform.SetParent(mapHolder);
             mainSigel = go2;
 

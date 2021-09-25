@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,9 +25,9 @@ public class Lamp : MonoBehaviour
             _animator.SetBool("BeTouch",true);
             if (this.name.ToLower().Contains("Crystal".ToLower()))
             {
-                if (SceneManager.GetActiveScene().name =="m3")
+                if (SceneManager.GetActiveScene().name =="m3"||SceneManager.GetActiveScene().name =="m2")
                 {
-                    _gameData._uiTitle = UiTitle.BadEnd;
+                    ChangeMap.LampBeUse = true;
                 }
                 other.GetComponent<PlayerCtrl>().LevelUp();
             }

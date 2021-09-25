@@ -13,7 +13,6 @@ public class EndImage : MonoBehaviour
     private void Start()
     {
         _image = GetComponent<Image>();
-        Debug.Log("Title"+((int)gameData._uiTitle-1));
         _image.sprite = _sprites[(int)gameData._uiTitle-1];
     }
 

@@ -60,3 +60,4 @@ MonoBehaviour:
   TrapArray:
   - {fileID: 4096851891590958706, guid: 3defc6880a98a714bbf178281208aeee, type: 3}
   - {fileID: 4085397999736263554, guid: 850524692d14dcb469f67ac9e81f1dac, type: 3}
+  Test: {fileID: 0}

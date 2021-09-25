@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585692873291814680
+    m_lastTime: -8585691079611412005
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585691622250794203
+    m_lastTime: -8585690524436416082
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -175,9 +175,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: cbd7f38fcac80d4da94e1d82cb9b30b6
       Path: Events\Default Work Unit\Props\Crystal_Fire
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
+    - name: Crystal_Fire_Off
+      guid: fbdb5167d1a82141bc20e988c5933166
+      id: 3723867782
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Props
+        ObjectType: 4
+        guid: 056c0b0eea3a2844806d2ae3230b1c70
+      - ElementName: Crystal_Fire_Off
+        ObjectType: 3
+        guid: fbdb5167d1a82141bc20e988c5933166
+      Path: Events\Default Work Unit\Props\Crystal_Fire_Off
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Die1
       guid: 5cdcf17746cb124ab973e92fe2880267
       id: 2514411446
@@ -295,7 +315,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 22d0d1a7cf52e544ae9ec830243e4951
       Path: Events\Default Work Unit\Monster\Monster01\Monster01_Attack
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 1.199304
       minDuration: 0.775466
     - name: Monster01_Idle
@@ -318,7 +338,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: da65b0a155cb0f4495753f658310b6b5
       Path: Events\Default Work Unit\Monster\Monster01\Monster01_Idle
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
     - name: Player
@@ -392,7 +412,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7ae80df900bc0247b1e4f59383189abf
       Path: Events\Default Work Unit\Monster\Snake
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 1.427256
       minDuration: 1.427256
     - name: Ui
@@ -452,7 +472,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f3e7cbe097495e409835b464b2b11a9e
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Attack
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 1.622607
       minDuration: 1.168734
     - name: Work1_Aware
@@ -475,7 +495,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: cc3c79664d972841a3cef355d06eeee4
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Aware
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 1.997755
       minDuration: 1.364127
     - name: Work1_Idle
@@ -498,7 +518,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4e945f46321ed46bece6db4372a14e2
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Idle
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
     - name: Work1_Move
@@ -521,7 +541,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 566c84783833f24fae8c140383d41941
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Move
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 0.721169
       minDuration: 0.370981
     - name: Work2_Attack
@@ -544,7 +564,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3b2720f407dcba4f98b14eafa738c3ab
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Attack
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 2.982526
       minDuration: 2.061658
     - name: Work2_Idle
@@ -567,7 +587,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 50d394170ddee44c97bfd661432bb906
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Idle
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: -1
       minDuration: -1
     - name: Work2_Move_Hand
@@ -590,7 +610,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d89f265461f0114e9fd59aedfd61acee
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Move_Hand
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 0.467113
       minDuration: 0.271379
     - name: Work2_Move_Wheel
@@ -613,7 +633,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2256ec15add262408e5189b850da846a
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Move_Wheel
-      maxAttenuation: 13
+      maxAttenuation: 3
       maxDuration: 4.525329
       minDuration: 4.525329
     - name: Worker1
@@ -826,7 +846,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f00000010000000130000002500000026000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000025000000260000002700000028000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

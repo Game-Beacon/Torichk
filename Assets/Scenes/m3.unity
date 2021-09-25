@@ -201,7 +201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 618927178}
-  - component: {fileID: 618927177}
   - component: {fileID: 618927176}
   - component: {fileID: 618927175}
   - component: {fileID: 618927174}
@@ -229,7 +228,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c0f2074f9e3764c4f8a52a5bc27d723f,
+    WwiseObjectReference: {fileID: 11400000, guid: 17de518c6f46dd5468f5d707a8997cfd,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -254,7 +253,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0ea541cb75610ca4da9dda2d46560bd3,
+    WwiseObjectReference: {fileID: 11400000, guid: c0f2074f9e3764c4f8a52a5bc27d723f,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -279,7 +278,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 17de518c6f46dd5468f5d707a8997cfd,
+    WwiseObjectReference: {fileID: 11400000, guid: 0ea541cb75610ca4da9dda2d46560bd3,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -287,32 +286,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &618927177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618927173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe0c58733a3ba040a11359326f64b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: ea230ed18b5cf62459411d7eee01b976,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &618927178
 Transform:
   m_ObjectHideFlags: 0
@@ -320,10 +293,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618927173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

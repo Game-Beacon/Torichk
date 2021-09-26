@@ -143,7 +143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8404552707337813310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5931c90d9fec3f84e8e0cd5ad5ed2af0, type: 3}
   m_Name: 
@@ -189,7 +189,7 @@ MonoBehaviour:
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
   MultiPositionType: 1
-  multiPositionTypeLabel: 2
+  multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []

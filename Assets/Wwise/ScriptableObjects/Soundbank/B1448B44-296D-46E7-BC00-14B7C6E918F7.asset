@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02b12f55fd0256f4fb8935d952781b38, type: 3}
-  m_Name: 23C460A1-B764-4D6A-B628-64FE8C626D2F
+  m_Name: B1448B44-296D-46E7-BC00-14B7C6E918F7
   m_EditorClassIdentifier: 
-  objectName: Ui
-  id: 1551306167
-  guid: 23C460A1-B764-4D6A-B628-64FE8C626D2F
+  objectName: Gameplay
+  id: 89505537
+  guid: B1448B44-296D-46E7-BC00-14B7C6E918F7

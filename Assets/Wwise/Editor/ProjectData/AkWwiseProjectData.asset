@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585691079611412005
+    m_lastTime: -8585689521283596476
     List:
+    - name: EFX
+      guid: ba246288e0ea2d42be0fcedcab7e04ca
+      id: 663947456
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4976344400649e40be102727ac375cc7
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: EFX
+        ObjectType: 2
+        guid: ba246288e0ea2d42be0fcedcab7e04ca
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\EFX
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 2c2bd528a5f3534d8307147590933a04
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4976344400649e40be102727ac375cc7
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 2c2bd528a5f3534d8307147590933a04
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,11 +100,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585691621952996947
+    m_lastTime: -8585689547295192006
     List:
-    - name: Monster
-      guid: 02483d2e7893a74fa536731550770beb
-      id: 2376328173
+    - name: Gameplay
+      guid: 448b44b16d29e746bc0014b7c6e918f7
+      id: 89505537
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -78,13 +112,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Monster
+      - ElementName: Gameplay
         ObjectType: 7
-        guid: 02483d2e7893a74fa536731550770beb
-      Path: SoundBanks\Default Work Unit\Monster
-    - name: Player
-      guid: 4f70113f8f6d894390053930e8c736e3
-      id: 1069431850
+        guid: 448b44b16d29e746bc0014b7c6e918f7
+      Path: SoundBanks\Default Work Unit\Gameplay
+    - name: Gameplay_music
+      guid: 8178150a5fc723479efab4e3bf475c3a
+      id: 2322231365
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -92,13 +126,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Player
+      - ElementName: Gameplay_music
         ObjectType: 7
-        guid: 4f70113f8f6d894390053930e8c736e3
-      Path: SoundBanks\Default Work Unit\Player
-    - name: Props
-      guid: 5ff27bc8bd2b7042846783234f6e5f33
-      id: 968010305
+        guid: 8178150a5fc723479efab4e3bf475c3a
+      Path: SoundBanks\Default Work Unit\Gameplay_music
+    - name: Intro
+      guid: 8141d2a9eb055047a67cce5648c9add0
+      id: 1125500713
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -106,13 +140,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Props
+      - ElementName: Intro
         ObjectType: 7
-        guid: 5ff27bc8bd2b7042846783234f6e5f33
-      Path: SoundBanks\Default Work Unit\Props
-    - name: Ui
-      guid: a160c42364b76a4db62864fe8c626d2f
-      id: 1551306167
+        guid: 8141d2a9eb055047a67cce5648c9add0
+      Path: SoundBanks\Default Work Unit\Intro
+    - name: Outro
+      guid: 11cae66372c96542b2322bbc24a206a9
+      id: 4184794294
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -120,10 +154,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Ui
+      - ElementName: Outro
         ObjectType: 7
-        guid: a160c42364b76a4db62864fe8c626d2f
-      Path: SoundBanks\Default Work Unit\Ui
+        guid: 11cae66372c96542b2322bbc24a206a9
+      Path: SoundBanks\Default Work Unit\Outro
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -136,7 +170,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585690524436416082
+    m_lastTime: -8585689527318701643
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -156,8 +190,8 @@ MonoBehaviour:
         guid: 31d8107e883e15488e9e68cdcddd0deb
       Path: Events\Default Work Unit\Props\Crystal_Break
       maxAttenuation: 0
-      maxDuration: 1.01458
-      minDuration: 1.01458
+      maxDuration: 1.020476
+      minDuration: 1.020476
     - name: Crystal_Fire
       guid: cbd7f38fcac80d4da94e1d82cb9b30b6
       id: 829715712
@@ -175,7 +209,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: cbd7f38fcac80d4da94e1d82cb9b30b6
       Path: Events\Default Work Unit\Props\Crystal_Fire
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: Crystal_Fire_Off
@@ -216,8 +250,8 @@ MonoBehaviour:
         guid: 5cdcf17746cb124ab973e92fe2880267
       Path: Events\Default Work Unit\Player\Die1
       maxAttenuation: 0
-      maxDuration: 2.01585
-      minDuration: 1.52322
+      maxDuration: 5.015543
+      minDuration: 2.64215
     - name: Die2
       guid: 305c007bc49b5d4793091db9a7cbf4d8
       id: 2514411445
@@ -236,8 +270,28 @@ MonoBehaviour:
         guid: 305c007bc49b5d4793091db9a7cbf4d8
       Path: Events\Default Work Unit\Player\Die2
       maxAttenuation: 0
-      maxDuration: 2.01585
-      minDuration: 1.52322
+      maxDuration: 5.015543
+      minDuration: 2.64215
+    - name: Gameplay_Music
+      guid: cd409baf0e8a1245890ca08128c4afe3
+      id: 2322231365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Music
+        ObjectType: 4
+        guid: 689a46c93885a14f9b11d8576c54a508
+      - ElementName: Gameplay_Music
+        ObjectType: 3
+        guid: cd409baf0e8a1245890ca08128c4afe3
+      Path: Events\Default Work Unit\Music\Gameplay_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Intro
       guid: 6e5deac9758d8847b89fd35c15924d6d
       id: 1125500713
@@ -248,13 +302,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ebfe06cbad3d1047a5e9809ce084aa38
-      - ElementName: Ui
+      - ElementName: Music
         ObjectType: 4
-        guid: fdb0a1482df51340a99a27b9da3e443c
+        guid: 689a46c93885a14f9b11d8576c54a508
       - ElementName: Intro
         ObjectType: 3
         guid: 6e5deac9758d8847b89fd35c15924d6d
-      Path: Events\Default Work Unit\Ui\Intro
+      Path: Events\Default Work Unit\Music\Intro
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -315,7 +369,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 22d0d1a7cf52e544ae9ec830243e4951
       Path: Events\Default Work Unit\Monster\Monster01\Monster01_Attack
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 1.199304
       minDuration: 0.775466
     - name: Monster01_Idle
@@ -338,7 +392,64 @@ MonoBehaviour:
         ObjectType: 3
         guid: da65b0a155cb0f4495753f658310b6b5
       Path: Events\Default Work Unit\Monster\Monster01\Monster01_Idle
-      maxAttenuation: 3
+      maxAttenuation: 4
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 689a46c93885a14f9b11d8576c54a508
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Music
+        ObjectType: 4
+        guid: 689a46c93885a14f9b11d8576c54a508
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Outro_B
+      guid: 13e59d473479ef4f9fd5febd655320b4
+      id: 1340545413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Music
+        ObjectType: 4
+        guid: 689a46c93885a14f9b11d8576c54a508
+      - ElementName: Outro_B
+        ObjectType: 3
+        guid: 13e59d473479ef4f9fd5febd655320b4
+      Path: Events\Default Work Unit\Music\Outro_B
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Outro_G
+      guid: 2ac848e917e65246a6a43e8f67586c1d
+      id: 1340545408
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Music
+        ObjectType: 4
+        guid: 689a46c93885a14f9b11d8576c54a508
+      - ElementName: Outro_G
+        ObjectType: 3
+        guid: 2ac848e917e65246a6a43e8f67586c1d
+      Path: Events\Default Work Unit\Music\Outro_G
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Player
@@ -412,9 +523,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7ae80df900bc0247b1e4f59383189abf
       Path: Events\Default Work Unit\Monster\Snake
-      maxAttenuation: 3
-      maxDuration: 1.427256
-      minDuration: 1.427256
+      maxAttenuation: 4
+      maxDuration: 5.015543
+      minDuration: 2.64215
     - name: Ui
       guid: fdb0a1482df51340a99a27b9da3e443c
       id: 1551306167
@@ -450,8 +561,8 @@ MonoBehaviour:
         guid: 6a3b322123767a44aa303287fb0da50e
       Path: Events\Default Work Unit\Props\water_drown
       maxAttenuation: 0
-      maxDuration: 1.038458
-      minDuration: 1.038458
+      maxDuration: 5.015543
+      minDuration: 2.64215
     - name: Work1_Attack
       guid: f3e7cbe097495e409835b464b2b11a9e
       id: 2773911378
@@ -472,7 +583,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f3e7cbe097495e409835b464b2b11a9e
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Attack
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 1.622607
       minDuration: 1.168734
     - name: Work1_Aware
@@ -495,7 +606,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: cc3c79664d972841a3cef355d06eeee4
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Aware
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 1.997755
       minDuration: 1.364127
     - name: Work1_Idle
@@ -518,7 +629,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4e945f46321ed46bece6db4372a14e2
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Idle
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: Work1_Move
@@ -541,7 +652,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 566c84783833f24fae8c140383d41941
       Path: Events\Default Work Unit\Monster\Worker1\Work1_Move
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 0.721169
       minDuration: 0.370981
     - name: Work2_Attack
@@ -564,7 +675,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3b2720f407dcba4f98b14eafa738c3ab
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Attack
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 2.982526
       minDuration: 2.061658
     - name: Work2_Idle
@@ -587,7 +698,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 50d394170ddee44c97bfd661432bb906
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Idle
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: Work2_Move_Hand
@@ -610,7 +721,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d89f265461f0114e9fd59aedfd61acee
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Move_Hand
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 0.467113
       minDuration: 0.271379
     - name: Work2_Move_Wheel
@@ -633,7 +744,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2256ec15add262408e5189b850da846a
       Path: Events\Default Work Unit\Monster\Worker2\Work2_Move_Wheel
-      maxAttenuation: 3
+      maxAttenuation: 4
       maxDuration: 4.525329
       minDuration: 4.525329
     - name: Worker1
@@ -846,7 +957,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000025000000260000002700000028000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

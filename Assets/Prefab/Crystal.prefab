@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1478484650350907239}
   - component: {fileID: 7499781964612073585}
   - component: {fileID: 5957334434337979879}
+  - component: {fileID: 146816633475057740}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Untagged
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb887afe108c784a932fa80cbae9174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameData: {fileID: 0}
 --- !u!114 &7499781964612073585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +227,30 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
+--- !u!114 &146816633475057740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8940340889561042418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eca595951336f14fa13dbe99fba964e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27f75a513e29a3a42817c20e56b302d6,
+      type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27f75a513e29a3a42817c20e56b302d6,
+      type: 2}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 27f75a513e29a3a42817c20e56b302d6,
+      type: 2}

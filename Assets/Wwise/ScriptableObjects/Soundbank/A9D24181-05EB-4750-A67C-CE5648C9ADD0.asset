@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02b12f55fd0256f4fb8935d952781b38, type: 3}
-  m_Name: 2E3D4802-9378-4FA7-A536-731550770BEB
+  m_Name: A9D24181-05EB-4750-A67C-CE5648C9ADD0
   m_EditorClassIdentifier: 
-  objectName: Monster
-  id: 2376328173
-  guid: 2E3D4802-9378-4FA7-A536-731550770BEB
+  objectName: Intro
+  id: 1125500713
+  guid: A9D24181-05EB-4750-A67C-CE5648C9ADD0

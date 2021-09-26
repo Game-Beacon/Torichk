@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02b12f55fd0256f4fb8935d952781b38, type: 3}
-  m_Name: 3F11704F-6D8F-4389-9005-3930E8C736E3
+  m_Name: 63E6CA11-C972-4265-B232-2BBC24A206A9
   m_EditorClassIdentifier: 
-  objectName: Player
-  id: 1069431850
-  guid: 3F11704F-6D8F-4389-9005-3930E8C736E3
+  objectName: Outro
+  id: 4184794294
+  guid: 63E6CA11-C972-4265-B232-2BBC24A206A9

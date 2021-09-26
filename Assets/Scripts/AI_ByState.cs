@@ -30,8 +30,6 @@ public class AI_ByState : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
- 
-
     void Update()
     {
         currentState.OnStateExecution();
@@ -39,7 +37,6 @@ public class AI_ByState : MonoBehaviour
         { ChangeState(attackState); }
         AiPosition = transform.position;
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.tag =="Player")
@@ -47,24 +44,18 @@ public class AI_ByState : MonoBehaviour
             _animator.SetBool("IsAttack",true);
             other.transform.GetComponent<PlayerCtrl>().KillPlayer();
         }
-        
     }
-
     public  void ChangeState(Istate nextstate)
     {
         currentState.OnstateExit();
         nextstate.OnStateEnter();
         currentState = nextstate;
     }
-
-
     public void MoveToPosition(Vector3 position,float v)
     {
         transform.position = Vector3.Lerp(transform.position,position,v);
     }
-
-
-
+    
     public static AI_ByState GetAi()
     {
         if (aI_ByState == null)
@@ -77,9 +68,6 @@ public class AI_ByState : MonoBehaviour
         }
     }
 }
-
-
-
 
 public class IdleState :Istate
 {
@@ -125,8 +113,6 @@ public class MoveState : Istate
     {
         timeEnd = Time.time + 3f;
         aiBystate.speed = 10;
-
-        Debug.Log(aiBystate.name + ":MoveEnter");
         Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
         if (aiBystate.AiPosition.x - Target.x > 0 != dirold)
         {
@@ -143,12 +129,10 @@ public class MoveState : Istate
         {
             aiBystate.ChangeState(aiBystate.idleState);
         }
-        Debug.Log(aiBystate.name + ":MoveEx");
     }
 
     void Istate.OnstateExit()
     {
-        Debug.Log(aiBystate.name + ":MoveExut");
     }
 }
 
@@ -163,7 +147,6 @@ public class AttackState : Istate
 
     void Istate.OnStateEnter()
     {
-
     }
 
     void Istate.OnStateExecution()
@@ -188,17 +171,10 @@ public class AttackState : Istate
         }
         Debug.Log(aistate.name + ":DetenceEx");
     }
-
     void Istate.OnstateExit()
     {
-        Debug.Log(aistate.name + ":DetenceExit");
     }
-
 }
-
-
-
-
 public interface Istate
 {
     void OnStateEnter();

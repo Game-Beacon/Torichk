@@ -18,6 +18,7 @@ public class MaskCtrl : MonoBehaviour
         CurrectMaskPercentage = MaskPercentage[0];
         CurrectTargetScal = TargetScal[0];
         MaskLimit = 1;
+        currectScal = 1.0f;
     }
     void Update()
     {

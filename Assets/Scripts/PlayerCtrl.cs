@@ -31,6 +31,14 @@ public class PlayerCtrl : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKey(KeyCode.Z))
+        {
+            MoveSpeed = 10;
+        }
+        else
+        {
+            MoveSpeed = 4;
+        }
         PlayerPosition = transform.position;
         float moveX = 0f;
         float moveY = 0f;
@@ -53,7 +61,7 @@ public class PlayerCtrl : MonoBehaviour
             animator.SetBool("IsRun",false);
         }
 
-        if (Input.GetKey(KeyCode.A))//按A可以放大光圈
+        if (Input.GetKeyDown(KeyCode.A))//按A可以放大光圈
         {
             LevelUp();
         }

@@ -85,6 +85,10 @@ public class PlayerCtrl : MonoBehaviour
                 PlayerEventArgs playerEventArgs = new PlayerEventArgs();
                 playerEventArgs.ObjectCount = objectCount;
                 objectCountChange.Invoke(this, playerEventArgs);//狀態有發生變化，傳遞變化後的狀態給訂閱者
+                if (value ==2)
+                {
+                    ChangeMonsterStateTo1();
+                }
             }
         }
     }
@@ -109,6 +113,13 @@ public class PlayerCtrl : MonoBehaviour
         animator.SetBool("IsDie",true);
     }
 
+    public void ChangeMonsterStateTo1()
+    {
+        foreach (var mon in MapV2.MonsterList)
+        {
+            mon.GetComponent<AI_ByState>().SetState1();
+        }
+    }
     void ReloadSC()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

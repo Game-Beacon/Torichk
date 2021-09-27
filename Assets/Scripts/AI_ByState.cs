@@ -17,7 +17,7 @@ public class AI_ByState : MonoBehaviour
     public Vector3 AiPosition;
     public Animator _animator;
     public SpriteRenderer _spriteRenderer;
-    private static AI_ByState aI_ByState;
+    private AI_ByState aI_ByState;
     private void Start()
     {
         idleState = new IdleState(this);
@@ -56,7 +56,7 @@ public class AI_ByState : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position,position,v);
     }
     
-    public static AI_ByState GetAi()
+    public  AI_ByState GetAi()
     {
         if (aI_ByState == null)
         {
@@ -67,6 +67,12 @@ public class AI_ByState : MonoBehaviour
             return aI_ByState;
         }
     }
+    
+    public  void SetState1()
+    {
+        _animator.SetBool("IsState2",false);
+    }
+    
 }
 
 public class IdleState :Istate
@@ -175,6 +181,8 @@ public class AttackState : Istate
     {
     }
 }
+
+
 public interface Istate
 {
     void OnStateEnter();

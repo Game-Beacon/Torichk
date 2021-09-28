@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b12f55fd0256f4fb8935d952781b38, type: 3}
-  m_Name: 3F11704F-6D8F-4389-9005-3930E8C736E3
+  m_Script: {fileID: 11500000, guid: 87ae938e9c4495c4c9137f0618656181, type: 3}
+  m_Name: E948C82A-E617-4652-A6A4-3E8F67586C1D
   m_EditorClassIdentifier: 
-  objectName: Player
-  id: 1069431850
-  guid: 3F11704F-6D8F-4389-9005-3930E8C736E3
+  objectName: Outro_G
+  id: 1340545408
+  guid: E948C82A-E617-4652-A6A4-3E8F67586C1D

@@ -18,9 +18,15 @@ namespace AK
         static const AkUniqueID CRYSTAL_FIRE_OFF = 3723867782U;
         static const AkUniqueID DIE1 = 2514411446U;
         static const AkUniqueID DIE2 = 2514411445U;
+        static const AkUniqueID GAMEPLAY_MUSIC = 2322231365U;
         static const AkUniqueID INTRO = 1125500713U;
+        static const AkUniqueID INTRO_BUTTOM = 3693510923U;
         static const AkUniqueID MONSTER01_ATTACK = 2069098427U;
         static const AkUniqueID MONSTER01_IDLE = 4233206453U;
+        static const AkUniqueID OUTRO_B = 1340545413U;
+        static const AkUniqueID OUTRO_BUTTOM = 2796758030U;
+        static const AkUniqueID OUTRO_G = 1340545408U;
+        static const AkUniqueID PAGE_TURN = 4286538426U;
         static const AkUniqueID SETMAINVOLUME = 1377850382U;
         static const AkUniqueID SNAKE = 3187576023U;
         static const AkUniqueID WATER_DROWN = 4104381493U;
@@ -63,20 +69,21 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID MAIN_VOLUME = 2312172015U;
+        static const AkUniqueID MUSIC_VOLUME = 1006694123U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID MONSTER = 2376328173U;
-        static const AkUniqueID PLAYER = 1069431850U;
-        static const AkUniqueID PROPS = 968010305U;
+        static const AkUniqueID GAMEPLAY = 89505537U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID EFX = 663947456U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

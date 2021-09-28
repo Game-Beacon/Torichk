@@ -23,6 +23,8 @@ public class EndImage : MonoBehaviour
             
             SceneManager.LoadScene("UI");
             //SceneManager.LoadScene(m[(int)gameData._uiTitle]);
+            AkSoundEngine.PostEvent("Outro_buttom", gameObject);
+            
         }
     }
 }

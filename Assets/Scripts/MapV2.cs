@@ -20,10 +20,11 @@ public class MapV2 : MonoBehaviour
     List<MapUnit> houseList = new List<MapUnit>();
     List<MapUnit> EndhouseList = new List<MapUnit>();
     List<MapUnit> FloorList = new List<MapUnit>();
-    List<GameObject> SigelList = new List<GameObject>();
+    public static List<GameObject> MonsterList = new List<GameObject>();
+    public static List<GameObject> SigelList = new List<GameObject>();
     public GameData gameData;
-    private GameObject mainSigel;
-    private GameObject EXmainSigel;
+    public  static GameObject mainSigel;
+    public  static GameObject EXmainSigel;
     
     //0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     //str =m1,m2,m3
@@ -235,11 +236,12 @@ public class MapV2 : MonoBehaviour
                         go.transform.SetParent(mapHolder);
                         break;
                     case 6: 
-                        go = Instantiate(MonsterArray[Random.Range(0,MonsterArray.Length-1)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go = Instantiate(MonsterArray[Random.Range(0,MonsterArray.Length)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
+                        MonsterList.Add(go);
                         break;
                     case 7: 
-                        go = Instantiate(TrapArray[Random.Range(0,TrapArray.Length-1)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
+                        go = Instantiate(TrapArray[Random.Range(0,TrapArray.Length)], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
                         break;
                     default:
@@ -278,16 +280,17 @@ public class MapV2 : MonoBehaviour
         {
             EXmainSigel.SetActive(false);
             mainSigel.SetActive(true);
-            foreach (var sigel in SigelList)
+
+            for (int i = 0; i < SigelList.Count; i++)
             {
-                sigel.SetActive(false);
+                SigelList[i] = RotateSigel(SigelList[i], ExExit);
             }
         }
 
     }
     
     
-    private Vector2 Exit,ExExit;
+    public  static Vector2 Exit,ExExit;
     private GameObject ExitObj,ExExitObj;
     void CreatExit_ExExit()
     {
@@ -301,7 +304,7 @@ public class MapV2 : MonoBehaviour
             //gameData._uiTitle = UiTitle.BadEnd;//壞結局
             ExitObj.AddComponent<ChangeMap>().MapStr = "end";
             ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
-            GameObject go = Instantiate(ObjArray[7], new Vector3(Exit.x, Exit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            GameObject go = Instantiate(ObjArray[8], new Vector3(Exit.x, Exit.y-0.3f, -3), Quaternion.identity) as GameObject;
             go.transform.SetParent(mapHolder);
              EXmainSigel= go;
             
@@ -315,7 +318,7 @@ public class MapV2 : MonoBehaviour
             //gameData._uiTitle = UiTitle.GoodEnd;//好結局
             ExExitObj.AddComponent<ChangeMap>().MapStr = "end";
             ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
-            GameObject go2 = Instantiate(ObjArray[8], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
             go2.transform.SetParent(mapHolder);
             mainSigel = go2;
 

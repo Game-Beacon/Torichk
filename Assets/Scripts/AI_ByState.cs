@@ -17,7 +17,7 @@ public class AI_ByState : MonoBehaviour
     public Vector3 AiPosition;
     public Animator _animator;
     public SpriteRenderer _spriteRenderer;
-    private static AI_ByState aI_ByState;
+    private AI_ByState aI_ByState;
     private void Start()
     {
         idleState = new IdleState(this);
@@ -36,6 +36,11 @@ public class AI_ByState : MonoBehaviour
         if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal)
         { ChangeState(attackState); }
         AiPosition = transform.position;
+        if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1&& PlayerCtrl.IsScare ==false)
+        {
+            PlayerCtrl.IsScare = true;
+            PlayerCtrl.CanMove = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -56,7 +61,7 @@ public class AI_ByState : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position,position,v);
     }
     
-    public static AI_ByState GetAi()
+    public  AI_ByState GetAi()
     {
         if (aI_ByState == null)
         {
@@ -67,6 +72,12 @@ public class AI_ByState : MonoBehaviour
             return aI_ByState;
         }
     }
+    
+    public  void SetState1()
+    {
+        _animator.SetBool("IsState2",false);
+    }
+    
 }
 
 public class IdleState :Istate
@@ -82,7 +93,6 @@ public class IdleState :Istate
         timeEnd = Time.time + 3f;
         aiBystate.speed = 0;
         aiBystate._animator.SetBool("IsMove",false);
-        Debug.Log(aiBystate.name+":IdleEnter");
     }
 
     void Istate.OnStateExecution()
@@ -95,7 +105,6 @@ public class IdleState :Istate
 
    void Istate.OnstateExit()
     {
-        Debug.Log(aiBystate.name + ":IdleExit");
     }
 }
 
@@ -167,14 +176,14 @@ public class AttackState : Istate
         }
         if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)<aistate.Distance)
         {
-            Debug.Log("KillPlayer");
         }
-        Debug.Log(aistate.name + ":DetenceEx");
     }
     void Istate.OnstateExit()
     {
     }
 }
+
+
 public interface Istate
 {
     void OnStateEnter();

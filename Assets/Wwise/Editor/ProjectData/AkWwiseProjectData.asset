@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585689502727867041
+    m_lastTime: -8585688110379892187
     List:
     - name: EFX
       guid: ba246288e0ea2d42be0fcedcab7e04ca
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585689547295192006
+    m_lastTime: -8585688107972202742
     List:
     - name: Gameplay
       guid: 448b44b16d29e746bc0014b7c6e918f7
@@ -116,23 +116,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 448b44b16d29e746bc0014b7c6e918f7
       Path: SoundBanks\Default Work Unit\Gameplay
-    - name: Gameplay_music
-      guid: 8178150a5fc723479efab4e3bf475c3a
-      id: 2322231365
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Gameplay_music
-        ObjectType: 7
-        guid: 8178150a5fc723479efab4e3bf475c3a
-      Path: SoundBanks\Default Work Unit\Gameplay_music
-    - name: Intro
+    - name: Ui
       guid: 8141d2a9eb055047a67cce5648c9add0
-      id: 1125500713
+      id: 1551306167
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -140,24 +126,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Intro
+      - ElementName: Ui
         ObjectType: 7
         guid: 8141d2a9eb055047a67cce5648c9add0
-      Path: SoundBanks\Default Work Unit\Intro
-    - name: Outro
-      guid: 11cae66372c96542b2322bbc24a206a9
-      id: 4184794294
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c6848a86382e3446a3c8ce3a6893276e
-      - ElementName: Outro
-        ObjectType: 7
-        guid: 11cae66372c96542b2322bbc24a206a9
-      Path: SoundBanks\Default Work Unit\Outro
+      Path: SoundBanks\Default Work Unit\Ui
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +142,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585689527318701643
+    m_lastTime: -8585688099562240081
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -190,8 +162,8 @@ MonoBehaviour:
         guid: 31d8107e883e15488e9e68cdcddd0deb
       Path: Events\Default Work Unit\Props\Crystal_Break
       maxAttenuation: 0
-      maxDuration: 1.020476
-      minDuration: 1.020476
+      maxDuration: 2.50254
+      minDuration: 2.50254
     - name: Crystal_Fire
       guid: cbd7f38fcac80d4da94e1d82cb9b30b6
       id: 829715712
@@ -312,6 +284,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Intro_buttom
+      guid: fa0e88a332e27a428d65193a8f25d91b
+      id: 3693510923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Ui
+        ObjectType: 4
+        guid: fdb0a1482df51340a99a27b9da3e443c
+      - ElementName: Intro_buttom
+        ObjectType: 3
+        guid: fa0e88a332e27a428d65193a8f25d91b
+      Path: Events\Default Work Unit\Ui\Intro_buttom
+      maxAttenuation: 0
+      maxDuration: 2.216417
+      minDuration: 2.216417
     - name: Monster
       guid: 6f5afafab804b243bc91e64e57f5dff9
       id: 2376328173
@@ -432,6 +424,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Outro_buttom
+      guid: 6799124e7d0b474cb309f710bf5db13f
+      id: 2796758030
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Ui
+        ObjectType: 4
+        guid: fdb0a1482df51340a99a27b9da3e443c
+      - ElementName: Outro_buttom
+        ObjectType: 3
+        guid: 6799124e7d0b474cb309f710bf5db13f
+      Path: Events\Default Work Unit\Ui\Outro_buttom
+      maxAttenuation: 0
+      maxDuration: 2.341406
+      minDuration: 2.341406
     - name: Outro_G
       guid: 2ac848e917e65246a6a43e8f67586c1d
       id: 1340545408
@@ -452,6 +464,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Page_turn
+      guid: 1bc30876e5228a488b95d0feba4d8bfa
+      id: 4286538426
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Ui
+        ObjectType: 4
+        guid: fdb0a1482df51340a99a27b9da3e443c
+      - ElementName: Page_turn
+        ObjectType: 3
+        guid: 1bc30876e5228a488b95d0feba4d8bfa
+      Path: Events\Default Work Unit\Ui\Page_turn
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
     - name: Player
       guid: 65b001696d99bf4ab2257472089e249c
       id: 1069431850
@@ -523,7 +555,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7ae80df900bc0247b1e4f59383189abf
       Path: Events\Default Work Unit\Monster\Snake
-      maxAttenuation: 4
+      maxAttenuation: 0
       maxDuration: 5.015543
       minDuration: 2.64215
     - name: Ui
@@ -799,7 +831,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 71aca284629bbe4d99a6221d8fc52977
     GuidInternal: 
-    m_lastTime: -8585692845769818869
+    m_lastTime: -8585688136711247207
     List:
     - name: Main_volume
       guid: 6490727462e4ca47b4c214eb74d34ca2
@@ -815,6 +847,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 6490727462e4ca47b4c214eb74d34ca2
       Path: Game Parameters\Default Work Unit\Main_volume
+    - name: Music_Volume
+      guid: 88238a896dbb7440ab5bd88c2f135f0c
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71aca284629bbe4d99a6221d8fc52977
+      - ElementName: Music_Volume
+        ObjectType: 13
+        guid: 88238a896dbb7440ab5bd88c2f135f0c
+      Path: Game Parameters\Default Work Unit\Music_Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -957,7 +1003,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d0000002f00000030000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

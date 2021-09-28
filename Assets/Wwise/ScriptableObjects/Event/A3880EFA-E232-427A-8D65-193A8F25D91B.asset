@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b12f55fd0256f4fb8935d952781b38, type: 3}
-  m_Name: 63E6CA11-C972-4265-B232-2BBC24A206A9
+  m_Script: {fileID: 11500000, guid: 87ae938e9c4495c4c9137f0618656181, type: 3}
+  m_Name: A3880EFA-E232-427A-8D65-193A8F25D91B
   m_EditorClassIdentifier: 
-  objectName: Outro
-  id: 4184794294
-  guid: 63E6CA11-C972-4265-B232-2BBC24A206A9
+  objectName: Intro_buttom
+  id: 3693510923
+  guid: A3880EFA-E232-427A-8D65-193A8F25D91B

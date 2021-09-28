@@ -33,7 +33,9 @@ public class TeachUi : MonoBehaviour
                 else
                 {
                     _image.sprite = _sprites[count-1];
-                }
+                AkSoundEngine.PostEvent("Page_turn", gameObject);
             }
+            
+        }
         }
 }

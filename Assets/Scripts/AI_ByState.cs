@@ -36,6 +36,11 @@ public class AI_ByState : MonoBehaviour
         if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal)
         { ChangeState(attackState); }
         AiPosition = transform.position;
+        if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1&& PlayerCtrl.IsScare ==false)
+        {
+            PlayerCtrl.IsScare = true;
+            PlayerCtrl.CanMove = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -88,7 +93,6 @@ public class IdleState :Istate
         timeEnd = Time.time + 3f;
         aiBystate.speed = 0;
         aiBystate._animator.SetBool("IsMove",false);
-        Debug.Log(aiBystate.name+":IdleEnter");
     }
 
     void Istate.OnStateExecution()
@@ -101,7 +105,6 @@ public class IdleState :Istate
 
    void Istate.OnstateExit()
     {
-        Debug.Log(aiBystate.name + ":IdleExit");
     }
 }
 
@@ -173,9 +176,7 @@ public class AttackState : Istate
         }
         if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)<aistate.Distance)
         {
-            Debug.Log("KillPlayer");
         }
-        Debug.Log(aistate.name + ":DetenceEx");
     }
     void Istate.OnstateExit()
     {

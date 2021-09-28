@@ -25,8 +25,8 @@ public class MaskCtrl : MonoBehaviour
         MaskL();
         currectScal = MaskChangeFromAtoB(
             currectScal,                //A
-            PlayerCtrl.PlayerIsMove ? CurrectTargetScal*MaskLimit:0//B mask 目標範圍，移動:往最大,不動:往0
-            , PlayerCtrl.PlayerIsMove ? (CurrectMaskPercentage * 5) : (CurrectMaskPercentage));     //mask變化比例
+            (PlayerCtrl.PlayerIsMove&&!PlayerCtrl.PlayerIsRun) ? CurrectTargetScal*MaskLimit:0//B mask 目標範圍，移動:往最大,不動:往0
+            , PlayerCtrl.PlayerIsRun ? (CurrectMaskPercentage /2) : (CurrectMaskPercentage));     //mask變化比例
         viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);
     }
 

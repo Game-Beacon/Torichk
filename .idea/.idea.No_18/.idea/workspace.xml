@@ -3,25 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/soilroad_b2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/soilroad_b2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/d0dd78bf73bed800.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/d0dd78bf73bed800.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/fire_cen.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/fire_cen.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/f.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/f.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +113,7 @@
       <workItem from="1632660587077" duration="3292000" />
       <workItem from="1632747015100" duration="2436000" />
       <workItem from="1632781615186" duration="1035000" />
-      <workItem from="1632830807617" duration="5881000" />
+      <workItem from="1632830807617" duration="8863000" />
     </task>
     <servers />
   </component>

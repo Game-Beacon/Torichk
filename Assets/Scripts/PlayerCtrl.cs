@@ -148,7 +148,7 @@ public class PlayerCtrl : MonoBehaviour
     {
         animator.SetBool("IsDie",true);
         MapV2.MonsterList.Clear();
-        
+        ChangeMap.LampBeUse = false;
         //ReloadSC();
     }
 
@@ -162,7 +162,7 @@ public class PlayerCtrl : MonoBehaviour
     void ReloadSC()
     {
         IsScare = false;
-        ChangeMap.LampBeUse = false;
+        // ChangeMap.LampBeUse = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         ///關掉怪物跟玩家的移動   
     }

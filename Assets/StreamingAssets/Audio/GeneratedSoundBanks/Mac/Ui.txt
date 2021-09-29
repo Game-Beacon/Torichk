@@ -1,9 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1125500713	Intro			\Default Work Unit\Ui\Intro	
+	1125500713	Intro			\Default Work Unit\Music\Intro	
+	1340545408	Outro_G			\Default Work Unit\Music\Outro_G	
+	1340545413	Outro_B			\Default Work Unit\Music\Outro_B	
+	1377850382	SetMainVolume			\Default Work Unit\Ui\SetMainVolume	
+	2796758030	Outro_buttom			\Default Work Unit\Ui\Outro_buttom	
+	3693510923	Intro_buttom			\Default Work Unit\Ui\Intro_buttom	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006694123	Music_Volume			\Default Work Unit\Music_Volume	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	56369941	Intro	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210824-Intro2_Fin_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro		1492382
 	57709335	Thunder01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\UI\Thunder01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Thunder\Thunder01		58915
 	147433264	Thunder03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\UI\Thunder03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Thunder\Thunder03		60391
 	195493673	Thunder02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\UI\Thunder02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Thunder\Thunder02		59481
+	315479486	20210918-Outro_B	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_B_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_B		1422165
+	338065267	Intro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Intro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro_buttom		39421
+	888766829	20210918-Outro_G_Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_G_Fin_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_G_Fin		1592624
+	966934053	Outro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Outro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Outro_buttom		40311
 

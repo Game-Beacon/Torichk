@@ -1,0 +1,105 @@
+Event	ID	Name			Wwise Object Path	Notes
+	178967744	Work2_Move_Wheel			\Default Work Unit\Monster\Worker2\Work2_Move_Wheel	
+	756738409	Crystal_Break			\Default Work Unit\Props\Crystal_Break	
+	829715712	Crystal_Fire			\Default Work Unit\Props\Crystal_Fire	
+	1624523373	Work1_Move			\Default Work Unit\Monster\Worker1\Work1_Move	
+	1744541137	Work2_Idle			\Default Work Unit\Monster\Worker2\Work2_Idle	
+	1807395391	Work2_Attack			\Default Work Unit\Monster\Worker2\Work2_Attack	
+	2012150292	Work2_Move_Hand			\Default Work Unit\Monster\Worker2\Work2_Move_Hand	
+	2069098427	Monster01_Attack			\Default Work Unit\Monster\Monster01\Monster01_Attack	
+	2322231365	Gameplay_Music			\Default Work Unit\Music\Gameplay_Music	
+	2514411445	Die2			\Default Work Unit\Player\Die2	
+	2514411446	Die1			\Default Work Unit\Player\Die1	
+	2773911378	Work1_Attack			\Default Work Unit\Monster\Worker1\Work1_Attack	
+	3086545764	Work1_Idle			\Default Work Unit\Monster\Worker1\Work1_Idle	
+	3187576023	Snake			\Default Work Unit\Monster\Snake	
+	3661139732	Work1_Aware			\Default Work Unit\Monster\Worker1\Work1_Aware	
+	3693510923	Intro_buttom			\Default Work Unit\Ui\Intro_buttom	
+	3723867782	Crystal_Fire_Off			\Default Work Unit\Props\Crystal_Fire_Off	
+	4104381493	water_drown			\Default Work Unit\Props\water_drown	
+	4233206453	Monster01_Idle			\Default Work Unit\Monster\Monster01\Monster01_Idle	
+	4286538426	Page_turn			\Default Work Unit\Ui\Page_turn	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1069431850	Player			\Default Work Unit\Player	
+
+Switch	ID	Name	Switch Group			Notes
+	2514411445	Die2	Player			
+	2514411446	Die1	Player			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	643438522	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence\Wwise Silence	
+	829793042	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence_01\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	17659245	Work2_Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Work2_Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Attack\Work2_Attack02		33970
+	27811459	20210614-GamePlay2-Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\20210614-GamePlay2-Fin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Music\20210614-GamePlay2-Fin\20210614-GamePlay2-Fin		1463933
+	54114215	Monster01_01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_01		38289
+	66420628	Worker01_Attack03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Worker01_Attack03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Attack\Worker01_Attack03		19256
+	79353227	Monster01_03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_03		31381
+	97401550	water drown	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\water drown_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\water drown		22998
+	103244461	Monster01_Loop - 01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 01		33603
+	111127699	Work1_Aware01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Aware\Work1_Aware01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Aware\Work1_Aware01		16597
+	132173753	Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack02		13190
+	142503006	Monster01_02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_02		32356
+	150299515	Attack01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Attack01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack01		12652
+	158202145	Fire_02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Fire\Fire_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Fire\Fire_02		8859
+	188490827	Work2_Move_Wheel01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel01		17451
+	204108023	Die02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Die\Die02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die02		22519
+	204187225	Work2_Move_Hand02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand02		7245
+	204500310	Page_Turn_14	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Page_Turn_14_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Page_Turn_14		14590
+	214971887	Move4	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move4		4611
+	221578199	Work2_Move_Hand03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand03		5372
+	231165499	Fire_04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Fire\Fire_04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Fire\Fire_04		7861
+	256311104	Fire_03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Fire\Fire_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Fire\Fire_03		9273
+	273435731	Work1_Aware02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Aware\Work1_Aware02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Aware\Work1_Aware02		25527
+	331282804	Work2_Idle02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle02		77424
+	338065267	Intro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Intro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro_buttom		39421
+	357413614	Fire_05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Fire\Fire_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Fire\Fire_05		9195
+	371649714	Monster01_Loop - 05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 05		36932
+	396001407	Monster01_Loop - 02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 02		35877
+	407420489	Monster01_Loop - 03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 03		24269
+	418675567	Man_Laugh01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Male laugh\Man_Laugh01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh01		47229
+	426380717	20210614-GamePlay2_drum-Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\20210614-GamePlay2_drum-Fin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Music\20210614-GamePlay2_drum-Fin\20210614-GamePlay2_drum-Fin		1488153
+	437231619	20210524-GamePlay3-Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\20210524-GamePlay3-Fin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Music\20210524-GamePlay3-Fin\20210524-GamePlay3-Fin		1715733
+	455931056	Work2_Move_Wheel02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel02		22270
+	481834780	Work1_Aware03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Aware\Work1_Aware03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Aware\Work1_Aware03		22901
+	586294338	Worker1_Idle03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle03		35627
+	612163316	Fire_01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Fire\Fire_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Fire\Fire_01		8472
+	625646434	Work2_Idle03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle03		31769
+	637248100	Man_Laugh03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Male laugh\Man_Laugh03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh03		26337
+	640699991	Work2_Idle04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle04		93306
+	654366805	Move2	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move2		5797
+	674005367	Monster01_05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_05		36167
+	691738766	Work2_Move_Hand06	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand06_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand06		5646
+	702182027	Move3	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move3		6829
+	711304252	Worker01_Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Worker01_Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Attack\Worker01_Attack02		18001
+	723813509	Crystal fire	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Crystal fire_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Crystal fire		35099
+	734048176	20210524-GamePlay-Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\20210524-GamePlay-Fin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Music\20210524-GamePlay-Fin\20210524-GamePlay-Fin		1359094
+	740279470	Work2_Move_Wheel05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel05		16758
+	745479459	Man_Laugh02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Male laugh\Man_Laugh02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh02		37711
+	767004798	Work2_Move_Hand04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand04		6867
+	768276696	Attack03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Attack03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack03		9506
+	774016884	Die01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Die\Die01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die01		17554
+	776396655	Worker1_Idle05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle05		39080
+	783537012	Work2_Move_Hand05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand05		5251
+	796263955	Snake	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Snake_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Snake\Snake		19154
+	825496742	Crystal_Break	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Crystal_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Crystal_Break		16673
+	835139951	Monster01_04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_04		36029
+	852778689	Work2_Idle05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle05		49692
+	874769197	Man_Laugh04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Male laugh\Man_Laugh04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh04		38026
+	876187140	Work2_Move_Wheel03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel03		19080
+	882049752	Worker1_Idle01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle01		39867
+	888093522	Work2_Move_Wheel04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Work2_Move_Wheel04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel04		18046
+	944175824	Worker1_Idle04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle04		30503
+	944564346	Work2_Attack01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Work2_Attack01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Attack\Work2_Attack01		29819
+	966646504	Move5	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move5		6370
+	969705420	Work2_Move_Hand01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Hand\Work2_Move_Hand01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand01		5795
+	973863114	Move1	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move1		5617
+	992227655	Monster01_Loop - 07	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 07_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 07		42644
+	1028442542	Monster01_Loop - 06	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 06_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 06		49819
+	1034464423	Work2_Idle01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Work2_Idle01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle01		75994
+	1054584888	Move6	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Move\Move6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move6		5470
+	1054862259	Worker1_Idle02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Idle\Worker1_Idle02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Worker1_Idle02		35304
+	1064980775	Monster01_Loop - 04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_Loop - 04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 04		33111
+

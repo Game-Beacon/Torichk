@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameData : ScriptableObject
 {
     public UiTitle _uiTitle = UiTitle.Start;
-
+    public string Current = "";
 }
 
 public enum UiTitle

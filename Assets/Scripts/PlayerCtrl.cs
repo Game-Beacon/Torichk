@@ -18,6 +18,7 @@ public class PlayerCtrl : MonoBehaviour
     public static bool IsScare = false;
     public  static bool CanMove;
     public GameObject Foxsigel;
+    public static PlayerCtrl Player;
     private void Start()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
@@ -25,6 +26,8 @@ public class PlayerCtrl : MonoBehaviour
         animator = GetComponent<Animator>();
         maskt = GetComponent<MaskCtrl>();
         playerT = GetComponent<PlayerCtrl>();
+        IsScare = false;
+        Player = playerT;
     }
 
     private void Awake()
@@ -80,11 +83,13 @@ public class PlayerCtrl : MonoBehaviour
                 }
                 PlayerIsMove = true;
                 animator.SetBool("IsRun",true);
+                animator.SetBool("CanD",false);
             }
             else
             {
                 PlayerIsMove = false;
                 animator.SetBool("IsRun",false);
+                //animator.SetBool("IsRun",false);
             }
             
         }
@@ -93,11 +98,23 @@ public class PlayerCtrl : MonoBehaviour
             MoveSpeed = 0;
         }
 
+        // if (Input.GetKeyUp(KeyCode.RightArrow)||Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp(KeyCode.UpArrow)||Input.GetKeyUp(KeyCode.DownArrow))
+        // {
+        //     PlayerIsMove = false;
+        // }
 
 
         if (Input.GetKeyDown(KeyCode.A))//按A可以放大光圈
         {
-            LevelUp();
+            
+            foreach (var lamp in MapV2.LamplList)
+            {
+                if (Vector2.Distance((Vector2)lamp.transform.position,PlayerCtrl.PlayerPosition)<1)
+                {
+                    lamp.GetComponent<Lamp>().UseLamp();
+                }
+            }
+            //LevelUp();
         }
     }
 
@@ -147,7 +164,7 @@ public class PlayerCtrl : MonoBehaviour
     public void KillPlayer()
     {
         animator.SetBool("IsDie",true);
-        MapV2.MonsterList.Clear();
+        MapV2.ClearList();
         ChangeMap.LampBeUse = false;
         //ReloadSC();
     }
@@ -163,7 +180,8 @@ public class PlayerCtrl : MonoBehaviour
     {
         IsScare = false;
         // ChangeMap.LampBeUse = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ChangeMap.gameData.Current = SceneManager.GetActiveScene().name;//暫存當前地圖
+        SceneManager.LoadScene("");//前往第中繼圖
         ///關掉怪物跟玩家的移動   
     }
 }

@@ -16,12 +16,14 @@ public class MapV2 : MonoBehaviour
     public GameObject[] MonsterArray;
     public GameObject[] TrapArray;//陷阱物件 
 
+
     List<MapUnit> mapUnits = new List<MapUnit>();
     List<MapUnit> houseList = new List<MapUnit>();
     List<MapUnit> EndhouseList = new List<MapUnit>();
     List<MapUnit> FloorList = new List<MapUnit>();
     public static List<GameObject> MonsterList = new List<GameObject>();
     public static List<GameObject> SigelList = new List<GameObject>();
+    public static List<GameObject> LamplList = new List<GameObject>();
     public GameData gameData;
     public  static GameObject mainSigel;
     public  static GameObject EXmainSigel;
@@ -105,28 +107,28 @@ public class MapV2 : MonoBehaviour
         "11111111111111111111";
 
     string m3 = //(ok)0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家
-        "11111111111111111111" +
+        "01111111111111111110" +
         "10000000000004000001" +
-        "10104000004000001141" +
+        "00004000004000000040" +
         "14100004000000001101" +
-        "10101111111111101101" +
+        "00000000000000000000" +
 
         "10101111111111101101" +
-        "10140000004000004141" +
-        "10101111111111100101" +
-        "10001111111111100001" +
-        "10500040000400001101" +
+        "00040000004000004040" +
+        "10100000000000000101" +
+        "00001111111111100000" +
+        "10500040000400000001" +
 
-        "10000000400000001201" +
-        "10041111111111100001" +
-        "10101111111111100101" +
+        "00000000400000001200" +
+        "10040000000000000001" +
+        "00001111111111100000" +
         "10100004000000040101" +
-        "14101111111111101101" +
+        "04001111111111100000" +
 
         "10101111111111101101" +
-        "10100000000000001141" +
+        "00000000000000000040" +
         "10100400000400001101" +
-        "10400000400000000001" +
+        "00400000400000000000" +
         "11111111111111111111";
 
     #endregion
@@ -230,6 +232,7 @@ public class MapV2 : MonoBehaviour
                     case 4: 
                         go = Instantiate(ObjArray[i[count]], new Vector3(y, x, -1), Quaternion.identity) as GameObject;
                         go.transform.SetParent(mapHolder);
+                        LamplList.Add(go);//把水晶存起來
                         break;
                     case 5: 
                         go = Instantiate(ObjArray[i[count]], new Vector3(y, x, 0), Quaternion.identity) as GameObject;
@@ -288,7 +291,13 @@ public class MapV2 : MonoBehaviour
         }
 
     }
-    
+
+    public static void ClearList()
+    {
+        MonsterList.Clear();
+        LamplList.Clear();
+        SigelList.Clear();
+    }
     
     public  static Vector2 Exit,ExExit;
     private GameObject ExitObj,ExExitObj;

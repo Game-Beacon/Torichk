@@ -5,6 +5,7 @@ using System.Security;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Lamp : MonoBehaviour
 {
@@ -25,23 +26,33 @@ public class Lamp : MonoBehaviour
         if (other.tag =="Player")
         {
             
-            _animator.SetBool("BeTouch",true);
-            if (this.name.ToLower().Contains("Crystal".ToLower()) && BeUse == true) 
+            // _animator.SetBool("BeTouch",true);
+            if (this.name.ToLower().Contains("Crystal".ToLower()) && BeUse) 
             {
-                if (SceneManager.GetActiveScene().name =="m3"||SceneManager.GetActiveScene().name =="m2")
-                {
-                    ChangeMap.LampBeUse = true;
-                }
-                other.GetComponent<PlayerCtrl>().LevelUp();
+                //UseLamp();
             }
             else
-            { 
+            {
+                _animator.SetBool("BeTouch",true);
                 other.GetComponent<PlayerCtrl>().KillPlayer();
             }
 
             BeUse = false;
         }
         //停止音效
+    }
+
+    public  void UseLamp()
+    {
+        if (this.name.ToLower().Contains("Crystal".ToLower()) && BeUse)
+        {
+            PlayerCtrl.Player.LevelUp();
+            _animator.SetBool("LampBeTouch",true);
+            ChangeMap.LampBeUse = true;
+            MaskCtrl.MaskWait(5,MaskCtrl.CurrectTargetScal);
+  
+        }
+
     }
 
 }

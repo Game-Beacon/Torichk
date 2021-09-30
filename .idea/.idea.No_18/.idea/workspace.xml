@@ -3,26 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/d0dd78bf73bed800.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/d0dd78bf73bed800.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/fire_cen.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/New/fire_cen.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/f.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/f.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房00.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/王蟲房04.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/詩人房00.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -114,6 +125,10 @@
       <workItem from="1632747015100" duration="2436000" />
       <workItem from="1632781615186" duration="1035000" />
       <workItem from="1632830807617" duration="8863000" />
+      <workItem from="1632925871545" duration="510000" />
+      <workItem from="1632926408034" duration="4799000" />
+      <workItem from="1632996911970" duration="170000" />
+      <workItem from="1632998366451" duration="8991000" />
     </task>
     <servers />
   </component>

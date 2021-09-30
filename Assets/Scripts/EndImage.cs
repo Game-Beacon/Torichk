@@ -13,7 +13,7 @@ public class EndImage : MonoBehaviour
     private void Start()
     {
         _image = GetComponent<Image>();
-        _image.sprite = _sprites[(int)gameData._uiTitle-1];
+        _image.sprite = _sprites[((int)gameData._uiTitle)-1];
     }
 
     private void Update()

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +110,8 @@
       <workItem from="1632996911970" duration="170000" />
       <workItem from="1632998366451" duration="8991000" />
       <workItem from="1633019956567" duration="495000" />
-      <workItem from="1633087114879" duration="4002000" />
+      <workItem from="1633087114879" duration="5711000" />
+      <workItem from="1633094051233" duration="1212000" />
     </task>
     <servers />
   </component>

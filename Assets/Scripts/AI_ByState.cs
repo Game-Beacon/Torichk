@@ -170,7 +170,7 @@ public class AttackState : Istate
         aistate._animator.SetBool("IsMove",true);
         
         
-        if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>MaskCtrl.currectScal * 3.5)
+        if (Vector3.Distance(aistate.AiPosition,PlayerCtrl.PlayerPosition)>MaskCtrl.currectScal)
         {
             aistate.ChangeState(aistate.idleState);
         }

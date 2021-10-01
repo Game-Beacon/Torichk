@@ -315,6 +315,7 @@ public class MapV2 : MonoBehaviour
             //ChangeMap.gameData = gameData;
             int x = Random.Range(0, EndhouseList.Count - 1);
             ExitObj = EndhouseList[x].houseObj;
+            EndhouseList.Remove(EndhouseList[x]);//選中後移除
             Exit = ExitObj.transform.position;
             EndhouseList.RemoveAt(x);
             //gameData._uiTitle = UiTitle.BadEnd;//好結局

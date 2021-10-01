@@ -50,7 +50,11 @@ public class Lamp : MonoBehaviour
             _animator.SetBool("LampBeTouch",true);
             ChangeMap.LampBeUse = true;
             MaskCtrl.MaskWait(5,MaskCtrl.CurrectTargetScal);
-  
+            if (SceneManager.GetActiveScene().name =="m1")
+            {
+                var map = FindObjectOfType<MapV2>();
+                map.ChangeSigelState();
+            }
         }
 
     }

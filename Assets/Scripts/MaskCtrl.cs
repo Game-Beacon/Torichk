@@ -44,7 +44,7 @@ public class MaskCtrl : MonoBehaviour
                     PlayerCtrl.Player.animator.SetBool("CanD",true);
                 }
         }
-        MaskL();
+        //MaskL();
         if (Input.GetKeyUp(KeyCode.RightArrow)||Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp(KeyCode.UpArrow)||Input.GetKeyUp(KeyCode.DownArrow))
         {
             MaskWait(5,currectScal);

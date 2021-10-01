@@ -181,7 +181,7 @@ public class PlayerCtrl : MonoBehaviour
         IsScare = false;
         // ChangeMap.LampBeUse = false;
         ChangeMap.gameData.Current = SceneManager.GetActiveScene().name;//暫存當前地圖
-        SceneManager.LoadScene("");//前往第中繼圖
+        SceneManager.LoadScene("UI_Six");//前往第中繼圖
         ///關掉怪物跟玩家的移動   
     }
 }

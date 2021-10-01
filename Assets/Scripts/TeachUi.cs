@@ -25,16 +25,24 @@ public class TeachUi : MonoBehaviour
             if (Input.anyKeyDown&&count<_sprites.Length+1)
             {
                 count++;
-                if (count>_sprites.Length)
+                if (count>=_sprites.Length)
                 {
                     CanTeach = false;
-                    SceneManager.LoadScene("m1");
+                    if (SceneManager.GetActiveScene().name.ToLower().Contains("UI_Six".ToLower()))
+                    {
+                        SceneManager.LoadScene(ChangeMap.gameData.Current);
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("m1"); 
+                    }
+
                 }
                 else
                 {
-                    _image.sprite = _sprites[count-1];
-                AkSoundEngine.PostEvent("Page_turn", gameObject);
-            }
+                    _image.sprite = _sprites[count];
+                    AkSoundEngine.PostEvent("Page_turn", gameObject);
+                }
             
         }
         }

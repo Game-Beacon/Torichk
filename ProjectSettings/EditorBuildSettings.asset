@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TeachSC.unity
     guid: 2931ce71952e01b4e8083559cab12a2f
+  - enabled: 1
+    path: Assets/Scenes/UI_Six.unity
+    guid: 9bf93ca288530044fa10fbca77ea1931
   m_configObjects: {}

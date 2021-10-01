@@ -3,28 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Crystal/Crystal.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/MapCreat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Pool.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,6 +114,8 @@
       <workItem from="1632926408034" duration="4799000" />
       <workItem from="1632996911970" duration="170000" />
       <workItem from="1632998366451" duration="8991000" />
+      <workItem from="1633019956567" duration="495000" />
+      <workItem from="1633087114879" duration="98000" />
     </task>
     <servers />
   </component>

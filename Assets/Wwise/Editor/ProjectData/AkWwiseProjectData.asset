@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585688110379892187
+    m_lastTime: -8585684438121144921
     List:
     - name: EFX
       guid: ba246288e0ea2d42be0fcedcab7e04ca
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585688107972202742
+    m_lastTime: -8585684418342736591
     List:
     - name: Gameplay
       guid: 448b44b16d29e746bc0014b7c6e918f7
@@ -142,7 +142,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585688099562240081
+    m_lastTime: -8585684409596996446
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -244,6 +244,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.015543
       minDuration: 2.64215
+    - name: Fire_Off
+      guid: 299b4cebecd464488056489f9f0cf4a1
+      id: 386024475
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Ui
+        ObjectType: 4
+        guid: fdb0a1482df51340a99a27b9da3e443c
+      - ElementName: Fire_Off
+        ObjectType: 3
+        guid: 299b4cebecd464488056489f9f0cf4a1
+      Path: Events\Default Work Unit\Ui\Fire_Off
+      maxAttenuation: 0
+      maxDuration: 7.415854
+      minDuration: 7.415854
     - name: Gameplay_Music
       guid: cd409baf0e8a1245890ca08128c4afe3
       id: 2322231365
@@ -482,8 +502,8 @@ MonoBehaviour:
         guid: 1bc30876e5228a488b95d0feba4d8bfa
       Path: Events\Default Work Unit\Ui\Page_turn
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 1.090508
+      minDuration: 0.917004
     - name: Player
       guid: 65b001696d99bf4ab2257472089e249c
       id: 1069431850

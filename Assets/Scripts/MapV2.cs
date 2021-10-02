@@ -48,7 +48,7 @@ public class MapV2 : MonoBehaviour
         "1100000001011020001100000110111301100001" +
         "1111111101000000001101111110111301111101" +
         "1121111101111110701102111110000001111101" +
-        "1007000001111110001100003110101101100001" +
+        "1007400001111110001100003110101101100001" +
         "1300007000000113000000000110101103000111" +
 
         "1001111111103110031111100110101100000111" +
@@ -59,7 +59,7 @@ public class MapV2 : MonoBehaviour
 
         "1010000011100110000600000001121111110021" +
         "1121110311100300000010010001160000000001" +
-        "1101110011110000311110011111111110011111" +
+        "1101110011110000311110011111111114011111" +
         "1161110011110330011110011111111110011211" +
         "1102210011111111111110011000000000011601" +
 
@@ -73,12 +73,12 @@ public class MapV2 : MonoBehaviour
         "1111001100111111101111110111110011111001" +
         "1211002111111111111111110120000000111031" +
         "1011000112000000010011211170011110111001" +
-        "1611011110610100000000011100121210111001" +
+        "1611011110610140000000011100121210111001" +
 
         "1000011110011100111100011100100000030011" +
         "1000000121002111111110021130101001000111" +
         "1011000011000111000110601000101012001111" +
-        "1511000000070000000000000000000100111111" +
+        "1011500000070000000000000000000100111111" +
         "1111111111111111111111111111111111111111";
 
     string m2 = //(ok)0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
@@ -92,7 +92,7 @@ public class MapV2 : MonoBehaviour
         "16001101111111011011" +
         "10000601111111011001" +
         "10001000000000000041" +
-        "10001111100011101101" +
+        "10001111101011101101" +
         
         "10601111102000001161" +
         "10001100000011101101" +
@@ -107,28 +107,28 @@ public class MapV2 : MonoBehaviour
         "11111111111111111111";
 
     string m3 = //(ok)0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家
-        "01111111111111111110" +
+        "11111111111111111111" +
         "10000000000004000001" +
-        "00004000004000000040" +
+        "10104000004000001141" +
         "14100004000000001101" +
-        "00000000000000000000" +
+        "10101111111111101101" +
 
         "10101111111111101101" +
-        "00040000004000004040" +
-        "10100000000000000101" +
-        "00001111111111100000" +
-        "10500040000400000001" +
+        "10140000004000004141" +
+        "10101111111111100101" +
+        "10001111111111100001" +
+        "10500040000400001101" +
 
-        "00000000400000001200" +
-        "10040000000000000001" +
-        "00001111111111100000" +
+        "10000000400000001201" +
+        "10041111111111100001" +
+        "10101111111111100101" +
         "10100004000000040101" +
-        "04001111111111100000" +
+        "14101111111111101101" +
 
         "10101111111111101101" +
-        "00000000000000000040" +
+        "10100000000000001141" +
         "10100400000400001101" +
-        "00400000400000000000" +
+        "10400000400000000001" +
         "11111111111111111111";
 
     #endregion
@@ -155,7 +155,11 @@ public class MapV2 : MonoBehaviour
 
     private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Q)&&SceneManager.GetActiveScene().name =="m1")
+        {
+            //MapV2.SigelList.Clear();
+            ChangeSigelState();
+        }
     }
     
     bool IsInside(Vector2[] vL,Vector2 v) {
@@ -182,7 +186,7 @@ public class MapV2 : MonoBehaviour
         }
         int count = 0;
         mapHolder = new GameObject("Map").transform;//0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
-        for (int x = cols ; x > 0; x--)
+        for (float x = cols ; x > 0; x--)
         {
             for (int y = 0; y < rows; y++)
             {
@@ -277,13 +281,16 @@ public class MapV2 : MonoBehaviour
         
     }
 
-    void ChangeSigelState()//碰到物件服文變換
+    public void ChangeSigelState()//碰到物件服文變換
     {
         if (SceneManager.GetActiveScene().name =="m1")
         {
-            EXmainSigel.SetActive(false);
-            mainSigel.SetActive(true);
-
+            mainSigel.SetActive(false);
+            ExitObj.GetComponent<ChangeMap>().enabled = false;
+            
+            EXmainSigel.SetActive(true);
+            ExExitObj.GetComponent<ChangeMap>().enabled = true;
+            
             for (int i = 0; i < SigelList.Count; i++)
             {
                 SigelList[i] = RotateSigel(SigelList[i], ExExit);
@@ -295,7 +302,7 @@ public class MapV2 : MonoBehaviour
     public static void ClearList()
     {
         MonsterList.Clear();
-        LamplList.Clear();
+        //LamplList.Clear();
         SigelList.Clear();
     }
     
@@ -308,15 +315,16 @@ public class MapV2 : MonoBehaviour
             //ChangeMap.gameData = gameData;
             int x = Random.Range(0, EndhouseList.Count - 1);
             ExitObj = EndhouseList[x].houseObj;
+            EndhouseList.Remove(EndhouseList[x]);//選中後移除
             Exit = ExitObj.transform.position;
             EndhouseList.RemoveAt(x);
-            //gameData._uiTitle = UiTitle.BadEnd;//壞結局
+            //gameData._uiTitle = UiTitle.BadEnd;//好結局
             ExitObj.AddComponent<ChangeMap>().MapStr = "end";
-            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
-            GameObject go = Instantiate(ObjArray[8], new Vector3(Exit.x, Exit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
+            GameObject go = Instantiate(ObjArray[7], new Vector3(Exit.x, Exit.y-0.3f, -3), Quaternion.identity) as GameObject;
             go.transform.SetParent(mapHolder);
-             EXmainSigel= go;
-            
+             mainSigel= go;
+             //mainSigel.SetActive(false);
             
             
             
@@ -324,12 +332,14 @@ public class MapV2 : MonoBehaviour
             ExExitObj = EndhouseList[x2].houseObj;
             ExExit = ExExitObj.transform.position;
             EndhouseList.RemoveAt(x2);
-            //gameData._uiTitle = UiTitle.GoodEnd;//好結局
+            //gameData._uiTitle = UiTitle.GoodEnd;//壞結局
             ExExitObj.AddComponent<ChangeMap>().MapStr = "end";
-            ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
-            GameObject go2 = Instantiate(ObjArray[7], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
+            GameObject go2 = Instantiate(ObjArray[8], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
             go2.transform.SetParent(mapHolder);
-            mainSigel = go2;
+            EXmainSigel = go2;
+            EXmainSigel.SetActive(false);
+            ExExitObj.GetComponent<ChangeMap>().enabled = false;
 
         }
         
@@ -339,12 +349,22 @@ public class MapV2 : MonoBehaviour
     {
         
         GameObject go2 = Instantiate(ObjArray[6], new Vector3(vector2.x, vector2.y-0.3f, -2), Quaternion.identity) as GameObject;
-        go2 = RotateSigel(go2,Exit);
-        go2.transform.SetParent(mapHolder);
-        SigelList.Add(go2);
+        // if (SceneManager.GetActiveScene().name =="m2"||SceneManager.GetActiveScene().name =="m3")
+        // {
+            go2 = RotateSigel(go2,Exit);
+            go2.transform.SetParent(mapHolder);
+            SigelList.Add(go2);
+        // }
+        // else
+        // {
+        //     go2 = RotateSigel(go2,ExExit);
+        //     go2.transform.SetParent(mapHolder);
+        //     SigelList.Add(go2);
+        // }
+
     }
     GameObject RotateSigel(GameObject gameObject,Vector2 target) {//選轉傳入物件到指定座標
-
+        
         Vector2 v = new Vector2(target.x - gameObject.transform.position.x, target.y -gameObject.transform.position.y);
         v.Normalize();
         Vector2 v2 = Vector2.up;

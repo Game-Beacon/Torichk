@@ -109,6 +109,7 @@ public class PlayerCtrl : MonoBehaviour
             
             foreach (var lamp in MapV2.LamplList)
             {
+                Debug.Log(lamp.name);
                 if (Vector2.Distance((Vector2)lamp.transform.position,PlayerCtrl.PlayerPosition)<1)
                 {
                     lamp.GetComponent<Lamp>().UseLamp();
@@ -181,7 +182,7 @@ public class PlayerCtrl : MonoBehaviour
         IsScare = false;
         // ChangeMap.LampBeUse = false;
         ChangeMap.gameData.Current = SceneManager.GetActiveScene().name;//暫存當前地圖
-        SceneManager.LoadScene("");//前往第中繼圖
+        SceneManager.LoadScene("UI_Six");//前往第中繼圖
         ///關掉怪物跟玩家的移動   
     }
 }

@@ -9,7 +9,7 @@ public class MaskCtrl : MonoBehaviour
     public static float currectScal;
     public static float CurrectTargetScal;
     float CurrectMaskPercentage;//遮罩速度
-    float[] TargetScal = new float[] { 1.5f, 2.5f, 4.5f, 5.5f,};
+    float[] TargetScal = new float[] { 5.5f, 7.5f, 8.5f, 10.5f,};
     float[] MaskPercentage = new float[] {0.01f, 0.02f, 0.03f, 0.05f };//遮罩速度1.2.3.5.8
     public static float MaskLimit;//0 to 1.00
     #endregion

@@ -52,8 +52,8 @@ public class Lamp : MonoBehaviour
             MaskCtrl.MaskWait(5,MaskCtrl.CurrectTargetScal);
             if (SceneManager.GetActiveScene().name =="m1")
             {
-                var map = FindObjectOfType<MapV2>();
-                map.ChangeSigelState();
+                var map = GameObject.Find("MapCreat");
+                map.GetComponent<MapV2>().ChangeSigelState();
             }
         }
 

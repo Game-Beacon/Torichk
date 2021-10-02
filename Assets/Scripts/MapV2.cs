@@ -302,7 +302,7 @@ public class MapV2 : MonoBehaviour
     public static void ClearList()
     {
         MonsterList.Clear();
-        //LamplList.Clear();
+        LamplList.Clear();
         SigelList.Clear();
     }
     

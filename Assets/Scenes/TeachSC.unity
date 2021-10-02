@@ -421,6 +421,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6345565180492887768, guid: c9d3b03d25dfdfe40af304f458520b8b,
+        type: 3}
+      propertyPath: _sprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6345565180853748570, guid: c9d3b03d25dfdfe40af304f458520b8b,
         type: 3}
       propertyPath: m_Name

@@ -109,6 +109,7 @@ public class PlayerCtrl : MonoBehaviour
             
             foreach (var lamp in MapV2.LamplList)
             {
+                Debug.Log(lamp.name);
                 if (Vector2.Distance((Vector2)lamp.transform.position,PlayerCtrl.PlayerPosition)<1)
                 {
                     lamp.GetComponent<Lamp>().UseLamp();

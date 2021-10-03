@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID CRYSTAL_FIRE_OFF = 3723867782U;
         static const AkUniqueID DIE1 = 2514411446U;
         static const AkUniqueID DIE2 = 2514411445U;
+        static const AkUniqueID FIRE_OFF = 386024475U;
         static const AkUniqueID GAMEPLAY_MUSIC = 2322231365U;
         static const AkUniqueID INTRO = 1125500713U;
         static const AkUniqueID INTRO_BUTTOM = 3693510923U;

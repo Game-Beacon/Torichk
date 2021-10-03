@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	386024475	Fire_Off			\Default Work Unit\Ui\Fire_Off	
 	1125500713	Intro			\Default Work Unit\Music\Intro	
 	1340545408	Outro_G			\Default Work Unit\Music\Outro_G	
 	1340545413	Outro_B			\Default Work Unit\Music\Outro_B	
@@ -16,6 +17,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	195493673	Thunder02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\UI\Thunder02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Thunder\Thunder02		59481
 	315479486	20210918-Outro_B	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_B_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_B		1422165
 	338065267	Intro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Intro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro_buttom		39421
+	472890454	Fire_Off	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Fire_Off_EB149FC5.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Fire_Off		92641
 	888766829	20210918-Outro_G_Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_G_Fin_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_G_Fin		1592624
 	966934053	Outro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Outro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Outro_buttom		40311
 

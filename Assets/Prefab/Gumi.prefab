@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd1c5d4118d64740a8b3260eca64aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
+  MoveSpeed: 1
   playerT: {fileID: 2942602083875944151}
   maskt: {fileID: 2908792757174977385}
   animator: {fileID: 0}
@@ -576,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 6333559568291352070, guid: 175679f9803f1fa4ea280f47ddd568d7,
         type: 3}
       propertyPath: orthographic size
-      value: 1
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 6333559568291352071, guid: 175679f9803f1fa4ea280f47ddd568d7,
         type: 3}

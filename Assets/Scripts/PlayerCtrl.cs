@@ -48,14 +48,14 @@ public class PlayerCtrl : MonoBehaviour
             {
                 animator.SetFloat("Speed",1.0f);
                 PlayerIsRun = true;
-                MoveSpeed = 10;
+                MoveSpeed = 5;
             }
             else
             {
                 animator.SetFloat("Speed",0.3f);
 
                 PlayerIsRun = false;
-                MoveSpeed = 4;
+                MoveSpeed = 2;
             }
             
             PlayerPosition = transform.position;

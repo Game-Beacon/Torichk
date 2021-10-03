@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 221462937298586733}
   - component: {fileID: 474314448814115731}
   - component: {fileID: 1761682342214916817}
-  - component: {fileID: 3697003150842242096}
-  - component: {fileID: 2506581017414339898}
+  - component: {fileID: 4762027033564831395}
+  - component: {fileID: 4334825686640303242}
   m_Layer: 0
   m_Name: Gumi
   m_TagString: Player
@@ -220,7 +220,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
---- !u!114 &3697003150842242096
+--- !u!114 &4762027033564831395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,7 +242,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &2506581017414339898
+--- !u!114 &4334825686640303242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -563,6 +563,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3007242189369770284}
     m_Modifications:
+    - target: {fileID: 3089302125553099858, guid: 175679f9803f1fa4ea280f47ddd568d7,
+        type: 3}
+      propertyPath: isEnvironmentAware
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6333559568291352068, guid: 175679f9803f1fa4ea280f47ddd568d7,
         type: 3}
       propertyPath: target
@@ -633,7 +638,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4046148552202049423, guid: 175679f9803f1fa4ea280f47ddd568d7, type: 3}
+    - {fileID: 3089302125553099858, guid: 175679f9803f1fa4ea280f47ddd568d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 175679f9803f1fa4ea280f47ddd568d7, type: 3}
 --- !u!4 &2107017429483078451 stripped
 Transform:

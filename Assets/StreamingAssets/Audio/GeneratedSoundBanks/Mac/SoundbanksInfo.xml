@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="89505537" Language="SFX" Hash="1587158494">
+		<SoundBank Id="89505537" Language="SFX" Hash="1171158098">
 			<ObjectPath>\SoundBanks\Default Work Unit\Gameplay</ObjectPath>
 			<ShortName>Gameplay</ShortName>
 			<Path>Gameplay.bnk</Path>
@@ -59,25 +59,9 @@
 							<ShortName>Die\Die02.wav</ShortName>
 							<Path>SFX\Die\Die02_3F75BDB9.wem</Path>
 						</File>
-						<File Id="418675567" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh01.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh01_3F75BDB9.wem</Path>
-						</File>
-						<File Id="637248100" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh03.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh03_3F75BDB9.wem</Path>
-						</File>
-						<File Id="745479459" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh02.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh02_3F75BDB9.wem</Path>
-						</File>
 						<File Id="774016884" Language="SFX">
 							<ShortName>Die\Die01.wav</ShortName>
 							<Path>SFX\Die\Die01_3F75BDB9.wem</Path>
-						</File>
-						<File Id="874769197" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh04.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh04_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{9A10EB02-8436-4EF9-AABC-5C6A4959AEB1}</DefaultSwitchValue>

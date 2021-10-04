@@ -30,7 +30,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	723813509	Crystal fire	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Crystal fire_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Crystal fire		35099
 	734048176	20210524-GamePlay-Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210524-GamePlay-Fin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Music\20210524-GamePlay-Fin\20210524-GamePlay-Fin		1359094
 	745479459	Man_Laugh02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Male laugh\Man_Laugh02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh02		37711
-	774016884	Die01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Die\Die01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die01		17554
+	774016884	Die01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Die\Die01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Die\Die01		22761
 	825496742	Crystal_Break	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Crystal_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Props\Crystal\Crystal_Break		16673
 	874769197	Man_Laugh04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Male laugh\Man_Laugh04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Male laugh\Man_Laugh04		38026
 

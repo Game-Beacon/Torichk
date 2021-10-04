@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585682943659890570
+    m_lastTime: -8585682931280494412
     List:
     - name: EFX
       guid: ba246288e0ea2d42be0fcedcab7e04ca
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585682947088045273
+    m_lastTime: -8585682607931860270
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: 5cdcf17746cb124ab973e92fe2880267
       Path: Events\Default Work Unit\Player\Die1
       maxAttenuation: 0
-      maxDuration: 5.015543
-      minDuration: 2.64215
+      maxDuration: 2.415611
+      minDuration: 2.01585
     - name: Die2
       guid: 305c007bc49b5d4793091db9a7cbf4d8
       id: 2514411445
@@ -304,8 +304,8 @@ MonoBehaviour:
         guid: 299b4cebecd464488056489f9f0cf4a1
       Path: Events\Default Work Unit\Ui\Fire_Off
       maxAttenuation: 0
-      maxDuration: 7.415854
-      minDuration: 7.415854
+      maxDuration: -1
+      minDuration: -1
     - name: Gameplay_Music
       guid: cd409baf0e8a1245890ca08128c4afe3
       id: 2322231365
@@ -598,8 +598,8 @@ MonoBehaviour:
         guid: 56b72ab060078447a80232ad132f47c5
       Path: Events\Default Work Unit\Ui\SetMainVolume
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Snake
       guid: 7ae80df900bc0247b1e4f59383189abf
       id: 3187576023

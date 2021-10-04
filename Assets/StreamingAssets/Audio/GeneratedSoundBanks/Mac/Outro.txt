@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1340545408	Outro_G			\Default Work Unit\Music\Outro_G	
+	1340545413	Outro_B			\Default Work Unit\Music\Outro_B	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006694123	Music_Volume			\Default Work Unit\Music_Volume	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	315479486	20210918-Outro_B	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_B_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_B		1422165
+	888766829	20210918-Outro_G_Fin	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\20210918-Outro_G_Fin_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\20210918-Outro_G_Fin		1592624
+

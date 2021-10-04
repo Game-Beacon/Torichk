@@ -253,16 +253,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b438e93af31e8489c4ca50063dd446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3.5
   AttackDistance: 2
   Distance: 0
   O: {x: 0, y: 0, z: 0}
   AiPosition: {x: 0, y: 0, z: 0}
   _animator: {fileID: 0}
   _spriteRenderer: {fileID: 0}
-  MoveAniSpeed: 0.5
-  AttAniSpeed: 0.5
-  IdleAniSpeed: 0.5
+  MoveAniSpeed: 0.3
+  AttAniSpeed: 0.3
+  IdleAniSpeed: 0.3
 --- !u!58 &9084531194936902040
 CircleCollider2D:
   m_ObjectHideFlags: 0

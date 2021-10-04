@@ -49,16 +49,16 @@ public class PlayerCtrl : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Z))
             {
-                animator.SetFloat("Speed",0.1f);
+                animator.SetFloat("Speed",0.3f);
                 PlayerIsRun = true;
-                MoveSpeed = 5;
+                MoveSpeed = 2.5f;
             }
             else
             {
-                animator.SetFloat("Speed",1f);
+                animator.SetFloat("Speed",0.1f);
 
                 PlayerIsRun = false;
-                MoveSpeed = 2;
+                MoveSpeed = 1.5f;
             }
             
             PlayerPosition = transform.position;

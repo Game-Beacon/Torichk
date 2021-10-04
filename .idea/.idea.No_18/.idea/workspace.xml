@@ -3,20 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Button/Exit_Enter.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Button/Exit_Enter.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Button/Start_Enter.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Button/Start_Enter.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/m3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/m3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonAni.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonAni.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +50,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.8/Editor/VisualStudioEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yOQ7FyTtY4NY6Tf3RR7UaSrvCT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -127,6 +143,10 @@
       <workItem from="1633145209297" duration="3451000" />
       <workItem from="1633149648590" duration="754000" />
       <workItem from="1633184851608" duration="2435000" />
+      <workItem from="1633351606355" duration="3768000" />
+      <workItem from="1633356016958" duration="4042000" />
+      <workItem from="1633362664199" duration="551000" />
+      <workItem from="1633363492043" duration="13808000" />
     </task>
     <servers />
   </component>
@@ -138,24 +158,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/MapV2.cs</url>
-          <line>164</line>
-          <properties documentPath="D:\save\Unity\No_18\Assets\Scripts\MapV2.cs" initialLine="164" containingFunctionPresentation="method 'IsInside'">
-            <startOffsets>
-              <option value="5551" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5552" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

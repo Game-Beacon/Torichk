@@ -17,8 +17,10 @@ public class PlayerCtrl : MonoBehaviour
     public Animator animator;
     public static bool IsScare = false;
     public  static bool CanMove;
-    public GameObject Foxsigel;
+    //public GameObject Foxsigel;
     public static PlayerCtrl Player;
+    public float AniSpeed;
+    public float DieSpeed;
     private void Start()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
@@ -28,6 +30,7 @@ public class PlayerCtrl : MonoBehaviour
         playerT = GetComponent<PlayerCtrl>();
         IsScare = false;
         Player = playerT;
+        DieSpeed = 0.1f;
     }
 
     private void Awake()
@@ -46,13 +49,13 @@ public class PlayerCtrl : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Z))
             {
-                animator.SetFloat("Speed",1.0f);
+                animator.SetFloat("Speed",0.1f);
                 PlayerIsRun = true;
                 MoveSpeed = 5;
             }
             else
             {
-                animator.SetFloat("Speed",0.3f);
+                animator.SetFloat("Speed",1f);
 
                 PlayerIsRun = false;
                 MoveSpeed = 2;
@@ -69,29 +72,27 @@ public class PlayerCtrl : MonoBehaviour
 
             if (Input.GetKey(KeyCode.UpArrow)||Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.RightArrow))
             {
-
+                MaskCtrl.CanTo0 = true;
                 if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    Foxsigel.transform.position = PlayerPosition+ new Vector3(-0.175f,0.048f,0);
+                    //Foxsigel.transform.position = PlayerPosition+ new Vector3(-0.175f,0.048f,0);
                     spriteRenderer.flipX = false;
                 }
 
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
-                    Foxsigel.transform.position = PlayerPosition+ new Vector3(0.175f,0.048f,0);
+                    //Foxsigel.transform.position = PlayerPosition+ new Vector3(0.175f,0.048f,0);
                     spriteRenderer.flipX = true;
                 }
                 PlayerIsMove = true;
                 animator.SetBool("IsRun",true);
-                animator.SetBool("CanD",false);
             }
             else
             {
                 PlayerIsMove = false;
                 animator.SetBool("IsRun",false);
-                //animator.SetBool("IsRun",false);
             }
-            
+
         }
         else
         {
@@ -119,6 +120,11 @@ public class PlayerCtrl : MonoBehaviour
         }
     }
 
+    
+    public static void SetCanDFalse()
+    {
+        Player.animator.SetBool("CanD",false);
+    }
     private void FixedUpdate()
     {
         rigibody2D.velocity = moveDir*MoveSpeed;

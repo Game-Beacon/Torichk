@@ -157,6 +157,7 @@ public class MapV2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q)&&SceneManager.GetActiveScene().name =="m1")
         {
+            PlayerCtrl.Player.LevelUp();
             //MapV2.SigelList.Clear();
             ChangeSigelState();
         }

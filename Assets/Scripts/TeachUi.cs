@@ -8,7 +8,7 @@ public class TeachUi : MonoBehaviour
         public Sprite[] _sprites; 
         private Image _image;
         private int count = 0;
-
+        public Sprite LoadSprite;
         public static bool CanTeach = true;
         // Start is called before the first frame update
         void Start()
@@ -30,10 +30,14 @@ public class TeachUi : MonoBehaviour
                     CanTeach = false;
                     if (SceneManager.GetActiveScene().name.ToLower().Contains("UI_Six".ToLower()))
                     {
-                        SceneManager.LoadScene(ChangeMap.gameData.Current);
+                        //SceneManager.LoadScene(ChangeMap.gameData.Current);
+                        _image.sprite = LoadSprite;
+                        SceneManager.LoadScene("m1"); 
+
                     }
                     else
-                    {
+                    {                        
+                        _image.sprite = LoadSprite;
                         SceneManager.LoadScene("m1"); 
                     }
 

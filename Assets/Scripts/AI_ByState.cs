@@ -18,6 +18,11 @@ public class AI_ByState : MonoBehaviour
     public Animator _animator;
     public SpriteRenderer _spriteRenderer;
     private AI_ByState aI_ByState;
+    public float MoveAniSpeed;
+    public float AttAniSpeed;
+    public float IdleAniSpeed;
+    private float KillFoxSec;
+    private bool killfox;
     private void Start()
     {
         idleState = new IdleState(this);
@@ -29,18 +34,42 @@ public class AI_ByState : MonoBehaviour
         Distance = 5;
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        killfox = true;
+        KillFoxSec = 1;
+        // _animator.SetFloat("AniSpeed",AniSpeed);
     }
+    
+    
     void Update()
     {
+        _animator.SetFloat("MoveAniSpeed",MoveAniSpeed);
+        _animator.SetFloat("AttAniSpeed",AttAniSpeed);
+        _animator.SetFloat("IdleAniSpeed",IdleAniSpeed);
+
         currentState.OnStateExecution();
-        if (Vector2.Distance(transform.position,PlayerCtrl.PlayerPosition)<MaskCtrl.currectScal||Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1)
-        { ChangeState(attackState); }
+        if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < MaskCtrl.currectScal
+            ||Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1)
+        {
+            ChangeState(attackState);
+        }
         AiPosition = transform.position;
         if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1&& PlayerCtrl.IsScare ==false)
         {
+            if (killfox)
+            {
+                KillFoxSec = Time.time + 5;
+                killfox = false;
+            }
             PlayerCtrl.IsScare = true;
             PlayerCtrl.CanMove = false;
         }
+
+        if (KillFoxSec<Time.time&&KillFoxSec>2)
+        {
+            PlayerCtrl.Player.KillPlayer();
+        }
+        
+        
     }
     private void OnCollisionEnter2D(Collision2D other)
     {

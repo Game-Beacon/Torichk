@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class ButtonAni : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 {
     private Animator _animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class ButtonAni : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
         
     }
     
-    private bool pointerDown;
+    //private bool pointerDown;
 
 
     public void OnPointerEnter(PointerEventData eventData)

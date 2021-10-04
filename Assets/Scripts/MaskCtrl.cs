@@ -9,7 +9,7 @@ public class MaskCtrl : MonoBehaviour
     public static float currectScal;
     public static float CurrectTargetScal;
     float CurrectMaskPercentage;//遮罩速度
-    float[] TargetScal = new float[] { 5.5f, 7.5f, 8.5f, 10.5f,};
+    float[] TargetScal = new float[] { 1f, 2f, 3f, 10.5f,};
     float[] MaskPercentage = new float[] {0.03f, 0.03f, 0.03f, 0.03f };//遮罩速度1.2.3.5.8
     public static float MaskLimit;//0 to 1.00
     #endregion
@@ -21,10 +21,10 @@ public class MaskCtrl : MonoBehaviour
         currectScal = 1.0f;
         WaitEnd = 0;
         MaskWait(5,CurrectTargetScal);
- 
+        CanTo0 = true;
     }
 
-    private bool CanTo0;
+    public  static bool CanTo0;
     void Update()
     {
         if (Time.time<= WaitEnd&&!PlayerCtrl.PlayerIsMove)
@@ -33,6 +33,7 @@ public class MaskCtrl : MonoBehaviour
         }
         else
         {
+
             currectScal = MaskChangeFromAtoB(
                     currectScal,                //A
                     (PlayerCtrl.PlayerIsMove&&!PlayerCtrl.PlayerIsRun) ? CurrectTargetScal*MaskLimit:0//B mask 目標範圍，移動:往最大,不動:往0
@@ -41,10 +42,12 @@ public class MaskCtrl : MonoBehaviour
                 if (!PlayerCtrl.PlayerIsMove)
                 {
                     PlayerCtrl.Player.animator.SetBool("IsRun",false);
-                    if (currectScal<0.1f)
+                    if (currectScal<0.1f&&CanTo0)
                     {
                         PlayerCtrl.Player.animator.SetBool("CanD",true);
+                        CanTo0 = false;
                     }
+
                 }
         }
         //MaskL();
@@ -53,7 +56,7 @@ public class MaskCtrl : MonoBehaviour
             MaskWait(5,currectScal);
         }
     }
-
+    
     static float WaitScal;
      static float WaitEnd;
     public static void MaskWait(float s,float Masktarget)

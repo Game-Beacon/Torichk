@@ -156,7 +156,8 @@ MonoBehaviour:
   playerT: {fileID: 2942602083875944151}
   maskt: {fileID: 2908792757174977385}
   animator: {fileID: 0}
-  Foxsigel: {fileID: 8253354430446154671}
+  AniSpeed: 0.1
+  DieSpeed: 0
 --- !u!61 &221462937298586733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -343,7 +344,7 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df9c901b31b0f6147bc8ce3a71614807, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41e2d49806bd1a6468cd106792861be5, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
@@ -451,12 +452,12 @@ PrefabInstance:
     - target: {fileID: 1173721035755656991, guid: d18911c9bf26bff418bb2aa23798ffea,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1173721035755656991, guid: d18911c9bf26bff418bb2aa23798ffea,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1173721035755656991, guid: d18911c9bf26bff418bb2aa23798ffea,
         type: 3}

@@ -11,6 +11,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	3661139732	Work1_Aware			\Default Work Unit\Monster\Worker1\Work1_Aware	
 	4233206453	Monster01_Idle			\Default Work Unit\Monster\Monster01\Monster01_Idle	
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	643438522	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence\Wwise Silence	
+	829793042	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence_01\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	17659245	Work2_Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Attack\Work2_Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Attack\Work2_Attack02		33970
 	54114215	Monster01_01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Windows\SFX\Monster01\Idle\Monster01_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_01		38289

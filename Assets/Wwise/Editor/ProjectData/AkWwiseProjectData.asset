@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585684438121144921
+    m_lastTime: -8585682943659890570
     List:
     - name: EFX
       guid: ba246288e0ea2d42be0fcedcab7e04ca
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585684418342736591
+    m_lastTime: -8585682941445760777
     List:
     - name: Gameplay
       guid: 448b44b16d29e746bc0014b7c6e918f7
@@ -116,6 +116,48 @@ MonoBehaviour:
         ObjectType: 7
         guid: 448b44b16d29e746bc0014b7c6e918f7
       Path: SoundBanks\Default Work Unit\Gameplay
+    - name: Intro
+      guid: 1ec329f069b8614a8f3a068c36acc12b
+      id: 1125500713
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c6848a86382e3446a3c8ce3a6893276e
+      - ElementName: Intro
+        ObjectType: 7
+        guid: 1ec329f069b8614a8f3a068c36acc12b
+      Path: SoundBanks\Default Work Unit\Intro
+    - name: Monster
+      guid: d2aedbbab9010442bdb21f2f4645a020
+      id: 2376328173
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c6848a86382e3446a3c8ce3a6893276e
+      - ElementName: Monster
+        ObjectType: 7
+        guid: d2aedbbab9010442bdb21f2f4645a020
+      Path: SoundBanks\Default Work Unit\Monster
+    - name: Outro
+      guid: fc4d139d747b1846bbf27d33ad44d070
+      id: 4184794294
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c6848a86382e3446a3c8ce3a6893276e
+      - ElementName: Outro
+        ObjectType: 7
+        guid: fc4d139d747b1846bbf27d33ad44d070
+      Path: SoundBanks\Default Work Unit\Outro
     - name: Ui
       guid: 8141d2a9eb055047a67cce5648c9add0
       id: 1551306167
@@ -142,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585684409596996446
+    m_lastTime: -8585682947088045273
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -575,9 +617,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7ae80df900bc0247b1e4f59383189abf
       Path: Events\Default Work Unit\Monster\Snake
-      maxAttenuation: 0
-      maxDuration: 5.015543
-      minDuration: 2.64215
+      maxAttenuation: 4
+      maxDuration: 1.427256
+      minDuration: 1.427256
     - name: Ui
       guid: fdb0a1482df51340a99a27b9da3e443c
       id: 1551306167
@@ -613,8 +655,8 @@ MonoBehaviour:
         guid: 6a3b322123767a44aa303287fb0da50e
       Path: Events\Default Work Unit\Props\water_drown
       maxAttenuation: 0
-      maxDuration: 5.015543
-      minDuration: 2.64215
+      maxDuration: 1.038458
+      minDuration: 1.038458
     - name: Work1_Attack
       guid: f3e7cbe097495e409835b464b2b11a9e
       id: 2773911378
@@ -851,22 +893,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 71aca284629bbe4d99a6221d8fc52977
     GuidInternal: 
-    m_lastTime: -8585688136711247207
+    m_lastTime: -8585682947087856078
     List:
-    - name: Main_volume
-      guid: 6490727462e4ca47b4c214eb74d34ca2
-      id: 2312172015
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 71aca284629bbe4d99a6221d8fc52977
-      - ElementName: Main_volume
-        ObjectType: 13
-        guid: 6490727462e4ca47b4c214eb74d34ca2
-      Path: Game Parameters\Default Work Unit\Main_volume
     - name: Music_Volume
       guid: 88238a896dbb7440ab5bd88c2f135f0c
       id: 1006694123
@@ -1023,7 +1051,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d0000002f00000030000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d0000002f0000003000000031000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

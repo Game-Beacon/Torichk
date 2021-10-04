@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="89505537" Language="SFX" Hash="862290688">
+		<SoundBank Id="89505537" Language="SFX" Hash="1587158494">
 			<ObjectPath>\SoundBanks\Default Work Unit\Gameplay</ObjectPath>
 			<ShortName>Gameplay</ShortName>
 			<Path>Gameplay.bnk</Path>
@@ -148,6 +148,67 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4104381493" Name="water_drown" ObjectPath="\Events\Default Work Unit\Props\water_drown" DurationType="OneShot" DurationMin="1.038458" DurationMax="1.038458">
+					<IncludedMemoryFiles>
+						<File Id="97401550" Language="SFX">
+							<ShortName>water drown.wav</ShortName>
+							<Path>SFX\water drown_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Player">
+					<Switches>
+						<Switch Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1"/>
+						<Switch Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1">
+					<Switches/>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1125500713" Language="SFX" Hash="3617998143">
+			<ObjectPath>\SoundBanks\Default Work Unit\Intro</ObjectPath>
+			<ShortName>Intro</ShortName>
+			<Path>Intro.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1125500713" Name="Intro" ObjectPath="\Events\Default Work Unit\Music\Intro" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="56369941" Language="SFX">
+							<ShortName>20210824-Intro2_Fin.wav</ShortName>
+							<Path>SFX\20210824-Intro2_Fin_9EDFC787.wem</Path>
+						</File>
+						<File Id="57709335" Language="SFX">
+							<ShortName>UI\Thunder01.wav</ShortName>
+							<Path>SFX\UI\Thunder01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="147433264" Language="SFX">
+							<ShortName>UI\Thunder03.wav</ShortName>
+							<Path>SFX\UI\Thunder03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="195493673" Language="SFX">
+							<ShortName>UI\Thunder02.wav</ShortName>
+							<Path>SFX\UI\Thunder02_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1847395119">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX" Hash="1117676266">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ui</ObjectPath>
+			<ShortName>Ui</ShortName>
+			<Path>Ui.bnk</Path>
+			<IncludedEvents>
 				<Event Id="3693510923" Name="Intro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom" DurationType="OneShot" DurationMin="2.216417" DurationMax="2.216417">
 					<IncludedMemoryFiles>
 						<File Id="338065267" Language="SFX">
@@ -156,6 +217,29 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2796758030" Name="Outro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Outro_buttom" DurationType="OneShot" DurationMin="2.341406" DurationMax="2.341406">
+					<IncludedMemoryFiles>
+						<File Id="966934053" Language="SFX">
+							<ShortName>Outro_buttom.wav</ShortName>
+							<Path>SFX\Outro_buttom_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4286538426" Name="Page_turn" ObjectPath="\Events\Default Work Unit\Ui\Page_turn" DurationType="OneShot" DurationMin="0.917004" DurationMax="1.090508">
+					<IncludedMemoryFiles>
+						<File Id="204500310" Language="SFX">
+							<ShortName>Page_Turn_14.wav</ShortName>
+							<Path>SFX\Page_Turn_14_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2376328173" Language="SFX" Hash="3955592108">
+			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
+			<ShortName>Monster</ShortName>
+			<Path>Monster.bnk</Path>
+			<IncludedEvents>
 				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Attack" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="0.775466" DurationMax="1.199304">
 					<IncludedMemoryFiles>
 						<File Id="132173753" Language="SFX">
@@ -224,59 +308,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4286538426" Name="Page_turn" ObjectPath="\Events\Default Work Unit\Ui\Page_turn" DurationType="OneShot" DurationMin="0.917004" DurationMax="1.090508">
+				<Event Id="3187576023" Name="Snake" ObjectPath="\Events\Default Work Unit\Monster\Snake" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="1.427256" DurationMax="1.427256">
 					<IncludedMemoryFiles>
-						<File Id="204500310" Language="SFX">
-							<ShortName>Page_Turn_14.wav</ShortName>
-							<Path>SFX\Page_Turn_14_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3187576023" Name="Snake" ObjectPath="\Events\Default Work Unit\Monster\Snake" DurationType="OneShot" DurationMin="2.642150" DurationMax="5.015543">
-					<IncludedMemoryFiles>
-						<File Id="418675567" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh01.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh01_3F75BDB9.wem</Path>
-						</File>
-						<File Id="637248100" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh03.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh03_3F75BDB9.wem</Path>
-						</File>
-						<File Id="745479459" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh02.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh02_3F75BDB9.wem</Path>
-						</File>
 						<File Id="796263955" Language="SFX">
 							<ShortName>Snake.wav</ShortName>
 							<Path>SFX\Snake_3F75BDB9.wem</Path>
-						</File>
-						<File Id="874769197" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh04.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh04_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4104381493" Name="water_drown" ObjectPath="\Events\Default Work Unit\Props\water_drown" DurationType="OneShot" DurationMin="2.642150" DurationMax="5.015543">
-					<IncludedMemoryFiles>
-						<File Id="97401550" Language="SFX">
-							<ShortName>water drown.wav</ShortName>
-							<Path>SFX\water drown_3F75BDB9.wem</Path>
-						</File>
-						<File Id="418675567" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh01.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh01_3F75BDB9.wem</Path>
-						</File>
-						<File Id="637248100" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh03.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh03_3F75BDB9.wem</Path>
-						</File>
-						<File Id="745479459" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh02.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh02_3F75BDB9.wem</Path>
-						</File>
-						<File Id="874769197" Language="SFX">
-							<ShortName>Male laugh\Man_Laugh04.wav</ShortName>
-							<Path>SFX\Male laugh\Man_Laugh04_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -449,80 +485,17 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
-			<SwitchGroups>
-				<SwitchGroup Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Player">
-					<Switches>
-						<Switch Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1"/>
-						<Switch Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2">
-					<Switches/>
-				</SwitchGroup>
-				<SwitchGroup Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1">
-					<Switches/>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3009580583">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="3931849219">
-			<ObjectPath>\SoundBanks\Default Work Unit\Ui</ObjectPath>
-			<ShortName>Ui</ShortName>
-			<Path>Ui.bnk</Path>
+		<SoundBank Id="4184794294" Language="SFX" Hash="2371734392">
+			<ObjectPath>\SoundBanks\Default Work Unit\Outro</ObjectPath>
+			<ShortName>Outro</ShortName>
+			<Path>Outro.bnk</Path>
 			<IncludedEvents>
-				<Event Id="386024475" Name="Fire_Off" ObjectPath="\Events\Default Work Unit\Ui\Fire_Off" DurationType="OneShot" DurationMin="7.415854" DurationMax="7.415854">
-					<IncludedMemoryFiles>
-						<File Id="472890454" Language="SFX">
-							<ShortName>Fire_Off.wav</ShortName>
-							<Path>SFX\Fire_Off_EB149FC5.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1125500713" Name="Intro" ObjectPath="\Events\Default Work Unit\Music\Intro" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="56369941" Language="SFX">
-							<ShortName>20210824-Intro2_Fin.wav</ShortName>
-							<Path>SFX\20210824-Intro2_Fin_9EDFC787.wem</Path>
-						</File>
-						<File Id="57709335" Language="SFX">
-							<ShortName>UI\Thunder01.wav</ShortName>
-							<Path>SFX\UI\Thunder01_3F75BDB9.wem</Path>
-						</File>
-						<File Id="147433264" Language="SFX">
-							<ShortName>UI\Thunder03.wav</ShortName>
-							<Path>SFX\UI\Thunder03_3F75BDB9.wem</Path>
-						</File>
-						<File Id="195493673" Language="SFX">
-							<ShortName>UI\Thunder02.wav</ShortName>
-							<Path>SFX\UI\Thunder02_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3693510923" Name="Intro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom" DurationType="OneShot" DurationMin="2.216417" DurationMax="2.216417">
-					<IncludedMemoryFiles>
-						<File Id="338065267" Language="SFX">
-							<ShortName>Intro_buttom.wav</ShortName>
-							<Path>SFX\Intro_buttom_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="1340545413" Name="Outro_B" ObjectPath="\Events\Default Work Unit\Music\Outro_B" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="315479486" Language="SFX">
 							<ShortName>20210918-Outro_B.wav</ShortName>
 							<Path>SFX\20210918-Outro_B_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2796758030" Name="Outro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Outro_buttom" DurationType="OneShot" DurationMin="2.341406" DurationMax="2.341406">
-					<IncludedMemoryFiles>
-						<File Id="966934053" Language="SFX">
-							<ShortName>Outro_buttom.wav</ShortName>
-							<Path>SFX\Outro_buttom_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -534,7 +507,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1377850382" Name="SetMainVolume" ObjectPath="\Events\Default Work Unit\Ui\SetMainVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Default Work Unit\Music_Volume"/>

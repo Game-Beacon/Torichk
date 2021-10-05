@@ -334,7 +334,7 @@ public class MapV2 : MonoBehaviour
             ExExit = ExExitObj.transform.position;
             EndhouseList.RemoveAt(x2);
             //gameData._uiTitle = UiTitle.GoodEnd;//壞結局
-            ExExitObj.AddComponent<ChangeMap>().MapStr = "end";
+            ExExitObj.AddComponent<ChangeMap>().MapStr = "BadEnd";
             ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
             GameObject go2 = Instantiate(ObjArray[8], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
             go2.transform.SetParent(mapHolder);

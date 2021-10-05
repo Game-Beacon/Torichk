@@ -13,7 +13,6 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	643438522	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence\Wwise Silence	
-	829793042	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Idle\Silence_01\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	17659245	Work2_Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Work2_Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Attack\Work2_Attack02		33970
@@ -23,7 +22,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	103244461	Monster01_Loop - 01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_Loop - 01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01_Loop\Monster01_Loop - 01		33603
 	111127699	Work1_Aware01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Aware\Work1_Aware01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Aware\Work1_Aware01		16597
 	132173753	Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack02		13190
-	142503006	Monster01_02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_02		32356
 	150299515	Attack01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Attack\Attack01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Attack\Attack01		12652
 	188490827	Work2_Move_Wheel01	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Move\Work2_Move_Wheel01_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Wheel\Work2_Move_Wheel01		17451
 	204187225	Work2_Move_Hand02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Hand\Work2_Move_Hand02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand02		7245
@@ -40,7 +38,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	625646434	Work2_Idle03	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Idle\Work2_Idle03_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle03		31769
 	640699991	Work2_Idle04	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Idle\Work2_Idle04_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Idle\Work2_Idle04		93306
 	654366805	Move2	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Move\Move2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move2		5797
-	674005367	Monster01_05	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Monster01\Idle\Monster01_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Monster01\Idle\Monster01\Monster01_05		36167
 	691738766	Work2_Move_Hand06	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Hand\Work2_Move_Hand06_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work2\Move_Hand\Work2_Move_Hand06		5646
 	702182027	Move3	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Move\Move3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Move\Move3		6829
 	711304252	Worker01_Attack02	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Worker01_Attack02_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Work1\Attack\Worker01_Attack02		18001

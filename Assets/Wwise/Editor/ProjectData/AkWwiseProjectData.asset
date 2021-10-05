@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4976344400649e40be102727ac375cc7
     GuidInternal: 
-    m_lastTime: -8585682931280494412
+    m_lastTime: -8585682122235643218
     List:
     - name: EFX
       guid: ba246288e0ea2d42be0fcedcab7e04ca
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585682607931860270
+    m_lastTime: -8585682073244220855
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -620,6 +620,26 @@ MonoBehaviour:
       maxAttenuation: 4
       maxDuration: 1.427256
       minDuration: 1.427256
+    - name: StopMusic
+      guid: 0e2b44d6bdfc8c4581093b5988e7a00b
+      id: 1917263390
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Music
+        ObjectType: 4
+        guid: 689a46c93885a14f9b11d8576c54a508
+      - ElementName: StopMusic
+        ObjectType: 3
+        guid: 0e2b44d6bdfc8c4581093b5988e7a00b
+      Path: Events\Default Work Unit\Music\StopMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ui
       guid: fdb0a1482df51340a99a27b9da3e443c
       id: 1551306167
@@ -1051,7 +1071,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585759454238038641
     List: []
-  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000007000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d0000002f0000003000000031000000
+  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f000000100000001300000014000000150000001d000000250000002600000027000000280000002b0000002c0000002d0000002f0000003000000031000000
   ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

@@ -6,6 +6,8 @@ public class UIScripts : MonoBehaviour
 {
     public GameData _gameData;
     private string[] m = new[] {"m1", "m3","m2"};
+
+    public GameObject _gameObject;
     // Start is called before the first frame update
 
     public void ExitGame()
@@ -25,5 +27,16 @@ public class UIScripts : MonoBehaviour
             SceneManager.LoadScene(m[(int)_gameData._uiTitle]);
         }
 
+    }
+
+    public void CloseCredit()
+    {
+        _gameObject.SetActive(false);
+
+    }
+
+    public void OpenCredit()
+    {
+        _gameObject.SetActive(true);
     }
 }

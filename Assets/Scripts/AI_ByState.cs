@@ -23,6 +23,9 @@ public class AI_ByState : MonoBehaviour
     public float IdleAniSpeed;
     private float KillFoxSec;
     private bool killfox;
+    private bool ScareLock;
+    private bool KillLock;
+    private bool state2;
     private void Start()
     {
         idleState = new IdleState(this);
@@ -36,6 +39,9 @@ public class AI_ByState : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         killfox = true;
         KillFoxSec = 1;
+        ScareLock = true;
+        KillLock = true;
+        state2 = false;
         // _animator.SetFloat("AniSpeed",AniSpeed);
     }
     
@@ -60,23 +66,55 @@ public class AI_ByState : MonoBehaviour
                 KillFoxSec = Time.time + 5;
                 killfox = false;
             }
-            PlayerCtrl.IsScare = true;
+            //PlayerCtrl.IsScare = true;
+            if (ScareLock)
+            {
+                PlayerCtrl.Player.animator.Play("Gumi_Scare");
+                ScareLock = false;
+            }
             PlayerCtrl.CanMove = false;
         }
 
-        if (KillFoxSec<Time.time&&KillFoxSec>2)
+        if (KillFoxSec<Time.time&&KillFoxSec>2&&KillLock)
         {
+            //_animator.SetBool("IsAttack",true);
+            KillAni();
             PlayerCtrl.Player.KillPlayer();
+            KillLock = false;
+        }
+
+        
+
+    }
+
+    void KillAni()
+    {
+        if (state2)
+        {
+            _animator.Play("Attack");
+            
+        }
+        else
+        {
+            _animator.Play("Attack2");
+
+            
         }
         
-        
+    }
+
+    public void StopAni()
+    {
+        _animator.enabled = false;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform.tag =="Player")
+        if (other.transform.tag =="Player"&&KillLock)
         {
-            _animator.SetBool("IsAttack",true);
+            //_animator.SetBool("IsAttack",true);
+            KillAni();
             other.transform.GetComponent<PlayerCtrl>().KillPlayer();
+            KillLock = false;
         }
     }
     public  void ChangeState(Istate nextstate)
@@ -104,6 +142,7 @@ public class AI_ByState : MonoBehaviour
     
     public  void SetState1()
     {
+        state2 = true;
         _animator.SetBool("IsState2",false);
     }
     

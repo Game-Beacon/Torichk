@@ -188,7 +188,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="1117676266">
+		<SoundBank Id="1551306167" Language="SFX" Hash="1053923944">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ui</ObjectPath>
 			<ShortName>Ui</ShortName>
 			<Path>Ui.bnk</Path>
@@ -198,6 +198,14 @@
 						<File Id="338065267" Language="SFX">
 							<ShortName>Intro_buttom.wav</ShortName>
 							<Path>SFX\Intro_buttom_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2610766947" Name="Intro_buttom2" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom2" DurationType="OneShot" DurationMin="1.883837" DurationMax="2.373485">
+					<IncludedMemoryFiles>
+						<File Id="51438306" Language="SFX">
+							<ShortName>Intro_buttom2.wav</ShortName>
+							<Path>SFX\Intro_buttom2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

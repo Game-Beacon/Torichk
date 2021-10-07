@@ -7,9 +7,12 @@ public class PlaybuttomSound : MonoBehaviour
     // Start is called before the first frame update
     public void onClick()
     {
-        AkSoundEngine.PostEvent("Intro_Buttom", gameObject);
+        AkSoundEngine.PostEvent("Intro_buttom", gameObject);
     }
-
+    public void onClick2()
+    {
+        AkSoundEngine.PostEvent("Intro_buttom2", gameObject);
+    }
     // Update is called once per frame
     void Update()
     {

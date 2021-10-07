@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2610766947	Intro_buttom2			\Default Work Unit\Ui\Intro_buttom2	
 	2796758030	Outro_buttom			\Default Work Unit\Ui\Outro_buttom	
 	3693510923	Intro_buttom			\Default Work Unit\Ui\Intro_buttom	
 	4286538426	Page_turn			\Default Work Unit\Ui\Page_turn	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	51438306	Intro_buttom2	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Intro_buttom2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro_buttom2		33636
 	204500310	Page_Turn_14	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Page_Turn_14_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Page_Turn_14		14590
 	338065267	Intro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Intro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Intro_buttom		39421
 	966934053	Outro_buttom	H:\Google雲端硬碟\Work\20210417_Belong 遊戲\No_18-main\No_18\No_18_WwiseProject\.cache\Mac\SFX\Outro_buttom_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Outro_buttom		40311

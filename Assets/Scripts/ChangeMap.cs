@@ -50,15 +50,23 @@ public class ChangeMap : MonoBehaviour
     
     public void GoMap()
     {
-        if (MapStr!= null&& !LampBeUse)
+        if ( !LampBeUse)//&&MapStr!= null)
         {
             gameData._uiTitle = _uiTitle;
             SceneManager.LoadScene(MapStr);   
         }
         else
         {
-            gameData._uiTitle = UiTitle.BadEnd;
-            SceneManager.LoadScene(MapStr);
+            if (MapStr!=null)
+            {
+                gameData._uiTitle = UiTitle.BadEnd;
+                SceneManager.LoadScene(MapStr);
+            }
+            else
+            {
+                SceneManager.LoadScene("m1");
+            }
+
         }
     }
 

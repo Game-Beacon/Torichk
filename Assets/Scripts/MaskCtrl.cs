@@ -9,9 +9,10 @@ public class MaskCtrl : MonoBehaviour
     public static float currectScal;
     public static float CurrectTargetScal;
     float CurrectMaskPercentage;//遮罩速度
-    float[] TargetScal = new float[] { 1f, 2f, 3f, 10.5f,};
+    float[] TargetScal = new float[] { 2f, 2.5f, 3f, 10.5f,};
     float[] MaskPercentage = new float[] {0.03f, 0.03f, 0.03f, 0.03f };//遮罩速度1.2.3.5.8
     public static float MaskLimit;//0 to 1.00
+    private bool MaskLock;
     #endregion
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class MaskCtrl : MonoBehaviour
         WaitEnd = 0;
         MaskWait(5,CurrectTargetScal);
         CanTo0 = true;
+        MaskLock = true;
     }
 
     public  static bool CanTo0;
@@ -30,6 +32,7 @@ public class MaskCtrl : MonoBehaviour
         if (Time.time<= WaitEnd&&!PlayerCtrl.PlayerIsMove)
         {
             viewMask.transform.localScale = new Vector3(WaitScal,WaitScal,WaitScal);
+            MaskLock = true;
         }
         else
         {
@@ -41,6 +44,12 @@ public class MaskCtrl : MonoBehaviour
                 viewMask.transform.localScale = new Vector3(currectScal,currectScal,currectScal);
                 if (!PlayerCtrl.PlayerIsMove)
                 {
+                    if (MaskLock)
+                    {
+                        AkSoundEngine.PostEvent("Die1", gameObject);
+                        MaskLock = false;
+                    }
+                    
                     PlayerCtrl.Player.animator.SetBool("IsRun",false);
                     if (currectScal<0.1f&&CanTo0)
                     {

@@ -3,9 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Die2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Scare.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gumi/Gumi_Scare.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Monster/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Monster/Attack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Monster/Monster.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Pool/Pool.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Pool/Pool.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Snake/Snake.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Attack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work1/Work1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work2/Work2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work2/Work2_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work2/Work2_Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Work2/Work2_TuanAttack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Work2/Work2_TuanAttack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Snake.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lamp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaskCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +149,8 @@
       <workItem from="1633362664199" duration="551000" />
       <workItem from="1633363492043" duration="14663000" />
       <workItem from="1633527368945" duration="778000" />
+      <workItem from="1633557584749" duration="1315000" />
+      <workItem from="1633608519024" duration="12565000" />
     </task>
     <servers />
   </component>

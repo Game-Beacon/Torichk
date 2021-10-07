@@ -21,6 +21,7 @@ public class PlayerCtrl : MonoBehaviour
     public static PlayerCtrl Player;
     public float AniSpeed;
     public float DieSpeed;
+    private bool AniLock;
     private void Start()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
@@ -31,6 +32,7 @@ public class PlayerCtrl : MonoBehaviour
         IsScare = false;
         Player = playerT;
         DieSpeed = 0.1f;
+        AniLock = true;
     }
 
     private void Awake()
@@ -44,7 +46,6 @@ public class PlayerCtrl : MonoBehaviour
     }
     void Update()
     {
-        animator.SetBool("IsScare",IsScare);
         if (CanMove)
         {
             if (Input.GetKey(KeyCode.Z))
@@ -56,7 +57,6 @@ public class PlayerCtrl : MonoBehaviour
             else
             {
                 animator.SetFloat("Speed",0.1f);
-
                 PlayerIsRun = false;
                 MoveSpeed = 1.5f;
             }
@@ -75,22 +75,20 @@ public class PlayerCtrl : MonoBehaviour
                 MaskCtrl.CanTo0 = true;
                 if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    //Foxsigel.transform.position = PlayerPosition+ new Vector3(-0.175f,0.048f,0);
                     spriteRenderer.flipX = false;
                 }
 
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
-                    //Foxsigel.transform.position = PlayerPosition+ new Vector3(0.175f,0.048f,0);
                     spriteRenderer.flipX = true;
                 }
                 PlayerIsMove = true;
-                animator.SetBool("IsRun",true);
+                animator.Play("Gumi_Run");
             }
             else
             {
                 PlayerIsMove = false;
-                animator.SetBool("IsRun",false);
+                animator.Play("Gumi_Idle");
             }
 
         }
@@ -98,12 +96,7 @@ public class PlayerCtrl : MonoBehaviour
         {
             MoveSpeed = 0;
         }
-
-        // if (Input.GetKeyUp(KeyCode.RightArrow)||Input.GetKeyUp(KeyCode.LeftArrow)||Input.GetKeyUp(KeyCode.UpArrow)||Input.GetKeyUp(KeyCode.DownArrow))
-        // {
-        //     PlayerIsMove = false;
-        // }
-
+        
 
         if (Input.GetKeyDown(KeyCode.A))//按A可以放大光圈
         {
@@ -116,7 +109,6 @@ public class PlayerCtrl : MonoBehaviour
                     lamp.GetComponent<Lamp>().UseLamp();
                 }
             }
-            //LevelUp();
         }
     }
 
@@ -170,10 +162,12 @@ public class PlayerCtrl : MonoBehaviour
 
     public void KillPlayer()
     {
-        animator.SetBool("IsDie",true);
+        if (AniLock)
+        {
+            animator.Play("Gumi_Die2");
+        }
         MapV2.ClearList();
         ChangeMap.LampBeUse = false;
-        //ReloadSC();
     }
 
     public void ChangeMonsterStateTo1()
@@ -185,8 +179,6 @@ public class PlayerCtrl : MonoBehaviour
     }
     void ReloadSC()
     {
-        IsScare = false;
-        // ChangeMap.LampBeUse = false;
         ChangeMap.gameData.Current = SceneManager.GetActiveScene().name;//暫存當前地圖
         SceneManager.LoadScene("UI_Six");//前往第中繼圖
         ///關掉怪物跟玩家的移動   

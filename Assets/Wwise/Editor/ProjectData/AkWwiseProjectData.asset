@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c6848a86382e3446a3c8ce3a6893276e
     GuidInternal: 
-    m_lastTime: -8585682941445760777
+    m_lastTime: -8585680240764325876
     List:
     - name: Gameplay
       guid: 448b44b16d29e746bc0014b7c6e918f7
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ebfe06cbad3d1047a5e9809ce084aa38
     GuidInternal: 
-    m_lastTime: -8585682073244220855
+    m_lastTime: -8585680240764535016
     List:
     - name: Crystal_Break
       guid: 31d8107e883e15488e9e68cdcddd0deb
@@ -366,6 +366,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.216417
       minDuration: 2.216417
+    - name: Intro_buttom2
+      guid: e5515d95394b9f4781d4caffad783efa
+      id: 2610766947
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ebfe06cbad3d1047a5e9809ce084aa38
+      - ElementName: Ui
+        ObjectType: 4
+        guid: fdb0a1482df51340a99a27b9da3e443c
+      - ElementName: Intro_buttom2
+        ObjectType: 3
+        guid: e5515d95394b9f4781d4caffad783efa
+      Path: Events\Default Work Unit\Ui\Intro_buttom2
+      maxAttenuation: 0
+      maxDuration: 2.373485
+      minDuration: 1.883837
     - name: Monster
       guid: 6f5afafab804b243bc91e64e57f5dff9
       id: 2376328173

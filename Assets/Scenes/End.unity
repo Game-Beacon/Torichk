@@ -561,8 +561,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: 21300000, guid: 38ca404eaada0fe43ad202101608551d, type: 3}
+  - {fileID: 21300000, guid: 2a15e3ad92e72974d91b7db5db84e7b5, type: 3}
   - {fileID: 21300000, guid: bbfd091a649bd3849843bda06f1f4179, type: 3}
+  - {fileID: 21300000, guid: 38ca404eaada0fe43ad202101608551d, type: 3}
   gameData: {fileID: 11400000, guid: 70286e0f9c607eb49a9c2cdc9bf474c9, type: 2}
 --- !u!114 &1695704775
 MonoBehaviour:

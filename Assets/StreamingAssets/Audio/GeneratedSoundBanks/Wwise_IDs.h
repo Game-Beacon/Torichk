@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID GAMEPLAY_MUSIC = 2322231365U;
         static const AkUniqueID INTRO = 1125500713U;
         static const AkUniqueID INTRO_BUTTOM = 3693510923U;
+        static const AkUniqueID INTRO_BUTTOM2 = 2610766947U;
         static const AkUniqueID MONSTER01_ATTACK = 2069098427U;
         static const AkUniqueID MONSTER01_IDLE = 4233206453U;
         static const AkUniqueID OUTRO_B = 1340545413U;

@@ -25,8 +25,8 @@ public class MapV2 : MonoBehaviour
     public static List<GameObject> SigelList = new List<GameObject>();
     public static List<GameObject> LamplList = new List<GameObject>();
     public GameData gameData;
-    public  static GameObject mainSigel;
-    public  static GameObject EXmainSigel;
+    public  static GameObject Sigel1;
+    public  static GameObject Sigel2;
     
     //0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
     //str =m1,m2,m3
@@ -186,7 +186,7 @@ public class MapV2 : MonoBehaviour
             i.Add(int.Parse(item));
         }
         int count = 0;
-        mapHolder = new GameObject("Map").transform;//0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱
+        mapHolder = new GameObject("Map").transform;//0=null,1 =詩人, 2=王蟲,3=樹,4=水晶,5=玩家,6=怪物,7=陷阱(出口符雯1),8=出口2符文
         for (float x = cols ; x > 0; x--)
         {
             for (int y = 0; y < rows; y++)
@@ -213,15 +213,15 @@ public class MapV2 : MonoBehaviour
                         EndhouseList.Add(new MapUnit(i[count], new Vector2(y, x),go));
                         if (SceneManager.GetActiveScene().name.ToLower() =="m2"||SceneManager.GetActiveScene().name.ToLower() =="m3")
                         {
-                            ExitObj = go;
+                            Exit1Obj = go;
                             //gameData._uiTitle = UiTitle.GoodEnd;
-                            ExitObj.AddComponent<ChangeMap>().MapStr = "end";//好結局?
-                            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
+                            Exit1Obj.AddComponent<ChangeMap>().MapStr = "end";
+                            Exit1Obj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
 
-                            Exit = new Vector2(y,x);
+                            Exit1 = new Vector2(y,x);
                             GameObject go2 = Instantiate(ObjArray[7], new Vector3(y, x-0.3f, -3), Quaternion.identity) as GameObject;
                             go2.transform.SetParent(mapHolder);
-                            mainSigel = go2;
+                            Sigel1 = go2;
                         }
                         
                         if (SceneManager.GetActiveScene().name.ToLower() =="m1")
@@ -278,7 +278,7 @@ public class MapV2 : MonoBehaviour
     
     public  void SetToBadEnd()
     {
-        ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
+        Exit1Obj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
         
     }
 
@@ -286,15 +286,15 @@ public class MapV2 : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name =="m1")
         {
-            mainSigel.SetActive(false);
-            ExitObj.GetComponent<ChangeMap>().enabled = false;
+            Sigel1.SetActive(false);
+            Exit1Obj.GetComponent<ChangeMap>().enabled = false;
             
-            EXmainSigel.SetActive(true);
-            ExExitObj.GetComponent<ChangeMap>().enabled = true;
+            Sigel2.SetActive(true);
+            Exit2Obj.GetComponent<ChangeMap>().enabled = true;
             
             for (int i = 0; i < SigelList.Count; i++)
             {
-                SigelList[i] = RotateSigel(SigelList[i], ExExit);
+                SigelList[i] = RotateSigel(SigelList[i], Exit2);
             }
         }
 
@@ -307,40 +307,40 @@ public class MapV2 : MonoBehaviour
         SigelList.Clear();
     }
     
-    public  static Vector2 Exit,ExExit;
-    private GameObject ExitObj,ExExitObj;
+    public  static Vector2 Exit1,Exit2;
+    private GameObject Exit1Obj,Exit2Obj;
     void CreatExit_ExExit()
     {
         if (SceneManager.GetActiveScene().name.ToLower() =="m1")
         {
             //ChangeMap.gameData = gameData;
             int x = Random.Range(0, EndhouseList.Count - 1);
-            ExitObj = EndhouseList[x].houseObj;
+            Exit1Obj = EndhouseList[x].houseObj;
             EndhouseList.Remove(EndhouseList[x]);//選中後移除
-            Exit = ExitObj.transform.position;
+            Exit1 = Exit1Obj.transform.position;
             EndhouseList.RemoveAt(x);
             //gameData._uiTitle = UiTitle.BadEnd;//好結局
-            ExitObj.AddComponent<ChangeMap>().MapStr = "end";
-            ExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
-            GameObject go = Instantiate(ObjArray[7], new Vector3(Exit.x, Exit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            Exit1Obj.AddComponent<ChangeMap>().MapStr = "end";
+            Exit1Obj.GetComponent<ChangeMap>()._uiTitle = UiTitle.GoodEnd;
+            GameObject go = Instantiate(ObjArray[7], new Vector3(Exit1.x, Exit1.y-0.3f, -3), Quaternion.identity) as GameObject;
             go.transform.SetParent(mapHolder);
-             mainSigel= go;
+             Sigel1= go;
              //mainSigel.SetActive(false);
             
             
             
             int x2 = Random.Range(0, EndhouseList.Count - 1);
-            ExExitObj = EndhouseList[x2].houseObj;
-            ExExit = ExExitObj.transform.position;
+            Exit2Obj = EndhouseList[x2].houseObj;
+            Exit2 = Exit2Obj.transform.position;
             EndhouseList.RemoveAt(x2);
             //gameData._uiTitle = UiTitle.GoodEnd;//壞結局
-            ExExitObj.AddComponent<ChangeMap>().MapStr = "BadEnd";
-            ExExitObj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
-            GameObject go2 = Instantiate(ObjArray[8], new Vector3(ExExit.x, ExExit.y-0.3f, -3), Quaternion.identity) as GameObject;
+            Exit2Obj.AddComponent<ChangeMap>().MapStr = "BadEnd";
+            Exit2Obj.GetComponent<ChangeMap>()._uiTitle = UiTitle.BadEnd;
+            GameObject go2 = Instantiate(ObjArray[8], new Vector3(Exit2.x, Exit2.y-0.3f, -3), Quaternion.identity) as GameObject;
             go2.transform.SetParent(mapHolder);
-            EXmainSigel = go2;
-            EXmainSigel.SetActive(false);
-            ExExitObj.GetComponent<ChangeMap>().enabled = false;
+            Sigel2 = go2;
+            Sigel2.SetActive(false);
+            Exit2Obj.GetComponent<ChangeMap>().enabled = false;
 
         }
         
@@ -352,7 +352,7 @@ public class MapV2 : MonoBehaviour
         GameObject go2 = Instantiate(ObjArray[6], new Vector3(vector2.x, vector2.y-0.3f, -2), Quaternion.identity) as GameObject;
         // if (SceneManager.GetActiveScene().name =="m2"||SceneManager.GetActiveScene().name =="m3")
         // {
-            go2 = RotateSigel(go2,Exit);
+            go2 = RotateSigel(go2,Exit1);
             go2.transform.SetParent(mapHolder);
             SigelList.Add(go2);
         // }

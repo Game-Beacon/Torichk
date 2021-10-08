@@ -6,11 +6,12 @@ using  UnityEngine.SceneManagement;
 public class ChangeMap : MonoBehaviour
 {
     public string MapStr { get; set; }
-    public UiTitle _uiTitle= UiTitle.GoodEnd;
+    public UiTitle _uiTitle;//= UiTitle.GoodEnd;
     public static GameData gameData;
-    public static bool LampBeUse = false;
+    public static bool LampBeUse;
     private void Start()
     {
+        LampBeUse = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -26,11 +27,11 @@ public class ChangeMap : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name =="m1")
         {
-            MapV2.EXmainSigel.SetActive(false);
-            MapV2.mainSigel.SetActive(true);
+            MapV2.Sigel2.SetActive(false);
+            MapV2.Sigel1.SetActive(true);
             for (int i = 0; i < MapV2.SigelList.Count; i++)
             {
-                MapV2.SigelList[i] = RotateSigel(MapV2.SigelList[i], MapV2.ExExit);
+                MapV2.SigelList[i] = RotateSigel(MapV2.SigelList[i], MapV2.Exit2);
             }
         }
 
@@ -52,20 +53,26 @@ public class ChangeMap : MonoBehaviour
     {
         if ( !LampBeUse)//&&MapStr!= null)
         {
-            gameData._uiTitle = _uiTitle;
-            SceneManager.LoadScene(MapStr);   
+            MapV2.ClearList();
+            gameData._uiTitle =_uiTitle;
+            SceneManager.LoadScene(MapStr); 
+            //SceneManager.LoadScene(); 
+            
         }
         else
         {
-            if (MapStr!=null)
-            {
-                gameData._uiTitle = UiTitle.BadEnd;
-                SceneManager.LoadScene(MapStr);
-            }
-            else
-            {
-                SceneManager.LoadScene("m1");
-            }
+            MapV2.ClearList();
+            gameData._uiTitle =UiTitle.BadEnd;
+            SceneManager.LoadScene(MapStr);
+            // if (MapStr!=null)
+            // {
+            //     gameData._uiTitle = UiTitle.BadEnd;
+            //     SceneManager.LoadScene(MapStr);
+            // }
+            // else
+            // {
+            //     SceneManager.LoadScene("m1");
+            // }
 
         }
     }

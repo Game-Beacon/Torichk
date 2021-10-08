@@ -5,24 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/d0dd78bf73bed800.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/d0dd78bf73bed800.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/eyeballroad4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/eyeballroad4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/f.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/f.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/lu01_sigel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/lu01_sigel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/soilroad_b2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/soilroad_b2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/tree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/王蟲房04.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Map/詩人房00.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BadEnd.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BadEnd.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/End.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TeachSC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +129,7 @@
       <workItem from="1633527368945" duration="778000" />
       <workItem from="1633557584749" duration="1315000" />
       <workItem from="1633608519024" duration="12565000" />
-      <workItem from="1633698599799" duration="6495000" />
+      <workItem from="1633698599799" duration="9612000" />
     </task>
     <servers />
   </component>

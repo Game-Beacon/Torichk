@@ -4,17 +4,18 @@ using UnityEngine;
 using  UnityEngine.SceneManagement;
 public class UIScripts : MonoBehaviour
 {
-    public GameData _gameData;
+    public  GameData _gameData;
     private string[] m = new[] {"m1", "m3","m2"};
 
     public GameObject _gameObject;
     // Start is called before the first frame update
 
     public void ExitGame()
-    {
+    {        
         _gameData._uiTitle = UiTitle.Start;
         Application.Quit();
     }
+    
 
     public void GoSc()
     {

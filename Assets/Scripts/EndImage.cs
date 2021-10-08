@@ -19,7 +19,7 @@ public class EndImage : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKeyDown)
         {
             
             SceneManager.LoadScene("UI");

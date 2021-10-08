@@ -32,8 +32,7 @@ public class TeachUi : MonoBehaviour
                     {
                         //SceneManager.LoadScene(ChangeMap.gameData.Current);
                         _image.sprite = LoadSprite;
-                        SceneManager.LoadScene("m1"); 
-
+                        SceneManager.LoadScene("m1");
                     }
                     else
                     {                        

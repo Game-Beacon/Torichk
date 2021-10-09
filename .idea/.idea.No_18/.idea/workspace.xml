@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Crystal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI_Six.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeachUi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +123,7 @@
       <workItem from="1633557584749" duration="1315000" />
       <workItem from="1633608519024" duration="12565000" />
       <workItem from="1633698599799" duration="9612000" />
+      <workItem from="1633710680273" duration="27000" />
     </task>
     <servers />
   </component>

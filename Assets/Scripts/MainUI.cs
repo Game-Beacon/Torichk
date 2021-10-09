@@ -24,7 +24,6 @@ public class MainUI : MonoBehaviour
     
     IEnumerator Tween(float duration, float Start, float End)
     {
-        Debug.Log("start");
         while (Stop)
         {
             yield return new WaitForSeconds(16);//15+1秒一般

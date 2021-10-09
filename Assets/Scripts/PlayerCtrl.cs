@@ -22,6 +22,8 @@ public class PlayerCtrl : MonoBehaviour
     public float AniSpeed;
     public float DieSpeed;
     private bool AniLock;
+
+    public Black _Black;
     private void Start()
     {
         rigibody2D = GetComponent<Rigidbody2D>();
@@ -55,13 +57,13 @@ public class PlayerCtrl : MonoBehaviour
             {
                 animator.SetFloat("Speed",0.3f);
                 PlayerIsRun = true;
-                MoveSpeed = 2.5f;
+                MoveSpeed = 1.25f;
             }
             else
             {
                 animator.SetFloat("Speed",0.1f);
                 PlayerIsRun = false;
-                MoveSpeed = 1.5f;
+                MoveSpeed = 0.75f;
             }
             
             float moveX = 0f;
@@ -182,7 +184,8 @@ public class PlayerCtrl : MonoBehaviour
     void ReloadSC()
     {
         ChangeMap.gameData.Current = SceneManager.GetActiveScene().name;//暫存當前地圖
-        SceneManager.LoadScene("UI_Six");//前往第中繼圖
+        _Black.GoBlack();
+        //SceneManager.LoadScene("UI_Six");//前往第中繼圖
         ///關掉怪物跟玩家的移動   
     }
 }

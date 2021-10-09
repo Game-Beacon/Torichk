@@ -26,6 +26,10 @@ public class AI_ByState : MonoBehaviour
     private bool ScareLock;
     private bool KillLock;
     private bool state2;
+
+    public static float MoveSpeed;
+    public static float MoveSpeed2;
+    
     private void Start()
     {
         idleState = new IdleState(this);
@@ -42,6 +46,8 @@ public class AI_ByState : MonoBehaviour
         ScareLock = true;
         KillLock = true;
         state2 = false;
+        MoveSpeed = 10f;
+        MoveSpeed2 = 0.0001f;
         // _animator.SetFloat("AniSpeed",AniSpeed);
     }
     
@@ -189,7 +195,7 @@ public class MoveState : Istate
     void Istate.OnStateEnter()
     {
         timeEnd = Time.time + 3f;
-        aiBystate.speed = 10;
+        aiBystate.speed = AI_ByState.MoveSpeed;
         Target = aiBystate.O + new Vector3(Random.Range(-12,12),Random.Range(-12,12),0);
         if (aiBystate.AiPosition.x - Target.x > 0 != dirold)
         {
@@ -201,7 +207,7 @@ public class MoveState : Istate
 
     void Istate.OnStateExecution()
     {
-        aiBystate.MoveToPosition(Target,0.001f);
+        aiBystate.MoveToPosition(Target,AI_ByState.MoveSpeed2);//0.0001f
         if (Time.time > timeEnd)
         {
             aiBystate.ChangeState(aiBystate.idleState);
@@ -229,7 +235,7 @@ public class AttackState : Istate
     void Istate.OnStateExecution()
     {
 
-        aistate.MoveToPosition(PlayerCtrl.PlayerPosition, 0.001f);
+        aistate.MoveToPosition(PlayerCtrl.PlayerPosition, AI_ByState.MoveSpeed2);//0.0001f
         if (aistate.AiPosition.x - PlayerCtrl.PlayerPosition.x > 0 != dirold)
         {
             aistate._spriteRenderer.flipX = !aistate._spriteRenderer.flipX;

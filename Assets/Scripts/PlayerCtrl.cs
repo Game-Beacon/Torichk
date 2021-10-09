@@ -33,6 +33,7 @@ public class PlayerCtrl : MonoBehaviour
         Player = playerT;
         DieSpeed = 0.1f;
         AniLock = true;
+        PlayerPosition = transform.position;
     }
 
     private void Awake()
@@ -46,6 +47,8 @@ public class PlayerCtrl : MonoBehaviour
     }
     void Update()
     {
+        PlayerPosition = transform.position;
+
         if (CanMove)
         {
             if (Input.GetKey(KeyCode.Z))
@@ -61,7 +64,6 @@ public class PlayerCtrl : MonoBehaviour
                 MoveSpeed = 1.5f;
             }
             
-            PlayerPosition = transform.position;
             float moveX = 0f;
             float moveY = 0f;
             if (Input.GetKey(KeyCode.UpArrow)) moveY = 1f;

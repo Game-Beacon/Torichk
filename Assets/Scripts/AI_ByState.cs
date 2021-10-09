@@ -59,7 +59,7 @@ public class AI_ByState : MonoBehaviour
             ChangeState(attackState);
         }
         AiPosition = transform.position;
-        if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1&& PlayerCtrl.IsScare ==false)
+        if (Vector2.Distance(transform.position, PlayerCtrl.PlayerPosition) < 1&& !PlayerCtrl.IsScare&&PlayerCtrl.Player.animator !=null)
         {
             if (killfox)
             {
@@ -67,7 +67,7 @@ public class AI_ByState : MonoBehaviour
                 killfox = false;
             }
             //PlayerCtrl.IsScare = true;
-            if (ScareLock)
+            if (ScareLock&&PlayerCtrl.Player.animator !=null)
             {
                 PlayerCtrl.Player.animator.Play("Gumi_Scare");
                 ScareLock = false;

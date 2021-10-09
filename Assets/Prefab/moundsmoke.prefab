@@ -60,7 +60,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.050109, y: 0.015806586}
+  m_Offset: {x: 0.050109, y: 0.33959043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -71,7 +71,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30264133, y: 0.09605071}
+  m_Size: {x: 0.30264133, y: 0.7436185}
   m_EdgeRadius: 0
 --- !u!1 &685755220044230775
 GameObject:
@@ -4887,7 +4887,7 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
 --- !u!1 &685755220267983423
 GameObject:
   m_ObjectHideFlags: 0

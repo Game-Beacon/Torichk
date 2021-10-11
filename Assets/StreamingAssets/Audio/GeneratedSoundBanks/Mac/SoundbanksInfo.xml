@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="89505537" Language="SFX" Hash="1791418064">
+		<SoundBank Id="89505537" Language="SFX" Hash="2533049933">
 			<ObjectPath>\SoundBanks\Default Work Unit\Gameplay</ObjectPath>
 			<ShortName>Gameplay</ShortName>
 			<Path>Gameplay.bnk</Path>
 			<IncludedEvents>
-				<Event Id="756738409" Name="Crystal_Break" ObjectPath="\Events\Default Work Unit\Props\Crystal_Break" DurationType="OneShot" DurationMin="2.502540" DurationMax="2.502540">
+				<Event Id="756738409" Name="Crystal_Break" ObjectPath="\Events\Default Work Unit\Props\Crystal_Break">
 					<IncludedMemoryFiles>
 						<File Id="723813509" Language="SFX">
 							<ShortName>Crystal fire.wav</ShortName>
@@ -28,7 +28,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="829715712" Name="Crystal_Fire" ObjectPath="\Events\Default Work Unit\Props\Crystal_Fire" MaxAttenuation="4.000000" DurationType="Infinite">
+				<Event Id="829715712" Name="Crystal_Fire" ObjectPath="\Events\Default Work Unit\Props\Crystal_Fire">
 					<IncludedMemoryFiles>
 						<File Id="158202145" Language="SFX">
 							<ShortName>Fire\Fire_02.wav</ShortName>
@@ -52,8 +52,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3723867782" Name="Crystal_Fire_Off" ObjectPath="\Events\Default Work Unit\Props\Crystal_Fire_Off" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2514411446" Name="Die1" ObjectPath="\Events\Default Work Unit\Player\Die1" DurationType="OneShot" DurationMin="2.015850" DurationMax="2.415611">
+				<Event Id="3723867782" Name="Crystal_Fire_Off" ObjectPath="\Events\Default Work Unit\Props\Crystal_Fire_Off"/>
+				<Event Id="2514411446" Name="Die1" ObjectPath="\Events\Default Work Unit\Player\Die1">
 					<IncludedMemoryFiles>
 						<File Id="204108023" Language="SFX">
 							<ShortName>Die\Die02.wav</ShortName>
@@ -81,7 +81,7 @@
 						<ActionSetSwitchEntry Id="2514411446" Name="Die1" ObjectPath="\Switches\Default Work Unit\Player\Die1"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="2514411445" Name="Die2" ObjectPath="\Events\Default Work Unit\Player\Die2" DurationType="OneShot" DurationMin="2.642150" DurationMax="5.015543">
+				<Event Id="2514411445" Name="Die2" ObjectPath="\Events\Default Work Unit\Player\Die2">
 					<IncludedMemoryFiles>
 						<File Id="204108023" Language="SFX">
 							<ShortName>Die\Die02.wav</ShortName>
@@ -112,7 +112,7 @@
 						<ActionSetSwitchEntry Id="2514411445" Name="Die2" ObjectPath="\Switches\Default Work Unit\Player\Die2"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="2322231365" Name="Gameplay_Music" ObjectPath="\Events\Default Work Unit\Music\Gameplay_Music" DurationType="Infinite">
+				<Event Id="2322231365" Name="Gameplay_Music" ObjectPath="\Events\Default Work Unit\Music\Gameplay_Music">
 					<IncludedMemoryFiles>
 						<File Id="27811459" Language="SFX">
 							<ShortName>20210614-GamePlay2-Fin.wav</ShortName>
@@ -132,7 +132,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4104381493" Name="water_drown" ObjectPath="\Events\Default Work Unit\Props\water_drown" DurationType="OneShot" DurationMin="1.038458" DurationMax="1.038458">
+				<Event Id="4104381493" Name="water_drown" ObjectPath="\Events\Default Work Unit\Props\water_drown">
 					<IncludedMemoryFiles>
 						<File Id="97401550" Language="SFX">
 							<ShortName>water drown.wav</ShortName>
@@ -161,7 +161,7 @@
 			<ShortName>Intro</ShortName>
 			<Path>Intro.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1125500713" Name="Intro" ObjectPath="\Events\Default Work Unit\Music\Intro" DurationType="Infinite">
+				<Event Id="1125500713" Name="Intro" ObjectPath="\Events\Default Work Unit\Music\Intro">
 					<IncludedMemoryFiles>
 						<File Id="56369941" Language="SFX">
 							<ShortName>20210824-Intro2_Fin.wav</ShortName>
@@ -183,7 +183,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2057357049">
+		<SoundBank Id="1355168291" Language="SFX" Hash="778735092">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -193,7 +193,7 @@
 			<ShortName>Ui</ShortName>
 			<Path>Ui.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3693510923" Name="Intro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom" DurationType="OneShot" DurationMin="2.216417" DurationMax="2.216417">
+				<Event Id="3693510923" Name="Intro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom">
 					<IncludedMemoryFiles>
 						<File Id="338065267" Language="SFX">
 							<ShortName>Intro_buttom.wav</ShortName>
@@ -201,7 +201,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2610766947" Name="Intro_buttom2" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom2" DurationType="OneShot" DurationMin="1.883837" DurationMax="2.373485">
+				<Event Id="2610766947" Name="Intro_buttom2" ObjectPath="\Events\Default Work Unit\Ui\Intro_buttom2">
 					<IncludedMemoryFiles>
 						<File Id="51438306" Language="SFX">
 							<ShortName>Intro_buttom2.wav</ShortName>
@@ -209,7 +209,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2796758030" Name="Outro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Outro_buttom" DurationType="OneShot" DurationMin="2.341406" DurationMax="2.341406">
+				<Event Id="2796758030" Name="Outro_buttom" ObjectPath="\Events\Default Work Unit\Ui\Outro_buttom">
 					<IncludedMemoryFiles>
 						<File Id="966934053" Language="SFX">
 							<ShortName>Outro_buttom.wav</ShortName>
@@ -217,7 +217,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4286538426" Name="Page_turn" ObjectPath="\Events\Default Work Unit\Ui\Page_turn" DurationType="OneShot" DurationMin="0.917004" DurationMax="1.090508">
+				<Event Id="4286538426" Name="Page_turn" ObjectPath="\Events\Default Work Unit\Ui\Page_turn">
 					<IncludedMemoryFiles>
 						<File Id="204500310" Language="SFX">
 							<ShortName>Page_Turn_14.wav</ShortName>
@@ -227,12 +227,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2376328173" Language="SFX" Hash="3020648766">
+		<SoundBank Id="2376328173" Language="SFX" Hash="3920749543">
 			<ObjectPath>\SoundBanks\Default Work Unit\Monster</ObjectPath>
 			<ShortName>Monster</ShortName>
 			<Path>Monster.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Attack" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="0.775466" DurationMax="1.199304">
+				<Event Id="2069098427" Name="Monster01_Attack" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Attack">
 					<IncludedMemoryFiles>
 						<File Id="132173753" Language="SFX">
 							<ShortName>Attack\Attack02.wav</ShortName>
@@ -248,7 +248,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4233206453" Name="Monster01_Idle" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Idle" MaxAttenuation="4.000000" DurationType="Infinite">
+				<Event Id="4233206453" Name="Monster01_Idle" ObjectPath="\Events\Default Work Unit\Monster\Monster01\Monster01_Idle">
 					<IncludedMemoryFiles>
 						<File Id="54114215" Language="SFX">
 							<ShortName>Monster01\Idle\Monster01_01.wav</ShortName>
@@ -292,7 +292,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3187576023" Name="Snake" ObjectPath="\Events\Default Work Unit\Monster\Snake" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="1.427256" DurationMax="1.427256">
+				<Event Id="3187576023" Name="Snake" ObjectPath="\Events\Default Work Unit\Monster\Snake">
 					<IncludedMemoryFiles>
 						<File Id="796263955" Language="SFX">
 							<ShortName>Snake.wav</ShortName>
@@ -300,7 +300,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2773911378" Name="Work1_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Attack" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="1.168734" DurationMax="1.622607">
+				<Event Id="2773911378" Name="Work1_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Attack">
 					<IncludedMemoryFiles>
 						<File Id="66420628" Language="SFX">
 							<ShortName>Worker01_Attack03.wav</ShortName>
@@ -312,7 +312,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3661139732" Name="Work1_Aware" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Aware" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="1.364127" DurationMax="1.997755">
+				<Event Id="3661139732" Name="Work1_Aware" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Aware">
 					<IncludedMemoryFiles>
 						<File Id="111127699" Language="SFX">
 							<ShortName>Aware\Work1_Aware01.wav</ShortName>
@@ -328,7 +328,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3086545764" Name="Work1_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Idle" MaxAttenuation="4.000000" DurationType="Infinite">
+				<Event Id="3086545764" Name="Work1_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Idle">
 					<IncludedMemoryFiles>
 						<File Id="586294338" Language="SFX">
 							<ShortName>Idle\Worker1_Idle03.wav</ShortName>
@@ -352,7 +352,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1624523373" Name="Work1_Move" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Move" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="0.370981" DurationMax="0.721169">
+				<Event Id="1624523373" Name="Work1_Move" ObjectPath="\Events\Default Work Unit\Monster\Worker1\Work1_Move">
 					<IncludedMemoryFiles>
 						<File Id="214971887" Language="SFX">
 							<ShortName>Move\Move4.wav</ShortName>
@@ -380,7 +380,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1807395391" Name="Work2_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Attack" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="2.061658" DurationMax="2.982526">
+				<Event Id="1807395391" Name="Work2_Attack" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Attack">
 					<IncludedMemoryFiles>
 						<File Id="17659245" Language="SFX">
 							<ShortName>Attack\Work2_Attack02.wav</ShortName>
@@ -392,7 +392,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1744541137" Name="Work2_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Idle" MaxAttenuation="4.000000" DurationType="Infinite">
+				<Event Id="1744541137" Name="Work2_Idle" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Idle">
 					<IncludedMemoryFiles>
 						<File Id="331282804" Language="SFX">
 							<ShortName>Idle\Work2_Idle02.wav</ShortName>
@@ -416,7 +416,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2012150292" Name="Work2_Move_Hand" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Hand" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="0.271379" DurationMax="0.467113">
+				<Event Id="2012150292" Name="Work2_Move_Hand" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Hand">
 					<IncludedMemoryFiles>
 						<File Id="204187225" Language="SFX">
 							<ShortName>Hand\Work2_Move_Hand02.wav</ShortName>
@@ -444,7 +444,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="178967744" Name="Work2_Move_Wheel" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Wheel" MaxAttenuation="4.000000" DurationType="OneShot" DurationMin="4.525329" DurationMax="4.525329">
+				<Event Id="178967744" Name="Work2_Move_Wheel" ObjectPath="\Events\Default Work Unit\Monster\Worker2\Work2_Move_Wheel">
 					<IncludedMemoryFiles>
 						<File Id="188490827" Language="SFX">
 							<ShortName>Move\Work2_Move_Wheel01.wav</ShortName>
@@ -475,7 +475,7 @@
 			<ShortName>Outro</ShortName>
 			<Path>Outro.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1340545413" Name="Outro_B" ObjectPath="\Events\Default Work Unit\Music\Outro_B" DurationType="Infinite">
+				<Event Id="1340545413" Name="Outro_B" ObjectPath="\Events\Default Work Unit\Music\Outro_B">
 					<IncludedMemoryFiles>
 						<File Id="315479486" Language="SFX">
 							<ShortName>20210918-Outro_B.wav</ShortName>
@@ -483,7 +483,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1340545408" Name="Outro_G" ObjectPath="\Events\Default Work Unit\Music\Outro_G" DurationType="Infinite">
+				<Event Id="1340545408" Name="Outro_G" ObjectPath="\Events\Default Work Unit\Music\Outro_G">
 					<IncludedMemoryFiles>
 						<File Id="888766829" Language="SFX">
 							<ShortName>20210918-Outro_G_Fin.wav</ShortName>

@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Work2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/moundsmoke.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI_ByState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -137,6 +131,8 @@
       <workItem from="1633757237396" duration="595000" />
       <workItem from="1633766601608" duration="1828000" />
       <workItem from="1633788268953" duration="5734000" />
+      <workItem from="1633798930999" duration="817000" />
+      <workItem from="1633946856625" duration="12000" />
     </task>
     <servers />
   </component>

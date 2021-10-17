@@ -15,6 +15,16 @@ public class EndImage : MonoBehaviour
         _image = GetComponent<Image>();
         Debug.Log("End"+((int)gameData._uiTitle));
         _image.sprite = _sprites[((int)gameData._uiTitle)];
+        switch (gameData._uiTitle)
+        {
+            case UiTitle.BadEnd:
+                AkSoundEngine.PostEvent("Outro_B", gameObject);
+                break;
+            case UiTitle.GoodEnd:
+                AkSoundEngine.PostEvent("Outro_G", gameObject);
+                break;
+        }
+        
     }
 
     private void Update()

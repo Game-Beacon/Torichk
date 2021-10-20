@@ -9,9 +9,12 @@ public class EndImage : MonoBehaviour
     public Sprite[] _sprites;
     private Image _image;
     public GameData gameData;
+
+    private float ChangeTime;
     //private string[] m = new[] {"", "m3","m2"};
     private void Start()
     {
+        ChangeTime = Time.time + 5;
         _image = GetComponent<Image>();
         Debug.Log("End"+((int)gameData._uiTitle));
         _image.sprite = _sprites[((int)gameData._uiTitle)];
@@ -29,7 +32,7 @@ public class EndImage : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown&&Time.time>ChangeTime)
         {
             
             SceneManager.LoadScene("UI");

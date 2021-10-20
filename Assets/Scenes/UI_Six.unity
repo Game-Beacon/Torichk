@@ -487,8 +487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: 21300000, guid: 36059553893230b4e9b08409fae771cc, type: 3}
-  - {fileID: 21300000, guid: 6859607794c953e44989444eaf7d1b10, type: 3}
+  - {fileID: 21300000, guid: cdee4d7b65070534ca1ffb9adca888d3, type: 3}
+  - {fileID: 21300000, guid: 8fa0d719ab7092e49a898eb2491cf774, type: 3}
   LoadSprite: {fileID: 21300000, guid: 654feccdb9f69f04a83a12051e2b8e8f, type: 3}
 --- !u!222 &7480931460966442462
 CanvasRenderer:

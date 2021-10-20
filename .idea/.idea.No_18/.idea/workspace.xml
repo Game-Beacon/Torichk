@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d8cc0e35-1e06-4068-be29-e40d023aaba0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.No_18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData/GameData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Gumi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BadEnd.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BadEnd.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/End.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/UI.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/UI.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapV2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +137,9 @@
       <workItem from="1633788268953" duration="5734000" />
       <workItem from="1633798930999" duration="817000" />
       <workItem from="1633946856625" duration="628000" />
-      <workItem from="1634439906963" duration="1096000" />
+      <workItem from="1634439906963" duration="1692000" />
+      <workItem from="1634503952381" duration="482000" />
+      <workItem from="1634505009980" duration="1216000" />
     </task>
     <servers />
   </component>

@@ -288,9 +288,12 @@ public class MapV2 : MonoBehaviour
         {
             Sigel1.SetActive(false);
             Exit1Obj.GetComponent<ChangeMap>().enabled = false;
+            Exit1Obj.GetComponent<BoxCollider2D>().isTrigger = true;
+
             
             Sigel2.SetActive(true);
             Exit2Obj.GetComponent<ChangeMap>().enabled = true;
+            Exit2Obj.GetComponent<BoxCollider2D>().isTrigger = false;
             
             for (int i = 0; i < SigelList.Count; i++)
             {
@@ -341,6 +344,7 @@ public class MapV2 : MonoBehaviour
             Sigel2 = go2;
             Sigel2.SetActive(false);
             Exit2Obj.GetComponent<ChangeMap>().enabled = false;
+            Exit2Obj.GetComponent<BoxCollider2D>().isTrigger = true;
 
         }
         
